@@ -1,11 +1,15 @@
 import VueRouter from 'vue-router'
-
-const Foo = { template: '<div>foo</div>' }
-const Bar = { template: '<div>bar</div>' }
+import main from 'pages/main'
+import home from 'pages/home'
+import about from 'pages/about'
 
 const routes = [
-  { path: '/foo', component: Foo },
-  { path: '/bar', component: Bar }
+  {path: '/', component: main,
+   children: [
+    {path: 'home', component: home},
+    {path: 'about', component: about}
+   ]
+  }
 ]
 
 const router = new VueRouter({

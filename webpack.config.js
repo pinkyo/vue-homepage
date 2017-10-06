@@ -2,6 +2,7 @@ var path = require('path')
 var webpack = require('webpack')
 var ExtractTextPlugin = require("extract-text-webpack-plugin")
 var HtmlWebpackPlugin = require('html-webpack-plugin')
+var plugin = new ExtractTextPlugin('style.css')
 
 module.exports = {
   entry: './src/main.js',
@@ -27,6 +28,7 @@ module.exports = {
     ]
   },
   plugins: [
+    plugin,
     new HtmlWebpackPlugin({
       title: "Vue Demo",
       favicon: "src/favicon.ico",
@@ -34,8 +36,11 @@ module.exports = {
     })
   ],
   resolve: {
+    extensions: [' ', '.js', '.vue', '.css'],
     alias: {
-      'vue$': 'vue/dist/vue.esm.js'
+      'vue$': 'vue/dist/vue.esm.js',
+      'components': path.resolve(__dirname, './src/components'),
+      'pages': path.resolve(__dirname, './src/pages')
     }
   },
   devServer: {
