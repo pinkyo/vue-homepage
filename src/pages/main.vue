@@ -5,16 +5,18 @@
 </template>
 
 <script>
+import {mapGetters, mapActions} from 'vuex'
+
 export default {
   name: 'main',
-  data: function() {
-    return {
-      hidden: false,
-    }
-  },
+  computed: mapGetters({
+    hidden: 'isHidden'
+  }),
   methods: {
-    handleClick: function() {
-      this.hidden = true
+    handleClick() {
+      if (this.hidden)
+        this.$store.dispatch('show')
+      else this.$store.dispatch('hide')
     }
   }
 }
