@@ -24,6 +24,23 @@ module.exports = {
         test: /\.js$/,
         exclude: /node_modules/,
         loader: 'babel-loader'
+      },
+      {
+        test: /\.css$/,
+        exclude: /dist/,
+        use: [
+          {
+            loader: "style-loader"
+          },
+          {
+            loader: "css-loader"
+          },
+        ]
+      },
+      {
+        test: /\.(ttf|woff)$/,
+        exclude: /dist/,
+        loader: 'file-loader'
       }
     ]
   },
