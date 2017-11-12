@@ -2,7 +2,7 @@
   <el-container>
     <el-header height='2rem'>Header</el-header>
     <el-container>
-      <el-aside width='200px'>
+      <el-aside width='250px' style="overflow: hidden">
         <nav-menu />
       </el-aside>
       <el-container>
