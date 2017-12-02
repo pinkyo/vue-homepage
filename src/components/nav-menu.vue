@@ -10,29 +10,26 @@
       <el-submenu index="1">
         <template slot="title">
           <div>
-            <i class="el-icon-location"></i>
-            <span>Navigator One</span>
+            <i class="el-icon-menu"></i>
+            <span v-t="'navigator.resources.title'"></span>
           </div>
         </template>
-        <el-menu-item-group title="Group One">
-          <el-menu-item index="1-1">item one</el-menu-item>
-          <el-menu-item index="1-2">item one</el-menu-item>
+        <el-menu-item-group :title="$t('navigator.resources.frontend.title')">
+          <el-menu-item index="1-1" v-t="'navigator.resources.frontend.react'"></el-menu-item>
+          <el-menu-item index="1-2" v-t="'navigator.resources.frontend.vue'"></el-menu-item>
+          <el-menu-item index="1-3" v-t="'navigator.resources.frontend.angular'"></el-menu-item>
         </el-menu-item-group>
-        <el-menu-item-group title="Group Two">
-          <el-menu-item index="1-3">item three</el-menu-item>
+        <el-menu-item-group :title="$t('navigator.resources.backend.title')">
+          <el-menu-item index="1-4" v-t="'navigator.resources.backend.java'"></el-menu-item>
         </el-menu-item-group>
-        <el-submenu index="1-4">
-          <template slot="title">item four</template>
-          <el-menu-item index="1-4-1">item one</el-menu-item>
-        </el-submenu>
       </el-submenu>
       <el-menu-item index="2">
-        <i class="el-icon-menu"></i>
-        <span>Navigator Two</span>
+        <i class="el-icon-star-on"></i>
+        <span v-t="'navigator.author'"></span>
       </el-menu-item>
       <el-menu-item index="3">
-        <i class="el-icon-setting"></i>
-        <span>Navigator Three</span>
+        <i class="el-icon-info"></i>
+        <span v-t="'navigator.about'"></span>
       </el-menu-item>
     </el-menu>
 </template>
@@ -40,14 +37,14 @@
 <script>
 export default {
   name: "nav-menu",
-   methods: {
-      handleOpen(key, keyPath) {
-        console.log(key, keyPath);
-      },
-      handleClose(key, keyPath) {
-        console.log(key, keyPath);
-      }
+  methods: {
+    handleOpen(key, keyPath) {
+      console.log(key, keyPath);
+    },
+    handleClose(key, keyPath) {
+      console.log(key, keyPath);
     }
+  }
 }
 </script>
 

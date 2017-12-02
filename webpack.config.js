@@ -5,7 +5,7 @@ var HtmlWebpackPlugin = require('html-webpack-plugin')
 var plugin = new ExtractTextPlugin('style.css')
 
 module.exports = {
-  entry: './src/main.js',
+  entry: path.resolve('src/setup/main.js'),
   output: {
     path: path.resolve(__dirname, './dist'),
     publicPath: '/',
@@ -55,10 +55,8 @@ module.exports = {
   resolve: {
     extensions: [' ', '.js', '.vue', '.css'],
     alias: {
-      'vue$': 'vue/dist/vue.esm.js',
-      'components': path.resolve(__dirname, './src/components'),
-      'pages': path.resolve(__dirname, './src/pages'),
-      'store': path.resolve(__dirname, './src/store')
+      '@': path.resolve('src'),
+      'vue$': 'vue/dist/vue.esm.js'
     }
   },
   devServer: {

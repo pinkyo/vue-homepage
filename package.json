@@ -8,8 +8,11 @@
     "clean": "rimraf dist/"
   },
   "dependencies": {
+    "axios": "^0.17.1",
     "element-ui": "^2.0.2",
+    "lodash": "^4.17.4",
     "vue": "^2.4.4",
+    "vue-i18n": "^7.3.2",
     "vue-router": "^2.7.0",
     "vuex": "^2.4.1"
   },

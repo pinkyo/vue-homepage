@@ -1,7 +1,7 @@
 import VueRouter from 'vue-router'
-import main from 'pages/main'
-import home from 'pages/home'
-import about from 'pages/about'
+import main from '@/pages/main'
+import home from '@/pages/home'
+import about from '@/pages/about'
 
 const routes = [
   {path: '/', component: main,

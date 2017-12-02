@@ -21,7 +21,7 @@
 
 <script>
 import {mapGetters, mapActions} from 'vuex'
-import navMenu from 'components/nav-menu'
+import navMenu from '@/components/nav-menu'
 
 export default {
   name: 'main',
