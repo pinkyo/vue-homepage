@@ -1,6 +1,8 @@
 <template>
   <el-container>
-    <el-header height='2rem'>Header</el-header>
+    <el-header class="main-header">
+      <h1>My Home Page</h1>
+    </el-header>
     <el-container>
       <el-aside width='250px' style="overflow: hidden">
         <nav-menu />
@@ -40,7 +42,19 @@ export default {
 </script>
 
 <style>
-  .main {
+  .main-header {
+    text-align: center;
+    background-color: #878D99;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+  }
+
+  .main-header h1 {
+    color: blue;
+    text-shadow: 0 0 5px white;
+  }
+
+  /* .main {
     margin: 0 auto;
   }
 
@@ -107,7 +121,7 @@ export default {
 
   .el-container:nth-child(7) .el-aside {
     line-height: 320px;
-  }
+  } */
 </style>
 
 
