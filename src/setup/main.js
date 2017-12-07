@@ -5,6 +5,7 @@ import store from '@/store'
 import ElementUI from 'element-ui'
 import 'element-ui/lib/theme-chalk/index.css'
 import {i18n, loadLanguageAsync} from '@/setup/i18n-setup'
+import '@/setup/amap-setup.js'
 
 Vue.use(VueRouter)
 Vue.use(ElementUI)

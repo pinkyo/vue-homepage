@@ -9,8 +9,8 @@
       </el-aside>
       <el-container>
         <el-main>
-          <router-link to="/home">home</router-link>
-          <router-link to="/about">about</router-link>
+          <!-- <router-link to="/home">home</router-link>
+          <router-link to="/about">about</router-link> -->
           <div class="main" :class="{hidden: hidden}" @click="handleClick">
             <router-view></router-view>
           </div>
