@@ -3,15 +3,15 @@
     <el-header class="main-header">
       <h1>My Home Page</h1>
     </el-header>
-    <el-container>
-      <el-aside width='250px' style="overflow: hidden">
+    <el-container class="main-container">
+      <el-aside width='250px' style="overflow: hidden" class="main-left-aside">
         <nav-menu />
       </el-aside>
-      <el-container>
+      <el-container class="main-right-container">
         <el-main>
           <!-- <router-link to="/home">home</router-link>
           <router-link to="/about">about</router-link> -->
-          <div class="main" :class="{hidden: hidden}" @click="handleClick">
+          <div class="main-div" :class="{hidden: hidden}" @click="handleClick">
             <router-view></router-view>
           </div>
         </el-main>
@@ -49,79 +49,26 @@ export default {
     border-top-right-radius: 4px;
   }
 
+  .main-container {
+    min-height: 43rem;
+  }
+
+  .main-left-aside {
+    border-bottom-left-radius: 4px;
+  }
+
+  .main-right-container {
+    border-bottom-right-radius: 4px;
+  }
+
   .main-header h1 {
     color: blue;
     text-shadow: 0 0 5px white;
   }
 
-  /* .main {
-    margin: 0 auto;
+  .main-right-container {
+    background-color: silver;
   }
-
-  .hidden {
-    display: none;
-  }
-
-  .el-row {
-    margin-bottom: 20px;
-    &:last-child {
-      margin-bottom: 0;
-    }
-  }
-  .el-col {
-    border-radius: 4px;
-  }
-  .bg-purple-dark {
-    background: #99a9bf;
-  }
-  .bg-purple {
-    background: #d3dce6;
-  }
-  .bg-purple-light {
-    background: #e5e9f2;
-  }
-  .grid-content {
-    border-radius: 4px;
-    min-height: 36px;
-  }
-  .row-bg {
-    padding: 10px 0;
-    background-color: #f9fafc;
-  }
-
-  .el-header, .el-footer {
-    background-color: #B3C0D1;
-    color: #333;
-    text-align: center;
-    line-height: 60px;
-  }
-
-  .el-aside {
-    background-color: #D3DCE6;
-    color: #333;
-    text-align: center;
-    line-height: 200px;
-  }
-
-  .el-main {
-    background-color: #E9EEF3;
-    color: #333;
-    text-align: center;
-    line-height: 160px;
-  }
-
-  body > .el-container {
-    margin-bottom: 40px;
-  }
-
-  .el-container:nth-child(5) .el-aside,
-  .el-container:nth-child(6) .el-aside {
-    line-height: 260px;
-  }
-
-  .el-container:nth-child(7) .el-aside {
-    line-height: 320px;
-  } */
 </style>
 
 

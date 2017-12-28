@@ -2,16 +2,12 @@
   <div class="amap-page-container">
     <el-amap ref="map" vid="amapDemo" :amap-manager="amapManager" :center="center" :zoom="zoom" :plugin="plugin" :events="events" class="amap-demo">
     </el-amap>
-
-    <div class="toolbar">
-      <button @click="getMap()">get map</button>
-    </div>
   </div>
 </template>
 
 <style>
   .amap-page-container {
-    height: 300px;
+    height: 20rem;
   }
 </style>
 
