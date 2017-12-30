@@ -4679,8 +4679,8 @@ vm-browserify@0.0.4:
     indexof "0.0.1"
 
 vue-amap@^0.4.2:
-  version "0.4.2"
-  resolved "http://registry.npm.taobao.org/vue-amap/download/vue-amap-0.4.2.tgz#5f31a0c75e60693e5b47a04b232ee77f9e69752a"
+  version "0.4.5"
+  resolved "http://registry.npm.taobao.org/vue-amap/download/vue-amap-0.4.5.tgz#214330811ddd449958c11d2e15f312baa8c627cb"
   dependencies:
     uppercamelcase "^1.1.0"
 

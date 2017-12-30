@@ -4,7 +4,12 @@
     <div>
       <div><h3>Where Am I ?</h3></div>
       <div class="amap-page-container">
-        <el-amap ref="map" vid="amapDemo" :amap-manager="amapManager" :center="center" :zoom="zoom" :plugin="plugin" :events="events" class="amap-demo"></el-amap>
+        <el-amap ref="map" vid="amapDemo" :amap-manager="amapManager" :center="center" :zoom="zoom" :events="events" class="amap-demo">
+          <el-amap-marker vid="component-marker-icon" :position="componentMarker.position"></el-amap-marker>
+          <el-amap-marker vid="component-marker-content" :position="componentMarker.position">
+            <h1>I am here.</h1>
+          </el-amap-marker>
+        </el-amap>
       </div>
     </div>
   </div>
@@ -29,6 +34,11 @@
   // NPM 方式
   import VueAMap from 'vue-amap';
 
+  const exampleComponents = {
+      props: ['text'],
+      template: `<div class="marker-content">text from  parent: {{text}}</div>`
+  }
+
   const amapManager = new VueAMap.AMapManager();
   export default {
     name: "about",
@@ -45,24 +55,11 @@
             o.getCity(result => {
               console.log(result)
             })
-          },
-          'moveend': () => {
-          },
-          'zoomchange': () => {
-          },
-          'click': (e) => {
-            alert('map clicked');
           }
         },
-        plugin: ['ToolBar', {
-          pName: 'MapType',
-          defaultType: 0,
-          events: {
-            init(o) {
-              console.log(o);
-            }
-          }
-        }]
+        componentMarker: {
+          position: [113.3423400000, 23.1707200000]
+        },
       };
     },
     methods: {
