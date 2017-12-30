@@ -1,13 +1,27 @@
 <template>
-  <div class="amap-page-container">
-    <el-amap ref="map" vid="amapDemo" :amap-manager="amapManager" :center="center" :zoom="zoom" :plugin="plugin" :events="events" class="amap-demo">
-    </el-amap>
+  <div class="">
+    <div class="about-header"><h2>About</h2></div>
+    <div>
+      <div><h3>Where Am I ?</h3></div>
+      <div class="amap-page-container">
+        <el-amap ref="map" vid="amapDemo" :amap-manager="amapManager" :center="center" :zoom="zoom" :plugin="plugin" :events="events" class="amap-demo"></el-amap>
+      </div>
+    </div>
   </div>
 </template>
 
 <style>
+  .about-header {
+    text-align: center;
+    text-decoration: underline;
+  }
+
   .amap-page-container {
-    height: 20rem;
+    height: 12rem;
+  }
+
+  #amapDemo {
+    border-radius: 4px;
   }
 </style>
 
