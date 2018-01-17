@@ -1,6 +1,6 @@
 <template>
-  <div class="">
-    <div class="about-header"><h2>About</h2></div>
+  <div class="about-content">
+    <content-header text="About" />
     <div>
       <div><h3>Where Am I ?</h3></div>
       <div class="amap-page-container">
@@ -15,24 +15,10 @@
   </div>
 </template>
 
-<style>
-  .about-header {
-    text-align: center;
-    text-decoration: underline;
-  }
-
-  .amap-page-container {
-    height: 12rem;
-  }
-
-  #amapDemo {
-    border-radius: 4px;
-  }
-</style>
-
 <script>
   // NPM 方式
   import VueAMap from 'vue-amap';
+  import contentHeader from '@/components/content-header'
 
   const exampleComponents = {
       props: ['text'],
@@ -41,7 +27,8 @@
 
   const amapManager = new VueAMap.AMapManager();
   export default {
-    name: "about",
+    name: "about-content",
+    components: {contentHeader},
     data: function() {
       return {
         //地理编码
@@ -72,3 +59,13 @@
     }
   };
 </script>
+
+<style>
+  .amap-page-container {
+    height: 12rem;
+  }
+
+  #amapDemo {
+    border-radius: 4px;
+  }
+</style>
