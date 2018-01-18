@@ -8,10 +8,8 @@
         <nav-menu />
       </el-aside>
       <el-container class="main-right-container">
-        <el-main>
-          <!-- <router-link to="/home">home</router-link>
-          <router-link to="/about">about</router-link> -->
-          <div class="main-div" :class="{hidden: hidden}" @click="handleClick">
+        <el-main style="padding: 0">
+         <div class="main-div" :class="{hidden: hidden}" @click="handleClick">
             <router-view></router-view>
           </div>
         </el-main>
@@ -62,12 +60,17 @@ export default {
   }
 
   .main-header h1 {
-    color: blue;
+    color: rgb(112, 56, 33);
+    font-style: italic;
     text-shadow: 0 0 5px white;
   }
 
   .main-right-container {
     background-color: silver;
+  }
+
+  * ::before ::after {
+    box-sizing: inherit;
   }
 </style>
 
