@@ -1,5 +1,5 @@
 <template>
-  <div class="vue-content">
+  <div class="vue-content main-content">
     <content-header text="Vue" />
     <div class="resources">
     </div>

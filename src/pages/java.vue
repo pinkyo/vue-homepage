@@ -1,5 +1,5 @@
 <template>
-  <div class="java-content">
+  <div class="java-content main-content">
     <content-header text="Java" />
     <div class="resources">
     </div>

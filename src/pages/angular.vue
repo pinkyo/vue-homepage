@@ -1,5 +1,5 @@
 <template>
-  <div class="angular-content">
+  <div class="angular-content main-content">
     <content-header text="Angular" />
     <div class="resources">
     </div>

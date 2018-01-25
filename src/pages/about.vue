@@ -1,8 +1,8 @@
 <template>
-  <div class="about-content">
+  <div class="about-content main-content">
     <content-header text="About" />
     <div>
-      <div><h3>Where Am I ?</h3></div>
+      <div><h2>Where Am I ?</h2></div>
       <div class="amap-page-container">
         <el-amap ref="map" vid="amapDemo" :amap-manager="amapManager" :center="center" :zoom="zoom" :events="events" class="amap-demo">
           <el-amap-marker vid="component-marker-icon" :position="componentMarker.position"></el-amap-marker>

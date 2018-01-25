@@ -8,11 +8,13 @@
         <nav-menu />
       </el-aside>
       <el-container class="main-right-container">
-        <el-main style="padding: 0">
-         <div class="main-div" :class="{hidden: hidden}" @click="handleClick">
-            <router-view></router-view>
-          </div>
-        </el-main>
+        <transition name="el-fade-in" appear="true">
+          <el-main style="padding: 0">
+          <div class="main-div">
+              <router-view></router-view>
+            </div>
+          </el-main>
+        </transition>
         <el-footer height='2rem'></el-footer>
       </el-container>
     </el-container>
@@ -26,16 +28,6 @@ import navMenu from '@/components/nav-menu'
 export default {
   name: 'main',
   components: {navMenu},
-  computed: mapGetters({
-    hidden: 'isHidden'
-  }),
-  methods: {
-    handleClick() {
-      if (this.hidden)
-        this.$store.dispatch('show')
-      else this.$store.dispatch('hide')
-    }
-  }
 }
 </script>
 
@@ -63,6 +55,33 @@ export default {
     color: rgb(112, 56, 33);
     font-style: italic;
     text-shadow: 0 0 5px white;
+  }
+
+  .main-content {
+    padding: 0 1rem;
+  }
+
+  .content-resources li {
+    font-size: 1.5rem;
+    letter-spacing: 0.01em;
+    font-weight: 150;
+    color: white;
+  }
+
+  .content-resources a:link {
+    font-size: 1.5rem;
+    letter-spacing: 0.01em;
+    font-weight: 100;
+    color: blue;
+    text-decoration: none;
+  }
+
+  .content-resources a:visited {
+    font-size: 1.5rem;
+    letter-spacing: 0.01em;
+    font-weight: 100;
+    color: red;
+    text-decoration: none;
   }
 
   .main-right-container {
