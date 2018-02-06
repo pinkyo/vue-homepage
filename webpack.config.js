@@ -38,7 +38,7 @@ module.exports = {
         ]
       },
       {
-        test: /\.(ttf|woff)$/,
+        test: /\.(ttf|woff|jpg)$/,
         exclude: /dist/,
         loader: 'file-loader'
       }
