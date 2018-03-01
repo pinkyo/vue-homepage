@@ -15,7 +15,9 @@
             </div>
           </el-main>
         </transition>
-        <el-footer height='2rem'></el-footer>
+        <el-footer style="height: none; padding: 0">
+          <page-footer />
+        </el-footer>
       </el-container>
     </el-container>
   </el-container>
@@ -24,10 +26,11 @@
 <script>
 import {mapGetters, mapActions} from 'vuex'
 import navMenu from '@/components/nav-menu'
+import pageFooter from '@/components/footer'
 
 export default {
   name: 'main',
-  components: {navMenu},
+  components: {navMenu, pageFooter}
 }
 </script>
 
