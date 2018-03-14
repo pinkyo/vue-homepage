@@ -8,7 +8,7 @@ module.exports = {
   entry: path.resolve('src/setup/main.js'),
   output: {
     path: path.resolve(__dirname, './dist'),
-    publicPath: '/vue-demo/dist/',
+    publicPath: '/dist/',
     filename: 'build.js'
   },
   module: {
@@ -43,7 +43,7 @@ module.exports = {
         use: [{
             loader: 'file-loader',
             options: {
-              publicPath: '/vue-demo/dist/'
+              publicPath: '/dist/'
             }
           }]
       }
