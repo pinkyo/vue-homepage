@@ -8,7 +8,7 @@ module.exports = {
   entry: path.resolve('src/setup/main.js'),
   output: {
     path: path.resolve(__dirname, './dist'),
-    publicPath: '/',
+    publicPath: '/vue-demo/',
     filename: 'build.js'
   },
   module: {
@@ -49,8 +49,7 @@ module.exports = {
     new HtmlWebpackPlugin({
       title: "Vue Demo",
       favicon: "src/favicon.ico",
-      template: "src/index.ejs",
-      filename: "index.html"
+      template: "src/index.ejs"
     })
   ],
   resolve: {
