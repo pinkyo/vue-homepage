@@ -7,7 +7,7 @@ var plugin = new ExtractTextPlugin('style.css')
 module.exports = {
   entry: path.resolve('src/setup/main.js'),
   output: {
-    path: path.resolve(__dirname, './dist'),
+    path: path.resolve(__dirname, './docs'),
     publicPath: '/',
     filename: 'build.js'
   },

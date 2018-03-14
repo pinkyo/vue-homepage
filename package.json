@@ -5,7 +5,7 @@
     "dev": "webpack-dev-server --inline --hot --progress",
     "build": "cross-env NODE_ENV=production webpack --progress --hide-modules",
     "predeploy": "npm run build",
-    "clean": "rimraf dist/"
+    "clean": "rimraf docs/"
   },
   "dependencies": {
     "axios": "^0.17.1",
