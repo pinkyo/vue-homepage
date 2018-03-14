@@ -7,7 +7,7 @@ var plugin = new ExtractTextPlugin('style.css')
 module.exports = {
   entry: path.resolve('src/setup/main.js'),
   output: {
-    path: path.resolve(__dirname, './docs'),
+    path: path.resolve(__dirname, './dist'),
     publicPath: '/',
     filename: 'build.js'
   },
@@ -49,7 +49,8 @@ module.exports = {
     new HtmlWebpackPlugin({
       title: "Vue Demo",
       favicon: "src/favicon.ico",
-      template: "src/index.ejs"
+      template: "src/index.ejs",
+      filename: "index.html"
     })
   ],
   resolve: {
