@@ -40,7 +40,12 @@ module.exports = {
       {
         test: /\.(ttf|woff|jpg)$/,
         exclude: /dist/,
-        loader: 'file-loader'
+        use: [{
+            loader: 'file-loader',
+            options: {
+              publicPath: '/vue-demo/dist/'
+            }
+          }]
       }
     ]
   },
