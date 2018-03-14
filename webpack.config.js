@@ -8,7 +8,7 @@ module.exports = {
   entry: path.resolve('src/setup/main.js'),
   output: {
     path: path.resolve(__dirname, './dist'),
-    publicPath: '/vue-demo/',
+    publicPath: '/vue-demo/dist/',
     filename: 'build.js'
   },
   module: {
