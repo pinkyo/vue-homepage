@@ -3,6 +3,7 @@ var webpack = require('webpack')
 var ExtractTextPlugin = require("extract-text-webpack-plugin")
 var HtmlWebpackPlugin = require('html-webpack-plugin')
 var plugin = new ExtractTextPlugin('style.css')
+var CopyWebpackPlugin = require('copy-webpack-plugin')
 
 module.exports = {
   entry: path.resolve('src/setup/main.js'),
@@ -63,7 +64,8 @@ module.exports = {
       template: "src/404.ejs",
       inject: false,
       filename: "404.html"
-    })
+    }),
+    new CopyWebpackPlugin(['CHAME'])
   ],
   resolve: {
     extensions: [' ', '.js', '.vue', '.css'],
