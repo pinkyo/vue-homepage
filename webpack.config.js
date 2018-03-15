@@ -65,7 +65,7 @@ module.exports = {
       inject: false,
       filename: "404.html"
     }),
-    new CopyWebpackPlugin(['CHAME'])
+    new CopyWebpackPlugin(['CNAME'])
   ],
   resolve: {
     extensions: [' ', '.js', '.vue', '.css'],
