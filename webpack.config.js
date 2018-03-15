@@ -8,7 +8,7 @@ module.exports = {
   entry: path.resolve('src/setup/main.js'),
   output: {
     path: path.resolve(__dirname, './dist'),
-    publicPath: '/dist/',
+    publicPath: '/',
     filename: 'build.js'
   },
   module: {
@@ -43,7 +43,7 @@ module.exports = {
         use: [{
             loader: 'file-loader',
             options: {
-              publicPath: '/dist/'
+              publicPath: '/'
             }
           }]
       }
@@ -54,7 +54,15 @@ module.exports = {
     new HtmlWebpackPlugin({
       title: "Vue Demo",
       favicon: "src/favicon.ico",
-      template: "src/index.ejs"
+      template: "src/index.ejs",
+      filename: "index.html"
+    }),
+    new HtmlWebpackPlugin({
+      title: "Vue Demo",
+      favicon: "src/favicon.ico",
+      template: "src/404.ejs",
+      inject: false,
+      filename: "404.html"
     })
   ],
   resolve: {
