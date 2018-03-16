@@ -4,6 +4,9 @@ node_js:
 script:
   - yarn clean
   - yarn build
+branches:
+  only:
+  - source
 deploy:
   provider: pages
   skip_cleanup: true
