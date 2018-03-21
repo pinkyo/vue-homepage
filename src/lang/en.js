@@ -3,13 +3,15 @@ export default {
     resources: {
       title: "Resources",
       frontend: {
-        title: "Front End",
+        javascript: {
+          title: "Javascript"
+        },
         react: "ReactJS",
         vue: "VueJS",
         angular: "AngularJS"
       },
       backend: {
-        title: "Back End",
+        title: "Server-side",
         java: "JAVA",
       }
     },

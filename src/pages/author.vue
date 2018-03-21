@@ -23,9 +23,8 @@
         <div><h2>Where Am I</h2></div>
         <div class="amap-page-container">
           <el-amap ref="map" vid="amapDemo" :amap-manager="amapManager" :center="center" :zoom="zoom" :events="events" class="amap-demo">
-            <el-amap-marker vid="component-marker-icon" :position="componentMarker.position"></el-amap-marker>
-            <el-amap-marker vid="component-marker-content" :position="componentMarker.position">
-              <h1>I am here.</h1>
+            <el-amap-marker vid="component-marker" :position="componentMarker.position">
+              <i class="fas fa-location-arrow position-marker" title="I am here"></i>
             </el-amap-marker>
           </el-amap>
         </div>
@@ -107,6 +106,17 @@ export default {
 
   #amapDemo {
     border-radius: 4px;
+  }
+
+  .position-marker {
+    color: rgb(102, 9, 9);
+    font-size: 1.5rem;
+    transition: 0.3s font-size ease-out
+  }
+
+  .position-marker:hover {
+    font-size: 1.8rem;
+    transition: 0.3s font-size ease-in
   }
 </style>
 

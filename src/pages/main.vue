@@ -87,6 +87,11 @@ export default {
     text-decoration: none;
   }
 
+  .head-icon {
+    display: inline-block;
+    font-size:3em;
+  }
+
   .main-right-container {
     background-color: silver;
   }

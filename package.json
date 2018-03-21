@@ -11,6 +11,7 @@
     "axios": "^0.17.1",
     "element-ui": "^2.0.2",
     "lodash": "^4.17.4",
+    "svg-inline-loader": "^0.8.0",
     "vue": "^2.4.4",
     "vue-amap": "^0.4.2",
     "vue-i18n": "^7.3.2",
