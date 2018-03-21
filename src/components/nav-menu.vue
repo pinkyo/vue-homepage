@@ -32,7 +32,7 @@
         </el-menu-item-group>
         <el-menu-item-group :title="$t('navigator.resources.backend.title')">
           <el-menu-item index="/backend/java">
-            <IconSVG :src="javaSvg" />
+            <i v-html="javaSvg" class="java-icon"/>
             <span v-t="'navigator.resources.backend.java'"></span>
           </el-menu-item>
         </el-menu-item-group>
@@ -53,7 +53,7 @@ import javaSvg from '@/static/java.svg'
 
 export default {
   name: "nav-menu",
-  data: {javaSvg},
+  data: () => ({javaSvg}),
   methods: {
     handleOpen(key, keyPath) {
       console.log(key, keyPath);
@@ -70,6 +70,12 @@ export default {
 .el-menu-vertical-demo {
   height: 100%;
   width: 100%;
+}
+
+.java-icon svg {
+  width: 0.8rem;
+  background-color: white;
+  border-radius: 4px;
 }
 
 </style>

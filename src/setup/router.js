@@ -1,5 +1,5 @@
 import VueRouter from 'vue-router'
-import main from '@/pages/main'
+import mainContainer from '@/pages/main-container'
 import home from '@/pages/home'
 import author from '@/pages/author'
 import about from '@/pages/about'
@@ -9,7 +9,7 @@ import angular from '@/pages/angular'
 import java from '@/pages/java'
 
 const routes = [
-  {path: '/', component: main,
+  {path: '/', component: mainContainer,
    children: [
     {path: 'home', component: home},
     {path: 'author', component: author},

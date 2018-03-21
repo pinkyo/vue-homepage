@@ -8,7 +8,7 @@
         <nav-menu />
       </el-aside>
       <el-container class="main-right-container">
-        <transition name="el-fade-in" appear="true">
+        <transition name="el-fade-in">
           <el-main style="padding: 0">
           <div class="main-div">
               <router-view></router-view>
@@ -26,10 +26,10 @@
 <script>
 import {mapGetters, mapActions} from 'vuex'
 import navMenu from '@/components/nav-menu'
-import pageFooter from '@/components/footer'
+import pageFooter from '@/components/content-footer'
 
 export default {
-  name: 'main',
+  name: 'main-container',
   components: {navMenu, pageFooter}
 }
 </script>
