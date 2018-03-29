@@ -57,13 +57,13 @@ module.exports = {
   plugins: [
     plugin,
     new HtmlWebpackPlugin({
-      title: "Vue Demo",
+      title: "Yinkn's HomePage",
       favicon: "src/favicon.ico",
       template: "src/index.ejs",
       filename: "index.html"
     }),
     new HtmlWebpackPlugin({
-      title: "Vue Demo",
+      title: "Yinkn's HomePage",
       favicon: "src/favicon.ico",
       template: "src/404.ejs",
       inject: false,
