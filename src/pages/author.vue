@@ -4,7 +4,7 @@
     <div class="resources">
       <div>
         <div><h2>Who Am I</h2></div>
-        <div class="author-info">
+        <div class="resource_item_content">
           <div class="author-pic-div"><img src="../static/author.jpg" ></div>
           <span>
             Lorem ipsum was conceived as filler text, formatted in a certain way to enable the presentation of graphic elements in documents, without the need for formal copy. Using Lorem Ipsum allows designers to put together layouts and the form of the content before the content has been created, giving the design and production process more freedom.It is widely believed that the history of Lorem Ipsum originates with Cicero in the 1st Century BC and his text De Finibus bonorum et malorum. This philosophical work, also known as On the Ends of Good and Evil, was split into five books. The Lorem Ipsum we know today is derived from parts of the first book Liber Primus and its discussion on hedonism, the words of which had been altered, added and removed to make it nonsensical and improper Latin. It is not known exactly when the text gained its current traditional form. However references to the phrase "lorem ipsum" can be found in the 1914 Loeb Classical Library Edition of the De Finibus in sections 32 and 33.
@@ -13,9 +13,13 @@
       </div>
       <div>
         <div><h2>What I Did</h2></div>
-        <div class="author-did">
+        <div class="resource_item_content">
           <span>
-            Lorem ipsum was conceived as filler text, formatted in a certain way to enable the presentation of graphic elements in documents, without the need for formal copy. Using Lorem Ipsum allows designers to put together layouts and the form of the content before the content has been created, giving the design and production process more freedom.It is widely believed that the history of Lorem Ipsum originates with Cicero in the 1st Century BC and his text De Finibus bonorum et malorum. This philosophical work, also known as On the Ends of Good and Evil, was split into five books. The Lorem Ipsum we know today is derived from parts of the first book Liber Primus and its discussion on hedonism, the words of which had been altered, added and removed to make it nonsensical and improper Latin. It is not known exactly when the text gained its current traditional form. However references to the phrase "lorem ipsum" can be found in the 1914 Loeb Classical Library Edition of the De Finibus in sections 32 and 33.
+            It's hard for me to describe what I did in the past, things are either small or just parts of a big project. I own neccessary skills
+            to join a big project and make it succeed, like good code smell and enough logical thoughts, but nothing special, I love coding and regard it as an
+            important of my life. In the year of <i>2017</i>, I start joining Open Source Community and publish a npm module named
+            <i><a href="https://github.com/pinkyo/validatorjs">ValidatorJs</a></i>, pretty simple and small. I will continue to try new thing in IT and
+            places I never reached in the past. Lift won't stop, and I will keep going forward.
           </span>
         </div>
       </div>
@@ -80,12 +84,6 @@ export default {
 </script>
 
 <style>
-  .author-info,.author-did  {
-    font-size: 1.2rem;
-    word-spacing: 0.1rem;
-    font-weight: 100;
-    color: darkolivegreen;
-  }
 
   .author-pic-div {
     float: left;

@@ -99,6 +99,13 @@ export default {
   * ::before ::after {
     box-sizing: inherit;
   }
+
+  .resource_item_content  {
+    font-size: 1.2rem;
+    word-spacing: 0.1rem;
+    font-weight: 100;
+    color: darkolivegreen;
+  }
 </style>
 
 
