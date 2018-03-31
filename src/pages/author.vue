@@ -8,9 +8,10 @@
           <div class="author-pic-div"><img src="../static/author.jpg" ></div>
           <span>
             Kainian Yin, a naive coder, love technology and new experience. <b>2016-07</b>, I graduated from SUN-YAT-SEN UNIVERSITY in Mainland China, major is
-            <i>Computer Science And Technology</i>. After graduation, I worked as a intern in Payeco LTD firstly, but I found that it coundn't meet my interest in
-             daily work and I left soon. Then, I get a job chance to work for Ericsson GZ, a department focused on Internet related bussiness.
+            <i>Computer Science And Technology</i>. After graduation, I worked as an intern in Payeco Co.Ltd firstly, but I found that it coundn't meet my interest in
+             daily work and I left soon. Then, I got a job chance to work for Ericsson GZ, a department focused on Internet related bussiness, and I have been stayed in Ericsson since then.
           </span>
+          <br><br>
         </div>
       </div>
       <div>
