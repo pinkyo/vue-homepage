@@ -1,7 +1,7 @@
 <template>
   <el-container>
     <el-header class="main-header">
-      <h1>My Home Page</h1>
+      <div><i class="menu-header-logo" v-html="menuHeaderSVG"/></div>
     </el-header>
     <el-container class="main-container">
       <el-aside width='250px' style="overflow: hidden" class="main-left-aside">
@@ -27,9 +27,11 @@
 import {mapGetters, mapActions} from 'vuex'
 import navMenu from '@/components/nav-menu'
 import pageFooter from '@/components/content-footer'
+import menuHeaderSVG from '@/static/header.svg'
 
 export default {
   name: 'main-container',
+  data: () => ({menuHeaderSVG}),
   components: {navMenu, pageFooter}
 }
 </script>
@@ -37,7 +39,7 @@ export default {
 <style>
   .main-header {
     text-align: center;
-    background-color: #878D99;
+    background-color: lightgray;
     border-top-left-radius: 4px;
     border-top-right-radius: 4px;
   }
@@ -54,14 +56,23 @@ export default {
     border-bottom-right-radius: 4px;
   }
 
-  .main-header h1 {
-    color: rgb(112, 56, 33);
-    font-style: italic;
-    text-shadow: 0 0 5px white;
-  }
-
   .main-content {
     padding: 0 1rem;
+  }
+
+  .main-content .content-header {
+    color: lightblue;
+  }
+
+  .main-content .content-sub-header {
+    color: white;
+  }
+
+  .main-content .content-sub-div > span {
+    font-size: 1.5rem;
+    letter-spacing: 0.01em;
+    font-weight: 150;
+    color: lightgrey;
   }
 
   .content-resources li {
@@ -93,7 +104,11 @@ export default {
   }
 
   .main-right-container {
-    background-color: silver;
+    background-color: #282c34;
+  }
+
+  .menu-header-logo svg {
+    height: 3.5rem;
   }
 
   * ::before ::after {

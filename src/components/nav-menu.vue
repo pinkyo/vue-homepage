@@ -1,12 +1,12 @@
 <template>
   <el-menu
       default-active="2"
-      class="el-menu-vertical-demo"
+      class="el-menu-vertical"
       @open="handleOpen"
       @close="handleClose"
       background-color="#545c64"
       text-color="#fff"
-      active-text-color="#ffd04b"
+      active-text-color="#"
       router
       >
       <el-submenu index="1">
@@ -67,15 +67,25 @@ export default {
 
 <style>
 
-.el-menu-vertical-demo {
+.el-menu-vertical {
   height: 100%;
   width: 100%;
 }
 
+.el-menu-item * {
+  font-size: 1.2rem;
+}
+
+.el-submenu__title * {
+  font-size: 1.2rem;
+}
+
 .java-icon svg {
-  width: 0.8rem;
+  height: 1rem;
+  width: 1rem;
   background-color: white;
   border-radius: 4px;
+  margin-bottom: .3rem;
 }
 
 </style>

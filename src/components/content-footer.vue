@@ -15,6 +15,8 @@ export default {
 .footer-div {
   padding: 0.5rem;
   text-align: center;
-  background: #878D99;
+  background-color: lightgray;
+  font-size: 1.2rem;
+  font-weight: bold;
 }
 </style>

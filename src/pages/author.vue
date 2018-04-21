@@ -3,8 +3,8 @@
     <content-header text="Author" />
     <div class="resources">
       <div>
-        <div><h2>Who Am I</h2></div>
-        <div class="resource_item_content">
+        <div class="content-sub-header"><h2>Who Am I</h2></div>
+        <div class="resource_item_content content-sub-div">
           <div class="author-pic-div"><img src="../static/author.jpg" ></div>
           <span>
             Kainian Yin, a naive coder, love technology and new experience. <b>2016-07</b>, I graduated from SUN-YAT-SEN UNIVERSITY in Mainland China, major is
@@ -15,8 +15,8 @@
         </div>
       </div>
       <div>
-        <div><h2>What I Did</h2></div>
-        <div class="resource_item_content">
+        <div class="content-sub-header"><h2>What I Did</h2></div>
+        <div class="resource_item_content content-sub-div">
           <span>
             It's hard for me to describe what I did in the past, things are either small or just parts of a big project. I own neccessary skills
             to join a big project and make it succeed, like good code smell and enough logical thoughts, but nothing special, I love coding and regard it as an
@@ -27,7 +27,7 @@
         </div>
       </div>
       <div>
-        <div><h2>Where Am I</h2></div>
+        <div class="content-sub-header"><h2>Where Am I</h2></div>
         <div class="amap-page-container">
           <el-amap ref="map" vid="amapDemo" :amap-manager="amapManager" :center="center" :zoom="zoom" :events="events" class="amap-demo">
             <el-amap-marker vid="component-marker" :position="componentMarker.position">
@@ -87,7 +87,10 @@ export default {
 </script>
 
 <style>
+<<<<<<< Updated upstream
 
+=======
+>>>>>>> Stashed changes
   .author-pic-div {
     float: left;
     padding-right: 1rem;

@@ -30,10 +30,6 @@ export default {
     position: relative;
   }
 
-  .react-content .content-header {
-    color: #61dafb;
-  }
-
   .react-content .header-description {
     padding: 0;
     font-size: 30px;
