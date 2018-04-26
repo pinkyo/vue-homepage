@@ -5,7 +5,7 @@
       <div>
         <div class="content-sub-header"><h2>Who Am I</h2></div>
         <div class="resource_item_content content-sub-div">
-          <div class="author-pic-div"><img src="../static/author.jpg" ></div>
+          <div class="author-pic-div"><img src="../static/author.png" ></div>
           <span>
             Kainian Yin, a naive coder, love technology and new experience. <b>2016-07</b>, I graduated from SUN-YAT-SEN UNIVERSITY in Mainland China, major is
             <i>Computer Science And Technology</i>. After graduation, I worked as an intern in Payeco Co.Ltd firstly, but I found that it coundn't meet my interest in
@@ -87,10 +87,6 @@ export default {
 </script>
 
 <style>
-<<<<<<< Updated upstream
-
-=======
->>>>>>> Stashed changes
   .author-pic-div {
     float: left;
     padding-right: 1rem;
@@ -121,6 +117,10 @@ export default {
   .position-marker:hover {
     font-size: 1.8rem;
     transition: 0.3s font-size ease-in
+  }
+
+  div.resources:last-child {
+    margin-bottom: 3rem;
   }
 </style>
 
