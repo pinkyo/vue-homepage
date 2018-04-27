@@ -3,13 +3,43 @@
     <content-header text="Author" />
     <div class="resources">
       <div>
-        <div class="content-sub-header"><h2>Who Am I</h2></div>
         <div class="resource_item_content content-sub-div">
           <div class="author-pic-div"><img src="../static/author.png" ></div>
           <span>
             Kainian Yin, a naive coder, love technology and new experience. <b>2016-07</b>, I graduated from SUN-YAT-SEN UNIVERSITY in Mainland China, major is
             <i>Computer Science And Technology</i>. After graduation, I worked as an intern in Payeco Co.Ltd firstly, but I found that it coundn't meet my interest in
              daily work and I left soon. Then, I got a job chance to work for Ericsson GZ, a department focused on Internet related bussiness, and I have been stayed in Ericsson since then.
+          </span>
+          <br><br>
+        </div>
+      </div>
+      <div>
+        <div class="content-sub-header"><h2>2012.09-2016.07</h2></div>
+        <div class="resource_item_content content-sub-div">
+          <span>
+            Study in <b>SUN-YAT-SENT UNIVERSITY</b>, major in <b>Computer Science And Technology</b>. In my college years,
+            I got solid technical fundmental as a programmer, and made a good preparation for my job. SUN-YAT-SENT UNIVERSITY is
+            greate college which is open-minded and tolerant, I was deeply influenced by its culture to be a responsible and brave
+            man. I pretty honered the 4-year time.
+          </span>
+          <br><br>
+        </div>
+      </div>
+      <div>
+        <div class="content-sub-header"><h2>2015.12-2016.02</h2></div>
+        <div class="resource_item_content content-sub-div">
+          <span>
+            Work as an intern in <b>Payeco LTD</b>. During this period, I manly took the task to write a boundary program integrated with system
+            in customs, which accept message from IBM MQ, deal with it and send the message to customs through FTP.
+          </span>
+          <br><br>
+        </div>
+      </div>
+      <div>
+        <div class="content-sub-header"><h2>2016.03-now</h2></div>
+        <div class="resource_item_content content-sub-div">
+          <span>
+            Work in <b>Ericsson GZ</b>.
           </span>
           <br><br>
         </div>
