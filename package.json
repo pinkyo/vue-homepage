@@ -1,6 +1,6 @@
 {
-  "name": "vue-demo",
-  "description": "a vue demo using vue + vuex + vue-router.",
+  "name": "vue-homepage",
+  "description": "A personal vue homepage using vue + vuex + vue-router.",
   "scripts": {
     "dev": "webpack-dev-server --inline --hot --progress",
     "build": "cross-env NODE_ENV=production webpack --progress --hide-modules",
