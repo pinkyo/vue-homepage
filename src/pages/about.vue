@@ -12,7 +12,6 @@
             this will be more, visit me in my github page.
           </span>
         </div>
-        <div><a class="github_link" target="_blank" href="https://github.com/pinkyo"><i class="fab fa-github"></i></a></div>
       </div>
       <div>
         <div class="content-sub-header">
@@ -39,16 +38,4 @@ export default {
 </script>
 
 <style>
-.github_link {
-  font-size: 2rem;
-  color: white;
-}
-
-.github_link:hover {
-  color: darkgray;
-}
-
-.github_link:visited {
-  color: lightgray;
-}
 </style>

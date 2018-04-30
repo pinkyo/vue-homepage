@@ -6,11 +6,13 @@
         <div class="resource_item_content content-sub-div">
           <div class="author-pic-div"><img src="../static/author.png" ></div>
           <span>
-            Kainian Yin, a naive coder, love technology and new experience. <b>2016-07</b>, I graduated from SUN-YAT-SEN UNIVERSITY in Mainland China, major is
-            <i>Computer Science And Technology</i>. After graduation, I worked as an intern in Payeco Co.Ltd firstly, but I found that it coundn't meet my interest in
-             daily work and I left soon. Then, I got a job chance to work for Ericsson GZ, a department focused on Internet related bussiness, and I have been stayed in Ericsson since then.
+            Kainian Yin, a prfessional software engineer with more than 2-year working experience. I have been focusing on
+            Java Web development and other IT technology related to my work like Javascript and container tech.
+            With the evolution of modern software, I have been developing distributed software under micro service architacture after
+            graduation from college. I love my profession and seek friends who are on the same wavelength.
+            And I hope to work with people with great passion, and make progress together. Visit me in my Github.
+            <a class="github_link" target="_blank" href="https://github.com/pinkyo"><i class="fab fa-github"></i></a>
           </span>
-          <br><br>
         </div>
       </div>
       <div>
@@ -20,9 +22,8 @@
             Study in <b>SUN-YAT-SENT UNIVERSITY</b>, major in <b>Computer Science And Technology</b>. In my college years,
             I got solid technical fundmental as a programmer, and made a good preparation for my job. SUN-YAT-SENT UNIVERSITY is
             greate college which is open-minded and tolerant, I was deeply influenced by its culture to be a responsible and brave
-            man. I pretty honered the 4-year time.
+            man. I pretty cherish the memory of the 4-year college time.
           </span>
-          <br><br>
         </div>
       </div>
       <div>
@@ -32,27 +33,23 @@
             Work as an intern in <b>Payeco LTD</b>. During this period, I manly took the task to write a boundary program integrated with system
             in customs, which accept message from IBM MQ, deal with it and send the message to customs through FTP.
           </span>
-          <br><br>
         </div>
       </div>
       <div>
         <div class="content-sub-header"><h2>2016.03-now</h2></div>
         <div class="resource_item_content content-sub-div">
           <span>
-            Work in <b>Ericsson GZ</b>.
+            Work in <b>Ericsson mobile data research and application development(GuangZhou) LTD</b>, a branch company of Ericsson that
+            focused on Internet related bussiness like Iot and cloud.
           </span>
-          <br><br>
         </div>
       </div>
       <div>
         <div class="content-sub-header"><h2>What I Did</h2></div>
         <div class="resource_item_content content-sub-div">
           <span>
-            It's hard for me to describe what I did in the past, things are either small or just parts of a big project. I own neccessary skills
-            to join a big project and make it succeed, like good code smell and enough logical thoughts, but nothing special, I love coding and regard it as an
-            important of my life. In the year of <i>2017</i>, I start joining Open Source Community and publish a npm module named
-            <i><a href="https://github.com/pinkyo/validatorjs">ValidatorJs</a></i>, pretty simple and small. I will continue to try new thing in IT and
-            places I never reached in the past. Lift won't stop, and I will keep going forward.
+           I have joined several big projects like ABAC and CDM in Ericsson and been quite qualified for my task. I'm
+           confident to facing any challenge coming in my career and life, I'll do my best and never let you down.
           </span>
         </div>
       </div>
@@ -107,10 +104,6 @@ export default {
   },
   methods: {
     getMap() {
-      // amap vue component
-      console.log(amapManager._componentMap);
-      // gaode map instance
-      console.log(amapManager._map);
     }
   }
 }
@@ -124,10 +117,23 @@ export default {
 
   .author-pic-div img {
     border-radius: 4rem;
-    width: 8rem;
-    height: 8rem;
+    width: 8.5rem;
+    height: 8.5rem;
     box-shadow: 2rem 0 0;
     box-shadow: 0 0 2rem black;
+  }
+
+  .github_link {
+    font-size: 1.5rem;
+    color: white;
+  }
+
+  .github_link:hover {
+    color: darkgray;
+  }
+
+  .github_link:visited {
+    color: lightgray;
   }
 
   .amap-page-container {
