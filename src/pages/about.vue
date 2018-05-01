@@ -7,10 +7,11 @@
         <div class="resource_item_content content-sub-div">
           <span>
             I'm a professional Java developer, and my main daily work is developing server side function.
-            But, for that my company is one applying Agile managment, and under scrum developing Procedure,
-            I got many chance to take task of front-end. I have jonined a big react application in ABAC for
-            about 6 months, start to learn frontend technology for hobby.
-            VueJS become more and more popular, and I want to try it in a real work. So I developed this site.
+            But, for that my company is one applying Agile managment, and under scrum developing procedure,
+            I got many chances to take tasks of the front-end. I have jonined a big react application in ABAC for
+            about 6 months, and started to learn of frontend technology for hobby since then.
+            VueJS is becoming more and more popular now, and I want to try it in a real work.
+            So, I developed this home page site.
           </span>
         </div>
       </div>
