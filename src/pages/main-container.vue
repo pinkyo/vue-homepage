@@ -68,7 +68,7 @@ export default {
     color: white;
   }
 
-  .main-content .content-sub-div > span {
+  .main-content .content-sub-div {
     font-size: 1.5rem;
     letter-spacing: 0.01em;
     font-weight: 150;
@@ -113,13 +113,6 @@ export default {
 
   * ::before ::after {
     box-sizing: inherit;
-  }
-
-  .resource_item_content  {
-    font-size: 1.2rem;
-    word-spacing: 0.1rem;
-    font-weight: 100;
-    color: darkolivegreen;
   }
 </style>
 
