@@ -2,6 +2,11 @@
   <div class="java-content main-content">
     <content-header text="Java" />
     <div class="resources">
+      <div class="content-resources">
+        <ul>
+          <li><a href="https://github.com/pinkyo/TreeGrowth" target="_blank">TreeGrowth</a>: A toy program to generate ramda tree with JavaFX.</li>
+        </ul>
+      </div>
     </div>
   </div>
 </template>
