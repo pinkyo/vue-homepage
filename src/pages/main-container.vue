@@ -1,7 +1,11 @@
 <template>
   <el-container>
     <el-header class="main-header">
-      <div><i class="menu-header-logo" v-html="menuHeaderSVG"/></div>
+      <div>
+        <router-link to="/">
+          <i class="menu-header-logo" v-html="menuHeaderSVG"/>
+        </router-link>
+      </div>
     </el-header>
     <el-container class="main-container">
       <el-aside width='250px' style="overflow: hidden" class="main-left-aside">

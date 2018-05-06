@@ -11,7 +11,7 @@ import java from '@/pages/java'
 const routes = [
   {path: '/', component: mainContainer,
    children: [
-    {path: 'home', component: home},
+    {path: '', component: home},
     {path: 'author', component: author},
     {path: 'about', component: about},
     {path: 'frontend/react', component: react},
