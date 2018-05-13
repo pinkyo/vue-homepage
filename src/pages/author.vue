@@ -30,7 +30,7 @@
         <div class="content-sub-header"><h2>2015.12-2016.02</h2></div>
         <div class="resource_item_content content-sub-div">
           <span>
-            Work as an intern in <b>Payeco LTD</b>. During this period, I manly took the task to write a boundary program integrated with system
+            Work as an intern in <b>Payeco Co.LTD</b>. During this period, I manly took the task to write a boundary program integrated with system
             in customs, which accept message from IBM MQ, deal with it and send the message to customs through FTP.
           </span>
         </div>
@@ -39,7 +39,7 @@
         <div class="content-sub-header"><h2>2016.03-now</h2></div>
         <div class="resource_item_content content-sub-div">
           <span>
-            Work in <b>Ericsson mobile data research and application development(GuangZhou) LTD</b>, a branch company of Ericsson that
+            Work in <b>Ericsson mobile data application R&D(GuangZhou) Co.LTD</b>, a branch company of Ericsson that
             focused on Internet related bussiness like Iot and cloud.
           </span>
         </div>
