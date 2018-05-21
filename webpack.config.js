@@ -6,7 +6,7 @@ var plugin = new ExtractTextPlugin('style.css')
 var CopyWebpackPlugin = require('copy-webpack-plugin')
 
 module.exports = {
-  entry: path.resolve('src/setup/main.js'),
+  entry: ['babel-polyfill', path.resolve('src/setup/main.js')],
   output: {
     path: path.resolve(__dirname, './dist'),
     publicPath: '/',
