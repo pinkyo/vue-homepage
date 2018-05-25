@@ -79,9 +79,8 @@ export default {
     color: lightgrey;
   }
 
-  .resources {
-    max-width: 65rem;
-    min-width: 40rem;
+  .main-right-container {
+    width: calc(100%-250px);
   }
 
   .content-resources li {

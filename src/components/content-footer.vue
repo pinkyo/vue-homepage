@@ -1,6 +1,6 @@
 <template>
   <div class="footer-div">
-    <span>@Copyleft, no right reserved with MIT license.</span>
+    <span>@Copyleft, No right reserved with MIT License.</span>
   </div>
 </template>
 
