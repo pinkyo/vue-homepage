@@ -79,6 +79,10 @@ export default {
     color: lightgrey;
   }
 
+  .main-right-container {
+    width: calc(100%-250px);
+  }
+
   .content-resources li {
     font-size: 1.5rem;
     letter-spacing: 0.01em;

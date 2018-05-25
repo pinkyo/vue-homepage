@@ -6,9 +6,9 @@
         <div class="resource_item_content content-sub-div">
           <div class="author-pic-div"><img src="../static/author.png" ></div>
           <span>
-            Kainian Yin, a prfessional software engineer with more than 2-year working experience. I have been focusing on
-            Java Web development and other IT technology related to my work like Javascript and container tech.
-            With the evolution of modern software, I have been developing distributed software under micro service architacture after
+            Kainian Yin, a prfessional software developer with more than 2-year working experience. I have been focusing on
+            Java Web development and other IT technology related to my work like Javascript and Docker.
+            With the evolution of modern software, I have been developing distributed software under Microservice architacture after
             graduation from college. I love my profession and seek friends who are on the same wavelength.
             And I hope to work with people with great passion, and make progress together. Visit me in my Github.
             <a class="github_link" target="_blank" href="https://github.com/pinkyo"><i class="fab fa-github"></i></a>
@@ -20,8 +20,8 @@
         <div class="resource_item_content content-sub-div">
           <span>
             Study in <b>SUN-YAT-SENT UNIVERSITY</b>, major in <b>Computer Science And Technology</b>. In my college years,
-            I got solid technical fundmental as a programmer, and made a good preparation for my job. SUN-YAT-SENT UNIVERSITY is
-            greate college which is open-minded and tolerant, I was deeply influenced by its culture to be a responsible and brave
+            I got solid technical fundation as a programmer, and made a good preparation for my job. SUN-YAT-SENT UNIVERSITY is
+            a great place where its culture is open-minded and tolerant, I was deeply influenced and determined to be a responsible and brave
             man. I pretty cherish the memory of the 4-year college time.
           </span>
         </div>
@@ -30,7 +30,7 @@
         <div class="content-sub-header"><h2>2015.12-2016.02</h2></div>
         <div class="resource_item_content content-sub-div">
           <span>
-            Work as an intern in <b>Payeco LTD</b>. During this period, I manly took the task to write a boundary program integrated with system
+            Work as an intern in <b>Payeco Co.LTD</b>. During this period, I manly took the task to write a boundary program integrated with system
             in customs, which accept message from IBM MQ, deal with it and send the message to customs through FTP.
           </span>
         </div>
@@ -39,7 +39,7 @@
         <div class="content-sub-header"><h2>2016.03-now</h2></div>
         <div class="resource_item_content content-sub-div">
           <span>
-            Work in <b>Ericsson mobile data research and application development(GuangZhou) LTD</b>, a branch company of Ericsson that
+            Work in <b>Ericsson mobile data application R&D(GuangZhou) Co.LTD</b>, a branch company of Ericsson that
             focused on Internet related bussiness like Iot and cloud.
           </span>
         </div>
