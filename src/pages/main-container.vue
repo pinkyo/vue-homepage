@@ -12,9 +12,9 @@
         <nav-menu />
       </el-aside>
       <el-container class="main-right-container">
-        <transition name="el-fade-in">
+        <transition appear appear-class="fade" appear-to-class="fade-active">
           <el-main style="padding: 0">
-          <div class="main-div">
+            <div class="main-div">
               <router-view></router-view>
             </div>
           </el-main>
@@ -117,6 +117,19 @@ export default {
 
   .menu-header-logo svg {
     height: 3.5rem;
+  }
+
+  .fade {
+    opacity: 0
+  }
+
+  .fade-active {
+    transition: opacity 0.3s ease-in;
+    opacity: 0.9;
+  }
+
+  .main-div {
+    opacity: 0.9;
   }
 
   * ::before ::after {

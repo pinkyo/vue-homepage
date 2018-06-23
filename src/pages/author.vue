@@ -4,7 +4,9 @@
     <div class="resources">
       <div>
         <div class="resource_item_content content-sub-div">
-          <div class="author-pic-div"><img src="../static/author.png" ></div>
+          <div class="author-pic-div">
+            <img src="../static/author.png" >
+          </div>
           <span>
             Kainian Yin, a prfessional software developer with more than 2-year working experience. I have been focusing on
             Java Web development and other IT technology related to my work like Javascript and Docker.
@@ -12,6 +14,8 @@
             graduation from college. I love my profession and seek friends who are on the same wavelength.
             And I hope to work with people with great passion, and make progress together. Visit me in my Github.
             <a class="github_link" target="_blank" href="https://github.com/pinkyo"><i class="fab fa-github"></i></a>
+            <a class="csdn_link" target="_blank" href="https://blog.csdn.net/o_nikyo_o"><i class="fab fa-blogger"></i></a>
+
           </span>
         </div>
       </div>
@@ -112,18 +116,31 @@ export default {
 <style>
   .author-pic-div {
     float: left;
+    width: 8.5rem;
+    height: 8.5rem;
     padding-right: 1rem;
   }
 
   .author-pic-div img {
+    margin: 0.25rem;
     border-radius: 4rem;
-    width: 8.5rem;
-    height: 8.5rem;
+    width: 8rem;
+    height: 8rem;
     box-shadow: 2rem 0 0;
     box-shadow: 0 0 2rem black;
   }
 
-  .github_link {
+  .author-pic-div img:hover {
+    margin: 0rem;
+    border-radius: 4.25rem;
+    width: 8.5rem;
+    height: 8.5rem;
+    box-shadow: 2rem 0 0;
+    box-shadow: 0 0 2rem black;
+    transition: all .5s ease-in;
+  }
+
+  .github_link, .csdn_link {
     font-size: 1.5rem;
     color: white;
   }

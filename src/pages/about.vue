@@ -23,7 +23,7 @@
         </div>
         <div class="resource_item_content content-sub-div">
           <span>
-            There are many modules used in my site:
+            There are many modules used in this site:
             <ul>
                 <li>VueJS</li>
                 <li>Vue-Router</li>
