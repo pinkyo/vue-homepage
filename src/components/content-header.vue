@@ -18,7 +18,7 @@ export default {
     margin: 0;
     padding: 1rem;
     font-family: 'Rubik';
-    font-weight: 700;
+    font-weight: bold;
   }
 
   .content-header h1 {
