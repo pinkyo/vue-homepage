@@ -92,6 +92,7 @@ export default {
   width: 1rem;
   background-color: white;
   border-radius: 4px;
+  margin-bottom: 3px;
 }
 
 </style>
