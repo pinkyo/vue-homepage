@@ -14,10 +14,11 @@ export default {
 <style>
   .content-header {
     text-align: center;
-    font-size: 60px;
-    letter-spacing: 0.01em;
+    font-size: 4rem;
     margin: 0;
     padding: 1rem;
+    font-family: 'Rubik';
+    font-weight: 700;
   }
 
   .content-header h1 {

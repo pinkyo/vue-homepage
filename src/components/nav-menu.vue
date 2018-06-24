@@ -73,11 +73,15 @@ export default {
 }
 
 .el-menu-item * {
-  font-size: 1.2rem;
+  font-size: 1.1rem;
 }
 
 .el-submenu__title * {
-  font-size: 1.2rem;
+  font-size: 1.1rem;
+}
+
+.el-menu-item-group__title {
+  font-size: .9rem;
 }
 
 .java-icon svg {
@@ -85,7 +89,6 @@ export default {
   width: 1rem;
   background-color: white;
   border-radius: 4px;
-  margin-bottom: .3rem;
 }
 
 </style>

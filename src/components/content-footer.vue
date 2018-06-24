@@ -17,6 +17,6 @@ export default {
   text-align: center;
   background-color: lightgray;
   font-size: 1.2rem;
-  font-weight: bold;
+  font-weight: 500;
 }
 </style>

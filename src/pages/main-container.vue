@@ -2,7 +2,7 @@
   <el-container>
     <el-header class="main-header">
       <div>
-        <router-link to="/">
+        <router-link to="/" title="Home">
           <i class="menu-header-logo" v-html="menuHeaderSVG"/>
         </router-link>
       </div>
@@ -50,6 +50,7 @@ export default {
 
   .main-container {
     min-height: 43rem;
+    font-family: Rubik;
   }
 
   .main-left-aside {
@@ -68,15 +69,18 @@ export default {
     color: lightblue;
   }
 
-  .main-content .content-sub-header {
+  .main-content .content-sub-header h2 {
     color: white;
+    font-family: 'Rubik';
+    font-weight: 500;
+    line-height: 1rem;
   }
 
   .main-content .content-sub-div {
-    font-size: 1.5rem;
-    letter-spacing: 0.01em;
-    font-weight: 150;
+    font-size: 1.3rem;
+    font-weight: 400;
     color: lightgrey;
+    font-family: 'Rubik'
   }
 
   .main-right-container {
@@ -84,25 +88,22 @@ export default {
   }
 
   .content-resources li {
-    font-size: 1.5rem;
-    letter-spacing: 0.01em;
-    font-weight: 150;
+    font-size: 1.4rem;
+    font-weight: normal;
     color: white;
   }
 
   .content-resources a:link {
-    font-size: 1.5rem;
-    letter-spacing: 0.01em;
-    font-weight: 100;
-    color: blue;
+    font-size: 1.4rem;
+    font-weight: normal;
+    color: brown;
     text-decoration: none;
   }
 
   .content-resources a:visited {
-    font-size: 1.5rem;
-    letter-spacing: 0.01em;
-    font-weight: 100;
-    color: red;
+    font-size: 1.4rem;
+    font-weight: normal;
+    color: brown;
     text-decoration: none;
   }
 

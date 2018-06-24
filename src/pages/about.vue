@@ -3,7 +3,7 @@
     <content-header text="About" />
     <div class="resources">
       <div>
-        <div class="content-sub-header"><h2>Orientation</h2></div>
+        <div class="content-sub-header first-about-sub-header"><h2>Orientation</h2></div>
         <div class="resource_item_content content-sub-div">
           <span>
             I'm a professional <b>Java Developer</b>, and my main daily work is developing server side function.
@@ -50,4 +50,7 @@ export default {
 </script>
 
 <style>
+  .first-about-sub-header h2 {
+    margin-top: 0;
+  }
 </style>
