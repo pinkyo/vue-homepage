@@ -74,14 +74,17 @@ export default {
 
 .el-menu-item * {
   font-size: 1.1rem;
+  font-weight: 500;
 }
 
 .el-submenu__title * {
   font-size: 1.1rem;
+  font-weight: 500;
 }
 
 .el-menu-item-group__title {
   font-size: .9rem;
+  font-weight: 500;
 }
 
 .java-icon svg {
