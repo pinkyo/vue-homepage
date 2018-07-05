@@ -52,7 +52,7 @@
         <div class="content-sub-header"><h2>2018.07-now</h2></div>
         <div class="resource_item_content content-sub-div">
           <span>
-            Join <b>Webank</b>, and I move to <b>ShenZheng</b> from GuangZhou. My
+            Join <b>Webank</b>, and I move to <b>ShenZheng</b> from GuangZhou(PS: ShenZheng ). My
             Responsibility is to develop a test system with my teamates.
           </span>
         </div>
@@ -98,7 +98,7 @@ export default {
   data: function() {
     return {
       //地理编码
-      center: [113.3423400000, 23.1707200000],
+      center: [113.855757,22.61176],
       amapManager,
       zoom: 20,
       events: {
@@ -111,7 +111,7 @@ export default {
         }
       },
       componentMarker: {
-        position: [113.3423400000, 23.1707200000]
+        position: [113.855757,22.61176]
       },
     };
   },
