@@ -52,7 +52,7 @@
         <div class="content-sub-header"><h2>2018.07-now</h2></div>
         <div class="resource_item_content content-sub-div">
           <span>
-            Join <b>Webank</b>, and I move to <b>ShenZheng</b> from GuangZhou(PS: ShenZheng ). My
+            Join <b>Webank</b>, and I move to <b>ShenZheng</b> from GuangZhou. My
             Responsibility is to develop a test system with my teamates.
           </span>
         </div>
