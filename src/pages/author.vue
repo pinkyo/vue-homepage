@@ -40,11 +40,20 @@
         </div>
       </div>
       <div>
-        <div class="content-sub-header"><h2>2016.03-now</h2></div>
+        <div class="content-sub-header"><h2>2016.03-2018.06</h2></div>
         <div class="resource_item_content content-sub-div">
           <span>
             Work in <b>Ericsson mobile data application R&D(GuangZhou) Co.LTD</b>, a branch company of Ericsson that
             focused on Internet related bussiness like Iot and cloud.
+          </span>
+        </div>
+      </div>
+      <div>
+        <div class="content-sub-header"><h2>2018.07-now</h2></div>
+        <div class="resource_item_content content-sub-div">
+          <span>
+            Join <b>Webank</b>, and I move to <b>ShenZheng</b> from GuangZhou. My
+            Responsibility is to develop a test system with my teamates.
           </span>
         </div>
       </div>
