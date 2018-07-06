@@ -12,13 +12,13 @@
         <nav-menu />
       </el-aside>
       <el-container class="main-right-container">
-        <transition appear appear-class="fade" appear-to-class="fade-active">
-          <el-main style="padding: 0">
+        <el-main style="padding: 0">
             <div class="main-div">
-              <router-view></router-view>
+              <transition enter-class="fade" enter-to-class="fade-active">
+                <router-view></router-view>
+              </transition>
             </div>
           </el-main>
-        </transition>
         <el-footer style="height: none; padding: 0">
           <page-footer />
         </el-footer>

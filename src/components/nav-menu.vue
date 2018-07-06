@@ -6,7 +6,7 @@
       @close="handleClose"
       background-color="#545c64"
       text-color="#fff"
-      active-text-color="#"
+      active-text-color="lightblue"
       router
       >
       <el-submenu index="1">
@@ -95,5 +95,8 @@ export default {
   margin-bottom: 3px;
 }
 
+.el-menu-item.is-active .java-icon svg {
+  background: lightblue;
+}
 </style>
 
