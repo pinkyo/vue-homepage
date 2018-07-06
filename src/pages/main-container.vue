@@ -50,7 +50,7 @@ export default {
 
   .main-container {
     min-height: 43rem;
-    font-family: Rubik;
+    font-family: Arial, Helvetica, sans-serif;
   }
 
   .main-left-aside {
@@ -71,16 +71,16 @@ export default {
 
   .main-content .content-sub-header h2 {
     color: white;
-    font-family: 'Rubik';
+    font-family: Arial, Helvetica, sans-serif;
     font-weight: 500;
     line-height: 1rem;
   }
 
   .main-content .content-sub-div {
     font-size: 1.3rem;
-    font-weight: 400;
+    font-weight: lighter;
     color: lightgrey;
-    font-family: 'Rubik'
+    font-family: Arial, Helvetica, sans-serif;
   }
 
   .main-right-container {

@@ -17,7 +17,7 @@ export default {
     font-size: 4rem;
     margin: 0;
     padding: 1rem;
-    font-family: 'Rubik';
+    font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
   }
 
