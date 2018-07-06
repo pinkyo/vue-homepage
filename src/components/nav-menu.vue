@@ -1,12 +1,12 @@
 <template>
   <el-menu
-      default-active="2"
       class="el-menu-vertical"
       @open="handleOpen"
       @close="handleClose"
       background-color="#545c64"
       text-color="#fff"
       active-text-color="lightblue"
+      :default-active="getDefaultActiveItem()"
       router
       >
       <el-submenu index="1">
@@ -60,6 +60,9 @@ export default {
     },
     handleClose(key, keyPath) {
       console.log(key, keyPath);
+    },
+    getDefaultActiveItem() {
+      return this.$router.currentRoute.fullPath;
     }
   }
 }
@@ -97,6 +100,12 @@ export default {
 
 .el-menu-item.is-active .java-icon svg {
   background: lightblue;
+}
+
+.el-menu-item:hover span {
+  padding: .4rem;
+  font-style: italic;
+  transition: all .4s 0s  ease-in-out;
 }
 </style>
 
