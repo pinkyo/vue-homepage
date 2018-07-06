@@ -131,22 +131,16 @@ export default {
   }
 
   .author-pic-div img {
-    margin: 0.25rem;
-    border-radius: 4rem;
-    width: 8rem;
-    height: 8rem;
-    box-shadow: 2rem 0 0;
-    box-shadow: 0 0 2rem black;
+    border-radius: 4.125rem;
+    width: 8.25rem;
+    height: 8.25rem;
+    box-shadow: 0 0 .5rem lightslategray;
+    transition: box-shadow .5s ease-in;
   }
 
   .author-pic-div img:hover {
-    margin: 0rem;
-    border-radius: 4.25rem;
-    width: 8.5rem;
-    height: 8.5rem;
-    box-shadow: 2rem 0 0;
-    box-shadow: 0 0 2rem black;
-    transition: all .5s ease-in;
+    box-shadow: 0 0 3rem lightgray;
+    transition: box-shadow .5s ease-in;
   }
 
   .github_link, .csdn_link {
