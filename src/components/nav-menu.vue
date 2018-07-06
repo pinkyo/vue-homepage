@@ -103,9 +103,10 @@ export default {
 }
 
 .el-menu-item:hover span {
-  padding: .4rem;
+  padding: .2rem;
   font-style: italic;
-  transition: all .4s 0s  ease-in-out;
+  transition: padding .4s 0s  ease-in-out;
+  transition: italic .4s 0s  ease-in-out;
 }
 </style>
 
