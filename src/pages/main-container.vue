@@ -87,7 +87,7 @@ export default {
     width: calc(100%-250px);
   }
 
-  .content-resources li {
+  /* .content-resources li {
     font-size: 1.4rem;
     font-weight: normal;
     color: white;
@@ -105,7 +105,7 @@ export default {
     font-weight: normal;
     color: brown;
     text-decoration: none;
-  }
+  } */
 
   .head-icon {
     display: inline-block;

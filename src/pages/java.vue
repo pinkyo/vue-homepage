@@ -4,8 +4,8 @@
     <div class="resources">
       <div class="content-resources">
         <ul>
-          <li><a href="https://github.com/pinkyo/TreeGrowth" target="_blank">TreeGrowth</a>: A toy program to generate ramda tree with JavaFX.</li>
-          <li><a href="https://github.com/pinkyo/MultiwayMerge" target="_blank">MultiwayMerge</a>:A mulitway merge implementation, and top k repeated key selector.</li>
+          <project-item href="https://github.com/pinkyo/TreeGrowth" name="TreeGrowth" description="A toy program to generate ramda tree with JavaFX." />
+          <project-item href="https://github.com/pinkyo/MultiwayMerge" name="MultiwayMerge" description="A mulitway merge implementation, and top k repeated key selector." />
         </ul>
       </div>
     </div>
@@ -14,10 +14,11 @@
 
 <script>
 import contentHeader from '@/components/content-header'
+import projectItem from '@/components/project-item'
 
 export default {
   name: 'java-content',
-  components: {contentHeader}
+  components: {contentHeader, projectItem}
 }
 </script>
 

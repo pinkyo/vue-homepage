@@ -4,7 +4,11 @@
     <p class="header-description">A JavaScript library for building user interfaces</p>
     <div class="content-resources">
       <ul>
-        <li><a href="https://github.com/pinkyo/validatorjs" target="_blank">ValidatorJs</a>: Central validator to provide validation solution when developing using ES 6+</li>
+        <project-item
+          href="https://github.com/pinkyo/validatorjs"
+          name="ValidatorJs"
+          description="Central validator to provide validation solution when developing using ES6+"
+        />
       </ul>
     </div>
   </div>
@@ -12,10 +16,11 @@
 
 <script>
 import contentHeader from '@/components/content-header'
+import projectItem from '@/components/project-item'
 
 export default {
   name: 'react-content',
-  components: {contentHeader}
+  components: {contentHeader, projectItem}
 }
 </script>
 
