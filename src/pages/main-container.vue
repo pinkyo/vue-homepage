@@ -76,6 +76,12 @@ export default {
     line-height: 1rem;
   }
 
+  .main-content .content-sub-header h2:hover {
+    font-weight: bolder;
+    color: lightblue;
+    transition: all .6s 0s ease-in;
+  }
+
   .main-content .content-sub-div {
     font-size: 1.3rem;
     font-weight: lighter;

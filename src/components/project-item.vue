@@ -21,11 +21,19 @@ export default {
     list-style-type: none;
   }
 
+  li.project-list-item:hover {
+    color: lightblue;
+  }
+
   li.project-list-item::before {
     content: '>> ';
-    color: lightblue;
+    color: white;
     padding-right: .4rem;
     font-weight: bolder;
+  }
+
+  li.project-list-item:hover::before {
+    color: lightblue;
   }
 
   li.project-list-item:hover {

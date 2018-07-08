@@ -135,12 +135,12 @@ export default {
     width: 8.25rem;
     height: 8.25rem;
     box-shadow: 0 0 .5rem lightslategray;
-    transition: box-shadow .5s ease-in;
+    transition: box-shadow .6s ease-in;
   }
 
   .author-pic-div img:hover {
     box-shadow: 0 0 3rem lightgray;
-    transition: box-shadow .5s ease-in;
+    transition: box-shadow .6s ease-in;
   }
 
   .github_link, .csdn_link {
@@ -167,12 +167,12 @@ export default {
   .position-marker {
     color: rgb(102, 9, 9);
     font-size: 1.5rem;
-    transition: 0.3s font-size ease-out
+    transition: 0.3s font-size ease-in;
   }
 
   .position-marker:hover {
     font-size: 1.8rem;
-    transition: 0.3s font-size ease-in
+    transition: 0.3s font-size ease-in;
   }
 
   div.resources:last-child {
