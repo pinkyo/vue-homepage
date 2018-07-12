@@ -39,7 +39,7 @@ export default {
   li.project-list-item:hover {
     background-color: #323740;
     border-radius: .2rem;
-    box-shadow: 0 0 1rem lightgray;
+    box-shadow: 0 0 1rem #323740;
     font-size: 1.6rem;
     width: fit-content;
     transition: box-shadow .6s 0 ease-in;
