@@ -22,7 +22,7 @@
           <h2>What I use</h2>
         </div>
         <div class="resource_item_content content-sub-div">
-          <span>
+          <span class="module-info">
             There are many modules used in this site:
             <ul>
                 <li>VueJS</li>
@@ -34,6 +34,7 @@
                 <li>...</li>
             </ul>
           </span>
+          <img src="../static/star.png" />
         </div>
       </div>
     </div>
@@ -52,5 +53,14 @@ export default {
 <style>
   .first-about-sub-header h2 {
     margin-top: 0;
+  }
+
+  .about-content .module-info {
+    display: inline-block;
+  }
+
+  .about-content img {
+    float: right;
+    width: 15rem;
   }
 </style>
