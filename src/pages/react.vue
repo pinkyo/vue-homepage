@@ -7,7 +7,7 @@
         <project-item
           href="https://github.com/pinkyo/validatorjs"
           name="ValidatorJS"
-          description="Central validator to provide validation solution when developing using ES6+"
+          description="Central validator to provide validation solution when developing using ES6+."
         />
       </ul>
     </div>
