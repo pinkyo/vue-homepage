@@ -15,7 +15,7 @@ after_success:
   - coscmd -v
   - coscmd config -a $COS_SECRECT_ID -s $COS_SECRECT_KEY -b vue-homepage-1254036241 -r ap-guangzhou
   - coscmd delete -rf /
-  - coscmd upload dist/ /
+  - coscmd upload -r dist/ /
 deploy:
   provider: pages
   skip_cleanup: true
