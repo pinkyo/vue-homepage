@@ -8,6 +8,7 @@ branches:
   only:
   - source
 after_success:
+  - apt-get upgrade python
   - python -V
   - pip install --upgrade pip
   - pip install coscmd
