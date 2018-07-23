@@ -14,7 +14,7 @@ after_success:
   - sudo pip install coscmd
   - coscmd -v
   - coscmd config -a $COS_SECRECT_ID -s $COS_SECRECT_KEY -b vue-homepage-1254036241 -r ap-guangzhou
-  - coscmd delete -r /
+  - coscmd delete -rf /
   - coscmd upload dist/ /
 deploy:
   provider: pages
