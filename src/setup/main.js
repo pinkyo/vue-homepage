@@ -11,11 +11,11 @@ import {
   Footer,
   Main,
   Aside,
-  Header
+  Header,
 } from 'element-ui'
 import 'element-ui/lib/theme-chalk/index.css'
-import {i18n, loadLanguageAsync} from '@/setup/i18n-setup'
-import '@/setup/amap-setup.js'
+import { i18n, loadLanguageAsync } from '@/setup/i18n-setup'
+import '@/setup/amap-setup'
 
 Vue.use(VueRouter)
 Vue.use(Menu)
@@ -30,13 +30,12 @@ Vue.use(Header)
 
 
 router.beforeEach((to, from, next) => {
-  const lang = to.params.lang
+  const { lang } = to.params
   loadLanguageAsync(lang).then(() => next())
 })
 
-const app = new Vue({
+new Vue({
   router,
   store,
-  i18n
+  i18n,
 }).$mount('#app')
-

@@ -1,21 +1,21 @@
 export default {
   navigator: {
     resources: {
-      title: "Resources",
+      title: 'Resources',
       frontend: {
         javascript: {
-          title: "Javascript"
+          title: 'Javascript',
         },
-        react: "ReactJS",
-        vue: "VueJS",
-        angular: "AngularJS"
+        react: 'ReactJS',
+        vue: 'VueJS',
+        angular: 'AngularJS',
       },
       backend: {
-        title: "Server-side",
-        java: "JAVA",
-      }
+        title: 'Server-side',
+        java: 'JAVA',
+      },
     },
-    author: "Author",
-    about: "About"
-  }
+    author: 'Author',
+    about: 'About',
+  },
 }

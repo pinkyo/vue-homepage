@@ -1,20 +1,20 @@
 import * as types from '../mutation-types'
 
-const state = {
-  hidden: false
+const initialState = {
+  hidden: false,
 }
 
 const getters = {
-  isHidden: state => state.hidden
+  isHidden: state => state.hidden,
 }
 
 const actions = {
-  hide({commit, state}) {
+  hide({ commit }) {
     commit(types.HIDE_PAGE)
   },
-  show({commit, state}) {
+  show({ commit }) {
     commit(types.SHOW_PAGE)
-  }
+  },
 }
 
 const mutations = {
@@ -23,13 +23,12 @@ const mutations = {
   },
   [types.SHOW_PAGE](state) {
     state.hidden = false
-  }
+  },
 }
 
 export default {
-  state,
+  state: initialState,
   actions,
   getters,
-  actions,
-  mutations
+  mutations,
 }
