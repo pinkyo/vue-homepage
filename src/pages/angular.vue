@@ -7,7 +7,7 @@
 </template>
 
 <script>
-import contentHeader from '@/components/content-header'
+const contentHeader = () => import('@/components/content-header')
 
 export default {
   name: 'angular-content',

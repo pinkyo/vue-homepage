@@ -4,13 +4,18 @@ var ExtractTextPlugin = require("extract-text-webpack-plugin")
 var HtmlWebpackPlugin = require('html-webpack-plugin')
 var plugin = new ExtractTextPlugin('style.css')
 var CopyWebpackPlugin = require('copy-webpack-plugin')
+var Visualizer = require('webpack-visualizer-plugin');
 
 module.exports = {
-  entry: ['babel-polyfill', path.resolve('src/setup/main.js')],
+  entry: {
+    polyfill: 'babel-polyfill',
+    main: path.resolve('src/setup/main.js'),
+    common: ['vue-amap', 'lodash'],
+  },
   output: {
     path: path.resolve(__dirname, './dist'),
     publicPath: '/',
-    filename: 'build.js'
+    filename: '[name].bundle.js'
   },
   module: {
     rules: [
@@ -48,7 +53,8 @@ module.exports = {
         use: [{
             loader: 'file-loader',
             options: {
-              publicPath: '/'
+              publicPath: '/',
+              name: '[name]-[hash].[ext]'
             }
           }]
       }
@@ -56,6 +62,9 @@ module.exports = {
   },
   plugins: [
     plugin,
+    new webpack.optimize.CommonsChunkPlugin({
+      name: 'common' // 指定公共 bundle 的名称。
+    }),
     new HtmlWebpackPlugin({
       title: "Yinkn:Coder, NOT JUST Coder",
       favicon: "src/favicon.ico",
@@ -69,7 +78,10 @@ module.exports = {
       inject: false,
       filename: "404.html"
     }),
-    new CopyWebpackPlugin(['CNAME'])
+    new CopyWebpackPlugin(['CNAME']),
+    // new Visualizer({
+    //   filename: './statistics.html'
+    // })
   ],
   resolve: {
     extensions: [' ', '.js', '.vue', '.css'],

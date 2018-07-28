@@ -82,8 +82,8 @@
 
 <script>
 // NPM 方式
-import VueAMap from 'vue-amap';
-import contentHeader from '@/components/content-header'
+import VueAMap from 'vue-amap'
+const contentHeader = () =>import('@/components/content-header')
 
 const exampleComponents = {
     props: ['text'],

@@ -30,7 +30,7 @@
 <script>
 import {mapGetters, mapActions} from 'vuex'
 import navMenu from '@/components/nav-menu'
-import pageFooter from '@/components/content-footer'
+const pageFooter = () => import('@/components/content-footer')
 import menuHeaderSVG from '@/static/header.svg'
 
 export default {

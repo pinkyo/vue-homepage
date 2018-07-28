@@ -15,8 +15,8 @@
 </template>
 
 <script>
-import contentHeader from '@/components/content-header'
-import projectItem from '@/components/project-item'
+const contentHeader = () => import('@/components/content-header')
+const projectItem = () => import('@/components/project-item')
 
 export default {
   name: 'react-content',

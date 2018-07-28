@@ -1,5 +1,5 @@
 import Vue from 'vue'
-import VueAMap from 'vue-amap';
+import VueAMap from 'vue-amap'
 Vue.use(VueAMap);
 
 // 初始化vue-amap
