@@ -26,6 +26,7 @@ module.exports = {
   // add your custom rules here
   'rules': {
     "semi": [2, "never"],
+    "comma-dangle": 0,
     'no-param-reassign': 0,
     'no-multi-assign': 0,
 

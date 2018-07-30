@@ -10,7 +10,10 @@ module.exports = {
   entry: {
     polyfill: 'babel-polyfill',
     main: path.resolve('src/setup/main.js'),
-    common: ['vue-amap', 'lodash'],
+    amap: ['vue-amap'],
+    lodash: ['lodash'],
+    axios: ['axios'],
+    vue: ['vue', 'vue-router', 'vuex', 'vue-i18n'],
   },
   output: {
     path: path.resolve(__dirname, './dist'),
@@ -63,7 +66,10 @@ module.exports = {
   plugins: [
     plugin,
     new webpack.optimize.CommonsChunkPlugin({
-      name: 'common' // 指定公共 bundle 的名称。
+      names: ['amap', 'lodash', 'vue'],
+      minChunks: Infinity,
+      // (随着 entry chunk 越来越多，
+      // 这个配置保证没其它的模块会打包进 vendor chunk)
     }),
     new HtmlWebpackPlugin({
       title: "Yinkn:Coder, NOT JUST Coder",

@@ -11,7 +11,6 @@
   "dependencies": {
     "axios": "^0.17.1",
     "element-ui": "^2.0.2",
-    "eslint-plugin-html": "^4.0.5",
     "lodash": "^4.17.4",
     "vue": "^2.4.4",
     "vue-amap": "^0.4.2",
@@ -34,6 +33,7 @@
     "eslint": "^5.2.0",
     "eslint-config-airbnb-base": "^13.0.0",
     "eslint-import-resolver-webpack": "^0.10.1",
+    "eslint-plugin-html": "^4.0.5",
     "eslint-plugin-import": "^2.13.0",
     "extract-text-webpack-plugin": "^3.0.1",
     "file-loader": "^1.1.5",
