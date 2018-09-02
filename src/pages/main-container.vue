@@ -1,5 +1,5 @@
 <template>
-  <el-container>
+  <el-container class="body-container">
     <el-header class="main-header">
       <div>
         <router-link to="/" title="Home">
@@ -41,24 +41,20 @@ export default {
 </script>
 
 <style>
+  .body-container {
+    border-radius: 5px;
+    -webkit-transform: translateZ(0);
+    -webkit-mask-image: -webkit-radial-gradient(circle, white 100%, black 100%);
+  }
+
   .main-header {
     text-align: center;
     background-color: lightgray;
-    border-top-left-radius: 4px;
-    border-top-right-radius: 4px;
   }
 
   .main-container {
     min-height: 43rem;
     font-family: Arial, Helvetica, sans-serif;
-  }
-
-  .main-left-aside {
-    border-bottom-left-radius: 4px;
-  }
-
-  .main-right-container {
-    border-bottom-right-radius: 4px;
   }
 
   .main-content {
@@ -92,26 +88,6 @@ export default {
   .main-right-container {
     width: calc(100%-250px);
   }
-
-  /* .content-resources li {
-    font-size: 1.4rem;
-    font-weight: normal;
-    color: white;
-  }
-
-  .content-resources a:link {
-    font-size: 1.4rem;
-    font-weight: normal;
-    color: brown;
-    text-decoration: none;
-  }
-
-  .content-resources a:visited {
-    font-size: 1.4rem;
-    font-weight: normal;
-    color: brown;
-    text-decoration: none;
-  } */
 
   .head-icon {
     display: inline-block;

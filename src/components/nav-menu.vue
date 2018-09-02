@@ -17,7 +17,7 @@
           </div>
         </template>
         <el-menu-item-group :title="$t('navigator.resources.frontend.javascript.title')">
-          <el-menu-item index="/frontend/react">
+          <el-menu-item index="/frontend/react"">
             <i class="fab fa-react"></i>
             <span v-t="'navigator.resources.frontend.react'"></span>
           </el-menu-item>
@@ -53,7 +53,11 @@ import javaSvg from '@/static/java.svg'
 
 export default {
   name: "nav-menu",
-  data: () => ({javaSvg}),
+  data() {
+    return {
+      javaSvg
+    };
+  },
   methods: {
     handleOpen(key, keyPath) {
       console.log(key, keyPath);
@@ -78,6 +82,8 @@ export default {
 .el-menu-item * {
   font-size: 1.1rem;
   font-weight: 500;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .el-submenu__title * {
