@@ -40,7 +40,7 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
   .body-container {
     border-radius: 5px;
     -webkit-transform: translateZ(0);
@@ -61,30 +61,6 @@ export default {
     padding: 0 1rem;
   }
 
-  .main-content .content-header {
-    color: lightblue;
-  }
-
-  .main-content .content-sub-header h2 {
-    color: white;
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: 500;
-    line-height: 1rem;
-  }
-
-  .main-content .content-sub-header h2:hover {
-    font-weight: bolder;
-    color: lightblue;
-    transition: all .6s 0s ease-in;
-  }
-
-  .main-content .content-sub-div {
-    font-size: 1.3rem;
-    font-weight: lighter;
-    color: lightgrey;
-    font-family: Arial, Helvetica, sans-serif;
-  }
-
   .main-right-container {
     width: calc(100%-250px);
   }
@@ -98,8 +74,9 @@ export default {
     background-color: #282c34;
   }
 
-  .menu-header-logo svg {
-    height: 3.5rem;
+  .menu-header-logo >>> svg {
+    height: 50px;
+    padding: 5px 0;
   }
 
   .fade {

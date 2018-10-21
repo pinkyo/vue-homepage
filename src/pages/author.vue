@@ -122,7 +122,27 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
+  .content-sub-header h2 {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    line-height: 1rem;
+  }
+
+  .content-sub-header h2:hover {
+    font-weight: bolder;
+    color: lightblue;
+    transition: all .6s 0s ease-in;
+  }
+
+  .content-sub-div {
+    font-size: 1.3rem;
+    font-weight: lighter;
+    color: lightgrey;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
   .author-pic-div {
     float: left;
     width: 8.5rem;

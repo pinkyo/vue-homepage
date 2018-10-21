@@ -17,7 +17,7 @@
           </div>
         </template>
         <el-menu-item-group :title="$t('navigator.resources.frontend.javascript.title')">
-          <el-menu-item index="/frontend/react"">
+          <el-menu-item index="/frontend/react">
             <i class="fab fa-react"></i>
             <span v-t="'navigator.resources.frontend.react'"></span>
           </el-menu-item>

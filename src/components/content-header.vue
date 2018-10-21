@@ -19,6 +19,7 @@ export default {
     padding: 1rem;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
+    color: lightblue;
   }
 
   .content-header h1 {

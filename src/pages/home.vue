@@ -14,7 +14,7 @@ export default {
 </script>
 
 
-<style>
+<style scoped>
   .home-cat-svg svg {
     width: 40rem;
   }
