@@ -1,14 +1,12 @@
 <template>
   <el-container class="body-container">
-    <el-header class="main-header">
-      <div>
-        <router-link to="/" title="Home">
-          <i class="menu-header-logo" v-html="menuHeaderSVG"/>
-        </router-link>
-      </div>
-    </el-header>
     <el-container class="main-container">
       <el-aside width='250px' style="overflow: hidden" class="main-left-aside">
+        <div class="sit-icon">
+          <router-link to="/" title="Home">
+            <i class="menu-header-logo" v-html="menuHeaderSVG"/>
+          </router-link>
+        </div>
         <nav-menu />
       </el-aside>
       <el-container class="main-right-container">
@@ -41,6 +39,11 @@ export default {
 </script>
 
 <style scoped>
+  .sit-icon {
+    background-color: #aaa;
+    padding-left: 20px;
+    color: white;
+  }
   .body-container {
     border-radius: 5px;
     -webkit-transform: translateZ(0);
@@ -49,7 +52,7 @@ export default {
 
   .main-header {
     text-align: center;
-    background-color: lightgray;
+    background-color: #fff;
   }
 
   .main-container {
@@ -71,7 +74,7 @@ export default {
   }
 
   .main-right-container {
-    background-color: #282c34;
+    background-color: #000;
   }
 
   .menu-header-logo >>> svg {
@@ -96,5 +99,3 @@ export default {
     box-sizing: inherit;
   }
 </style>
-
-

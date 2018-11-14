@@ -3,9 +3,9 @@
       class="el-menu-vertical"
       @open="handleOpen"
       @close="handleClose"
-      background-color="#545c64"
-      text-color="#fff"
-      active-text-color="lightblue"
+      background-color="#aaa"
+      text-color="#000"
+      active-text-color="#039"
       :default-active="getDefaultActiveItem()"
       router
       >
@@ -32,7 +32,8 @@
         </el-menu-item-group>
         <el-menu-item-group :title="$t('navigator.resources.backend.title')">
           <el-menu-item index="/backend/java">
-            <i v-html="javaSvg" class="java-icon"/>
+            <!-- <i v-html="javaSvg" class="java-icon"/> -->
+            <i class="fab fa-java"></i>
             <span v-t="'navigator.resources.backend.java'"></span>
           </el-menu-item>
         </el-menu-item-group>
@@ -96,17 +97,17 @@ export default {
   font-weight: 500;
 }
 
-.java-icon svg {
+/* .java-icon svg {
   height: 1rem;
   width: 1rem;
-  background-color: white;
+  background-color: #fff;
   border-radius: 4px;
   margin-bottom: 3px;
-}
+} */
 
-.el-menu-item.is-active .java-icon svg {
+/* .el-menu-item.is-active .java-icon svg {
   background: lightblue;
-}
+} */
 
 .el-menu-item:hover span {
   padding: .2rem;
@@ -115,4 +116,3 @@ export default {
   transition: font-style .4s 0s  ease-in;
 }
 </style>
-
