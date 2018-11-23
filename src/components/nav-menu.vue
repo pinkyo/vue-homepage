@@ -104,4 +104,8 @@ export default {
   transition: padding .4s 0s  ease-in;
   transition: font-style .4s 0s  ease-in;
 }
+ 
+.el-menu {
+  border: none;
+}
 </style>

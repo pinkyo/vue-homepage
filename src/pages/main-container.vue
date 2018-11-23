@@ -1,7 +1,7 @@
 <template>
   <el-container class="body-container">
     <el-container class="main-container">
-      <el-aside width='3rem' style="overflow: hidden" class="main-left-aside">
+      <el-aside width='3.5rem' style="overflow: hidden" class="main-left-aside">
         <div class="sit-icon">
           <router-link to="/" title="Home">
             <i class="menu-header-logo" v-html="menuHeaderSVG"/>
@@ -53,6 +53,8 @@ export default {
   }
 
   .body-container {
+    width: 18.5rem;
+    margin: 0 auto;
     border-radius: 5px;
     -webkit-transform: translateZ(0);
     -webkit-mask-image: -webkit-radial-gradient(circle, white 100%, black 100%);
@@ -64,7 +66,6 @@ export default {
   }
 
   .main-container {
-    /* min-height: 43rem; */
     font-family: Arial, Helvetica, sans-serif;
   }
 
@@ -73,7 +74,8 @@ export default {
   }
 
   .main-right-container {
-    width: 9rem;
+    width: 15rem;
+    min-height: 700px;
   }
 
   .head-icon {

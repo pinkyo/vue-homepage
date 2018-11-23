@@ -16,11 +16,11 @@ export default {
 
 <style scoped>
   .home-cat-svg svg {
-    width: 40rem;
+    width: 4rem;
   }
 
   .home-cat-svg-div {
     margin: 3rem auto 0;
-    width: 40rem;
+    width: 4rem;
   }
 </style>
