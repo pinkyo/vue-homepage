@@ -14,9 +14,9 @@ export default {
 <style>
   .content-header {
     text-align: center;
-    font-size: 4rem;
+    font-size: 64px;
     margin: 0;
-    padding: 1rem;
+    padding: 0.16rem;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
     color: lightblue;

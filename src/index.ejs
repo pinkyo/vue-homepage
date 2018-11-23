@@ -11,6 +11,35 @@
         history.replaceState(null, null, redirect);
       }
     })();
+
+    (function() {
+      var throttle = function(type, name, obj) {
+          obj = obj || window;
+          var running = false;
+          var func = function() {
+              if (running) { return; }
+              running = true;
+              requestAnimationFrame(function() {
+                  obj.dispatchEvent(new CustomEvent(name));
+                  running = false;
+              });
+          };
+          obj.addEventListener(type, func);
+      };
+
+      /* init - you can init any event */
+      throttle("resize", "optimizedResize");
+    })();
+
+    // handle event
+    window.addEventListener("optimizedResize", function() {
+      console.info('  ')
+      var whdef = 100/1920;// 表示1920的设计图,使用100PX的默认值
+      var wW = window.innerWidth;// 当前窗口的宽度
+      var rem = wW * whdef;// 以默认比例值乘以当前窗口宽度,得到该宽度下的相应FONT-SIZE值
+      var html = document.getElementsByTagName('html')[0];
+      html.style['font-size'] = rem + "px";
+    });
   </script>
 </head>
 <body>
@@ -20,4 +49,12 @@
 
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
 </body>
+<style type="text/css">
+  html {
+    font-size: 100px;
+  }
+  body {
+    font-size: 16px;
+  }
+</style>
 </html>

@@ -56,17 +56,18 @@ export default {
     color: white;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 500;
-    line-height: 1rem;
+    font-size: 25px;
   }
 
   .content-sub-header h2:hover {
+    font-size: 25px;
     font-weight: bolder;
     color: lightblue;
     transition: all .6s 0s ease-in;
   }
 
   .content-sub-div {
-    font-size: 1.3rem;
+    font-size: 20px;
     font-weight: lighter;
     color: lightgrey;
     font-family: Arial, Helvetica, sans-serif;
@@ -82,6 +83,6 @@ export default {
 
   .about-content img {
     float: right;
-    width: 15rem;
+    width: 2rem;
   }
 </style>

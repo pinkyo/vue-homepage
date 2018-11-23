@@ -1,7 +1,7 @@
 <template>
   <el-container class="body-container">
     <el-container class="main-container">
-      <el-aside width='250px' style="overflow: hidden" class="main-left-aside">
+      <el-aside width='3rem' style="overflow: hidden" class="main-left-aside">
         <div class="sit-icon">
           <router-link to="/" title="Home">
             <i class="menu-header-logo" v-html="menuHeaderSVG"/>
@@ -39,11 +39,19 @@ export default {
 </script>
 
 <style scoped>
-  .sit-icon {
+  .main-left-aside {
     background-color: #aaa;
-    padding-left: 20px;
-    color: white;
   }
+
+  .sit-icon {
+    padding: 5px 0 5px 20px;
+    
+  }
+
+  .sit-icon >>> i {
+    font-size: 16px;
+  }
+
   .body-container {
     border-radius: 5px;
     -webkit-transform: translateZ(0);
@@ -56,21 +64,21 @@ export default {
   }
 
   .main-container {
-    min-height: 43rem;
+    /* min-height: 43rem; */
     font-family: Arial, Helvetica, sans-serif;
   }
 
   .main-content {
-    padding: 0 1rem;
+    padding: 0 0.16rem;
   }
 
   .main-right-container {
-    width: calc(100%-250px);
+    width: 9rem;
   }
 
   .head-icon {
     display: inline-block;
-    font-size:3em;
+    font-size:30px;
   }
 
   .main-right-container {

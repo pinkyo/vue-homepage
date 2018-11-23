@@ -13,12 +13,12 @@ export default {
 
 <style>
 .footer-div {
-  padding: 0.5rem;
+  padding: 0.15rem;
   text-align: center;
   background-color: #000;
   color: #fff;
   opacity: .6;
-  font-size: .8rem;
+  font-size: 12px;
   font-weight: 300;
 }
 </style>

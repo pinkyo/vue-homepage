@@ -76,38 +76,27 @@ export default {
 <style>
 
 .el-menu-vertical {
-  height: 100%;
-  width: 100%;
+  /* min-height: 100%;
+  min-width: 100%; */
+  /* min-height: 43rem; */
 }
 
 .el-menu-item * {
-  font-size: 1.1rem;
+  font-size: 18px;
   font-weight: 500;
   overflow: hidden;
   text-overflow: ellipsis;
 }
 
 .el-submenu__title * {
-  font-size: 1.1rem;
+  font-size: 18px;
   font-weight: 500;
 }
 
 .el-menu-item-group__title {
-  font-size: .9rem;
+  font-size: 16px;
   font-weight: 500;
 }
-
-/* .java-icon svg {
-  height: 1rem;
-  width: 1rem;
-  background-color: #fff;
-  border-radius: 4px;
-  margin-bottom: 3px;
-} */
-
-/* .el-menu-item.is-active .java-icon svg {
-  background: lightblue;
-} */
 
 .el-menu-item:hover span {
   padding: .2rem;

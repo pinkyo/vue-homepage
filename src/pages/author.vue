@@ -127,7 +127,7 @@ export default {
     color: white;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 500;
-    line-height: 1rem;
+    font-size: 25px;
   }
 
   .content-sub-header h2:hover {
@@ -137,7 +137,7 @@ export default {
   }
 
   .content-sub-div {
-    font-size: 1.3rem;
+    font-size: 20px;
     font-weight: lighter;
     color: lightgrey;
     font-family: Arial, Helvetica, sans-serif;
@@ -145,26 +145,26 @@ export default {
 
   .author-pic-div {
     float: left;
-    width: 8.5rem;
-    height: 8.5rem;
-    padding-right: 1rem;
+    width: 1.4rem;
+    height: 1.4rem;
+    padding-right: 0.1rem;
   }
 
   .author-pic-div img {
-    border-radius: 4.125rem;
-    width: 8.25rem;
-    height: 8.25rem;
-    box-shadow: 0 0 .5rem lightslategray;
+    border-radius: 0.7rem;
+    width: 1.4rem;
+    height: 1.4rem;
+    box-shadow: 0 0 0.08rem lightslategray;
     transition: box-shadow .6s ease-in;
   }
 
   .author-pic-div img:hover {
-    box-shadow: 0 0 3rem lightgray;
+    box-shadow: 0 0 0.5rem lightgray;
     transition: box-shadow .6s ease-in;
   }
 
   .github_link, .csdn_link {
-    font-size: 1.5rem;
+    font-size: 25px;
     color: white;
   }
 
@@ -177,7 +177,7 @@ export default {
   }
 
   .amap-page-container {
-    height: 12rem;
+    height: 2rem;
   }
 
   #amapDemo {
@@ -186,17 +186,17 @@ export default {
 
   .position-marker {
     color: rgb(102, 9, 9);
-    font-size: 1.5rem;
+    font-size: 25px;
     transition: 0.3s font-size ease-in;
   }
 
   .position-marker:hover {
-    font-size: 1.8rem;
+    font-size: 25px;
     transition: 0.3s font-size ease-in;
   }
 
   div.resources:last-child {
-    margin-bottom: 3rem;
+    margin-bottom: 0.5rem;
   }
 </style>
 
