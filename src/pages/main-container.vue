@@ -45,7 +45,7 @@ export default {
 
   .sit-icon {
     padding: 5px 0 5px 20px;
-    
+
   }
 
   .sit-icon >>> i {
@@ -75,7 +75,8 @@ export default {
 
   .main-right-container {
     width: 15rem;
-    min-height: 700px;
+    padding: 0 0.2rem;
+    min-height: 9rem;
   }
 
   .head-icon {
