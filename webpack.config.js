@@ -2,7 +2,6 @@ var path = require('path')
 var webpack = require('webpack')
 var ExtractTextPlugin = require("extract-text-webpack-plugin")
 var HtmlWebpackPlugin = require('html-webpack-plugin')
-var plugin = new ExtractTextPlugin('style.css')
 var CopyWebpackPlugin = require('copy-webpack-plugin')
 var Visualizer = require('webpack-visualizer-plugin');
 
@@ -18,7 +17,7 @@ module.exports = {
   output: {
     path: path.resolve(__dirname, './dist'),
     publicPath: '/',
-    filename: '[name].bundle.js'
+    filename: 'js/[name].bundle.js'
   },
   module: {
     rules: [
@@ -41,30 +40,35 @@ module.exports = {
       {
         test: /\.css$/,
         exclude: /dist/,
-        use: [
-          {
-            loader: "style-loader"
-          },
-          {
-            loader: "css-loader"
-          },
-        ]
+        use: ExtractTextPlugin.extract({
+          fallback: "style-loader",
+          use: "css-loader"
+        })
       },
       {
-        test: /\.(ttf|woff|jpg|png)$/,
+        test: /\.(jpg|png)$/,
         exclude: /dist/,
         use: [{
             loader: 'file-loader',
             options: {
               publicPath: '/',
-              name: '[name]-[hash].[ext]'
+              name: 'img/[name]-[hash].[ext]'
+            }
+          }]
+      }, {
+        test: /\.(eot|ttf|woff|woff2)$/,
+        exclude: /dist/,
+        use: [{
+            loader: 'file-loader',
+            options: {
+              name: 'webfonts/[name]-[hash].[ext]'
             }
           }]
       }
     ]
   },
   plugins: [
-    plugin,
+    new ExtractTextPlugin('css/style.css'),
     new webpack.optimize.CommonsChunkPlugin({
       names: ['amap', 'lodash', 'vue'],
       minChunks: Infinity,
@@ -98,7 +102,7 @@ module.exports = {
   },
   devServer: {
     historyApiFallback: true,
-    noInfo: true
+    // noInfo: true
   },
   devtool: '#eval-source-map'
 }

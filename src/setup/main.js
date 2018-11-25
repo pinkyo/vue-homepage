@@ -16,6 +16,10 @@ import {
 import 'element-ui/lib/theme-chalk/index.css'
 import { i18n, loadLanguageAsync } from '@/setup/i18n-setup'
 import '@/setup/amap-setup'
+import { library } from '@fortawesome/fontawesome-svg-core'
+import { faThList, faUserCircle, faInfoCircle } from '@fortawesome/free-solid-svg-icons'
+import { faReact, faVuejs, faAngular, faJava } from '@fortawesome/free-brands-svg-icons'
+import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 
 Vue.use(VueRouter)
 Vue.use(Menu)
@@ -27,6 +31,10 @@ Vue.use(Footer)
 Vue.use(Main)
 Vue.use(Aside)
 Vue.use(Header)
+
+library.add(faThList, faUserCircle, faInfoCircle, faReact, faVuejs, faAngular, faJava)
+Vue.component('font-awesome-icon', FontAwesomeIcon)
+Vue.config.productionTip = false
 
 
 router.beforeEach((to, from, next) => {
