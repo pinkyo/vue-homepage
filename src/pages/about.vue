@@ -34,7 +34,7 @@
                 <li>...</li>
             </ul>
           </span>
-          <img src="../static/star.png" />
+          <i class="about-svg" v-html="aboutSVG"></i>
         </div>
       </div>
     </div>
@@ -43,10 +43,16 @@
 
 <script>
 const contentHeader = () =>import('@/components/content-header')
+import aboutSVG from '@/static/about.svg'
 
 export default {
   name: "about-content",
-  components: {contentHeader}
+  components: {contentHeader},
+  data() {
+    return {
+      aboutSVG
+      }
+  }
 };
 </script>
 
@@ -84,5 +90,10 @@ export default {
   .about-content img {
     float: right;
     width: 2rem;
+  }
+
+  .about-svg >>> svg {
+    width: 10rem;
+    float: right;
   }
 </style>

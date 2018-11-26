@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   width="81.478035mm"
+   height="22.922171mm"
+   viewBox="0 0 81.478035 22.922171"
+   version="1.1"
+   id="svg2139">
+  <defs
+     id="defs2133">
+    <linearGradient
+       id="linearGradient2700">
+      <stop
+         style="stop-color:#000000;stop-opacity:1;"
+         offset="0"
+         id="stop2696" />
+      <stop
+         style="stop-color:#000000;stop-opacity:0;"
+         offset="1"
+         id="stop2698" />
+    </linearGradient>
+    <linearGradient
+       xlink:href="#linearGradient2700"
+       id="linearGradient2702"
+       x1="101.96405"
+       y1="109.00398"
+       x2="138.92303"
+       y2="109.00398"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(1.8702052,0,0,1.8702052,-88.232687,-91.042399)" />
+    <filter
+       height="1.5"
+       y="-0.25"
+       width="1.5"
+       x="-0.25"
+       style="color-interpolation-filters:sRGB"
+       id="filter2816">
+      <feGaussianBlur
+         stdDeviation="4"
+         result="result8"
+         id="feGaussianBlur2788" />
+      <feTurbulence
+         seed="50"
+         result="result7"
+         type="turbulence"
+         numOctaves="7"
+         baseFrequency="0.01 0.01"
+         id="feTurbulence2790" />
+      <feColorMatrix
+         result="result5"
+         values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 1.4 0 "
+         id="feColorMatrix2792" />
+      <feComposite
+         result="result6"
+         in="result5"
+         operator="in"
+         in2="result8"
+         id="feComposite2794" />
+      <feDisplacementMap
+         in="result5"
+         xChannelSelector="A"
+         yChannelSelector="A"
+         scale="100"
+         result="result4"
+         in2="result6"
+         id="feDisplacementMap2796" />
+      <feFlood
+         flood-opacity="1"
+         flood-color="rgb(224,224,224)"
+         id="feFlood2798" />
+      <feComposite
+         result="result2"
+         operator="atop"
+         in2="result4"
+         id="feComposite2800" />
+      <feComposite
+         in="result2"
+         operator="atop"
+         in2="SourceGraphic"
+         result="result9"
+         id="feComposite2802" />
+      <feBlend
+         result="fbSourceGraphic"
+         mode="darken"
+         in2="result9"
+         id="feBlend2804" />
+      <feGaussianBlur
+         stdDeviation="5"
+         in="fbSourceGraphic"
+         result="result0"
+         id="feGaussianBlur2806" />
+      <feSpecularLighting
+         in="result0"
+         result="result1"
+         lighting-color="#ffffff"
+         surfaceScale="8"
+         specularConstant="0.80000001"
+         specularExponent="30"
+         id="feSpecularLighting2810">
+        <feDistantLight
+           elevation="55"
+           azimuth="235"
+           id="feDistantLight2808" />
+      </feSpecularLighting>
+      <feComposite
+         in2="fbSourceGraphic"
+         in="result1"
+         result="result2"
+         operator="in"
+         id="feComposite2812" />
+      <feComposite
+         k4="0"
+         k1="0"
+         in="fbSourceGraphic"
+         result="fbSourceGraphic"
+         operator="arithmetic"
+         k2="1"
+         k3="1"
+         in2="result2"
+         id="feComposite2814" />
+      <feColorMatrix
+         result="fbSourceGraphicAlpha"
+         in="fbSourceGraphic"
+         values="0 0 0 -1 0 0 0 0 -1 0 0 0 0 -1 0 0 0 0 1 0"
+         id="feColorMatrix2818" />
+      <feColorMatrix
+         id="feColorMatrix2820"
+         type="luminanceToAlpha"
+         result="fbSourceGraphic"
+         in="fbSourceGraphic" />
+      <feFlood
+         id="feFlood2822"
+         flood-color="rgb(134,39,24)"
+         result="result1"
+         flood-opacity="1" />
+      <feComposite
+         in2="fbSourceGraphic"
+         id="feComposite2824"
+         operator="out"
+         result="result2" />
+      <feComposite
+         in2="fbSourceGraphic"
+         id="feComposite2826"
+         operator="in" />
+    </filter>
+  </defs>
+  <metadata
+     id="metadata2136">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     transform="translate(-87.754878,-123.5717)"
+     id="layer1">
+    <flowRoot
+       xml:space="preserve"
+       id="flowRoot2684"
+       style="font-style:normal;font-weight:normal;font-size:40px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"><flowRegion
+         id="flowRegion2686"><rect
+           id="rect2688"
+           width="368.70569"
+           height="184.85791"
+           x="203.04066"
+           y="330.56009" /></flowRegion><flowPara
+         id="flowPara2690" /></flowRoot>    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:19.79300499px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#b84d4d;fill-opacity:1;stroke:url(#linearGradient2702);stroke-width:2;stroke-miterlimit:4;stroke-dasharray:none"
+       id="text2694"><textPath
+         style="stroke:url(#linearGradient2702)"
+         xlink:href="#path2727"
+         id="textPath2729"><tspan
+   style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:19.79300499px;font-family:'Bauhaus 93';-inkscape-font-specification:'Bauhaus 93, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start;fill:#b84d4d;fill-opacity:1;stroke:url(#linearGradient2702);stroke-width:2;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+   id="tspan2692">ABOUT</tspan></textPath></text>
+    <path
+       style="fill:none;stroke:#beb7b7;stroke-width:0.40000001;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;filter:url(#filter2816)"
+       d="m 101.33455,140.46006 c 7.19913,-2.61154 15.55197,-1.98941 18.85599,-2.52183 10.79497,-1.73953 2.63931,3.41589 18.37643,4.96162 15.32683,3.29146 17.08627,1.09315 17.08627,1.09315"
+       id="path2727" />
+  </g>
+</svg>
