@@ -88,6 +88,10 @@ export default {
   text-overflow: ellipsis;
 }
 
+.el-menu-item.is-active * {
+  font-weight: bold;
+}
+
 .el-submenu__title * {
   font-size: 18px;
   font-weight: 500;
@@ -108,4 +112,5 @@ export default {
 .el-menu {
   border: none;
 }
+
 </style>

@@ -76,7 +76,7 @@ export default {
   .main-right-container {
     width: 15rem;
     padding: 0 0.2rem;
-    min-height: 9rem;
+    min-height: 10rem;
   }
 
   .head-icon {
