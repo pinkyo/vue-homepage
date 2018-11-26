@@ -17,7 +17,7 @@ import 'element-ui/lib/theme-chalk/index.css'
 import { i18n, loadLanguageAsync } from '@/setup/i18n-setup'
 import '@/setup/amap-setup'
 import { library } from '@fortawesome/fontawesome-svg-core'
-import { faThList, faUserCircle, faInfoCircle } from '@fortawesome/free-solid-svg-icons'
+import { faThList, faUserCircle, faInfoCircle, faAngleDoubleRight } from '@fortawesome/free-solid-svg-icons'
 import { faReact, faVuejs, faAngular, faJava } from '@fortawesome/free-brands-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 
@@ -32,7 +32,8 @@ Vue.use(Main)
 Vue.use(Aside)
 Vue.use(Header)
 
-library.add(faThList, faUserCircle, faInfoCircle, faReact, faVuejs, faAngular, faJava)
+library.add(faThList, faUserCircle, faInfoCircle, 
+  faReact, faVuejs, faAngular, faJava, faAngleDoubleRight)
 Vue.component('font-awesome-icon', FontAwesomeIcon)
 Vue.config.productionTip = false
 

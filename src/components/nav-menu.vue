@@ -32,7 +32,6 @@
         </el-menu-item-group>
         <el-menu-item-group :title="$t('navigator.resources.backend.title')">
           <el-menu-item index="/backend/java">
-             <font-awesome-icon icon="java" />
              <font-awesome-icon :icon="['fab', 'java']" />
             <span v-t="'navigator.resources.backend.java'"></span>
           </el-menu-item>

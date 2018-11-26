@@ -1,5 +1,6 @@
 <template>
   <li class="project-list-item">
+    <font-awesome-icon icon="angle-double-right" />
     <a :href="this.href" target="_blank">{{name}}</a>: {{description}}
   </li>
 </template>
@@ -24,14 +25,7 @@ export default {
   li.project-list-item:hover {
     color: lightblue;
   }
-
-  li.project-list-item::before {
-    content: '>> ';
-    color: white;
-    padding-right: 0.06rem;
-    font-weight: bolder;
-  }
-
+  
   li.project-list-item:hover::before {
     color: lightblue;
   }
