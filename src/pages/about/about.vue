@@ -57,43 +57,5 @@ export default {
 </script>
 
 <style scoped>
-
-  .content-sub-header h2 {
-    color: white;
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: 500;
-    font-size: 25px;
-  }
-
-  .content-sub-header h2:hover {
-    font-size: 25px;
-    font-weight: bolder;
-    color: lightblue;
-    transition: all .6s 0s ease-in;
-  }
-
-  .content-sub-div {
-    font-size: 20px;
-    font-weight: lighter;
-    color: lightgrey;
-    font-family: Arial, Helvetica, sans-serif;
-  }
-
-  .first-about-sub-header h2 {
-    margin-top: 0;
-  }
-
-  .about-content .module-info {
-    display: inline-block;
-  }
-
-  .about-content img {
-    float: right;
-    width: 2rem;
-  }
-
-  .about-svg >>> svg {
-    width: 10rem;
-    float: right;
-  }
+  @import './about.css';
 </style>

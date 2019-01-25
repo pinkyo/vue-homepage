@@ -73,13 +73,6 @@ export default {
 </script>
 
 <style>
-
-.el-menu-vertical {
-  /* min-height: 100%;
-  min-width: 100%; */
-  /* min-height: 43rem; */
-}
-
 .el-menu-item * {
   font-size: 18px;
   font-weight: 500;
@@ -102,7 +95,7 @@ export default {
 }
 
 .el-menu-item:hover span {
-  padding: .2rem;
+  padding: 20px;
   font-style: italic;
   transition: padding .4s 0s  ease-in;
   transition: font-style .4s 0s  ease-in;

@@ -1,37 +1,13 @@
 import VueRouter from 'vue-router'
 
-const mainContainer = () => import(
-  /* webpackChunkName: "main-container" */
-  '@/pages/main-container'
-)
-const home = () => import(
-  /* webpackChunkName: "home" */
-  '@/pages/home'
-)
-const author = () => import(
-  /* webpackChunkName: "author" */
-  '@/pages/author'
-)
-const about = () => import(
-  /* webpackChunkName: "about" */
-  '@/pages/about'
-)
-const react = () => import(
-  /* webpackChunkName: "frontend-react" */
-  '@/pages/react'
-)
-const vue = () => import(
-  /* webpackChunkName: "frontend-vue" */
-  '@/pages/vue'
-)
-const angular = () => import(
-  /* webpackChunkName: "frontend-angular" */
-  '@/pages/angular'
-)
-const java = () => import(
-  /* webpackChunkName: "backend-java" */
-  '@/pages/java'
-)
+const mainContainer = () => import('@/pages/main-container/main-container')
+const home = () => import('@/pages/home/home')
+const author = () => import('@/pages/author/author')
+const about = () => import('@/pages/about/about')
+const react = () => import('@/pages/react/react')
+const vue = () => import('@/pages/vue/vue')
+const angular = () => import('@/pages/angular/angular')
+const java = () => import('@/pages/java/java')
 
 const routes = [
   {

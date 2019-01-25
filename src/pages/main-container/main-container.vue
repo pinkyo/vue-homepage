@@ -1,7 +1,7 @@
 <template>
   <el-container class="body-container">
     <el-container class="main-container">
-      <el-aside width='3.5rem' style="overflow: hidden" class="main-left-aside">
+      <el-aside width='3rem' style="overflow: hidden" class="main-left-aside">
         <div class="sit-icon">
           <router-link to="/" title="Home">
             <i class="menu-header-logo" v-html="menuHeaderSVG"/>
@@ -39,74 +39,5 @@ export default {
 </script>
 
 <style scoped>
-  .main-left-aside {
-    background-color: #aaa;
-  }
-
-  .sit-icon {
-    padding: 5px 0 5px 20px;
-
-  }
-
-  .sit-icon >>> i {
-    font-size: 16px;
-  }
-
-  .body-container {
-    width: 18.5rem;
-    margin: 0 auto;
-    border-radius: 5px;
-    -webkit-transform: translateZ(0);
-    -webkit-mask-image: -webkit-radial-gradient(circle, white 100%, black 100%);
-  }
-
-  .main-header {
-    text-align: center;
-    background-color: #fff;
-  }
-
-  .main-container {
-    font-family: Arial, Helvetica, sans-serif;
-  }
-
-  .main-content {
-    padding: 0 0.16rem;
-  }
-
-  .main-right-container {
-    width: 15rem;
-    padding: 0 0.2rem;
-    min-height: 10rem;
-  }
-
-  .head-icon {
-    display: inline-block;
-    font-size:30px;
-  }
-
-  .main-right-container {
-    background-color: #000;
-  }
-
-  .menu-header-logo >>> svg {
-    height: 50px;
-    padding: 5px 0;
-  }
-
-  .fade {
-    opacity: 0
-  }
-
-  .fade-active {
-    transition: opacity 0.3s ease-in;
-    opacity: 0.9;
-  }
-
-  .main-div {
-    opacity: 0.9;
-  }
-
-  * ::before ::after {
-    box-sizing: inherit;
-  }
+  @import './main-container.css';
 </style>

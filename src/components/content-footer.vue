@@ -1,6 +1,6 @@
 <template>
   <div class="footer-div">
-    <span>@Copyleft, No right reserved with MIT License.</span>
+    <span>@MIT License</span>
   </div>
 </template>
 
@@ -13,12 +13,12 @@ export default {
 
 <style>
 .footer-div {
-  padding: 0.15rem;
+  padding: 15px;
   text-align: center;
   background-color: #000;
   color: #fff;
   opacity: .6;
-  font-size: 12px;
+  font-size: 16px;
   font-weight: 300;
 }
 </style>

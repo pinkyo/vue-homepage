@@ -1,0 +1,79 @@
+.content-sub-header h2 {
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 500;
+  font-size: 25px;
+}
+
+.content-sub-header h2:hover {
+  font-weight: bolder;
+  color: lightblue;
+  transition: all .6s 0s ease-in;
+}
+
+.content-sub-div {
+  font-size: 20px;
+  font-weight: lighter;
+  color: lightgrey;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.author-pic-div {
+  float: left;
+  width: 140px;
+  height: 140px;
+  padding-right: 10px;
+}
+
+.author-pic-div img {
+  border-radius: 70px;
+  width: 140px;
+  height: 140px;
+  box-shadow: 0 0 8px lightslategray;
+  transition: box-shadow .6s ease-in;
+}
+
+.author-brief-info {
+  min-height: 150px;
+}
+
+.author-pic-div img:hover {
+  box-shadow: 0 0 50px lightgray;
+  transition: box-shadow .6s ease-in;
+}
+
+.github_link, .csdn_link {
+  font-size: 25px;
+  color: white;
+}
+
+.github_link:hover {
+  color: darkgray;
+}
+
+.github_link:visited {
+  color: lightgray;
+}
+
+.amap-page-container {
+  height: 200px;
+}
+
+#amapDemo {
+  border-radius: 4px;
+}
+
+.position-marker {
+  color: rgb(102, 9, 9);
+  font-size: 25px;
+  transition: 0.3s font-size ease-in;
+}
+
+.position-marker:hover {
+  font-size: 25px;
+  transition: 0.3s font-size ease-in;
+}
+
+div.resources:last-child {
+  margin-bottom: 50px;
+}

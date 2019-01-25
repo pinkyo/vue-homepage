@@ -3,9 +3,9 @@
     <content-header text="Author" />
     <div class="resources">
       <div>
-        <div class="resource_item_content content-sub-div">
+        <div class="resource_item_content content-sub-div author-brief-info">
           <div class="author-pic-div">
-            <img src="../static/author.png" >
+            <img src="../../static/author.png" >
           </div>
           <span>
             Kainian Yin, a prfessional software developer with more than 2-year working experience. I have been focusing on
@@ -13,10 +13,11 @@
             With the evolution of modern software, I have been developing distributed software under Microservice architacture after
             graduation from college. I love my profession and seek friends who are on the same wavelength.
             And I hope to work with people with great passion, and make progress together. Visit me in my Github.
-            <a class="github_link" target="_blank" href="https://github.com/pinkyo"><i class="fab fa-github"></i></a>
-            <a class="csdn_link" target="_blank" href="https://blog.csdn.net/o_nikyo_o"><i class="fab fa-blogger"></i></a>
-
           </span>
+          <div>
+            <a class="github_link" target="_blank" href="https://github.com/pinkyo"><font-awesome-icon :icon="['fab', 'github']" /></a>
+            <a class="csdn_link" target="_blank" href="https://blog.csdn.net/o_nikyo_o"><font-awesome-icon :icon="['fab', 'blogger']" /></a>
+          </div>
         </div>
       </div>
       <div>
@@ -85,11 +86,6 @@
 import VueAMap from 'vue-amap'
 const contentHeader = () =>import('@/components/content-header')
 
-const exampleComponents = {
-    props: ['text'],
-    template: `<div class="marker-content">text from  parent: {{text}}</div>`
-}
-
 const amapManager = new VueAMap.AMapManager();
 
 export default {
@@ -123,80 +119,6 @@ export default {
 </script>
 
 <style scoped>
-  .content-sub-header h2 {
-    color: white;
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: 500;
-    font-size: 25px;
-  }
-
-  .content-sub-header h2:hover {
-    font-weight: bolder;
-    color: lightblue;
-    transition: all .6s 0s ease-in;
-  }
-
-  .content-sub-div {
-    font-size: 20px;
-    font-weight: lighter;
-    color: lightgrey;
-    font-family: Arial, Helvetica, sans-serif;
-  }
-
-  .author-pic-div {
-    float: left;
-    width: 1.4rem;
-    height: 1.4rem;
-    padding-right: 0.1rem;
-  }
-
-  .author-pic-div img {
-    border-radius: 0.7rem;
-    width: 1.4rem;
-    height: 1.4rem;
-    box-shadow: 0 0 0.08rem lightslategray;
-    transition: box-shadow .6s ease-in;
-  }
-
-  .author-pic-div img:hover {
-    box-shadow: 0 0 0.5rem lightgray;
-    transition: box-shadow .6s ease-in;
-  }
-
-  .github_link, .csdn_link {
-    font-size: 25px;
-    color: white;
-  }
-
-  .github_link:hover {
-    color: darkgray;
-  }
-
-  .github_link:visited {
-    color: lightgray;
-  }
-
-  .amap-page-container {
-    height: 2rem;
-  }
-
-  #amapDemo {
-    border-radius: 4px;
-  }
-
-  .position-marker {
-    color: rgb(102, 9, 9);
-    font-size: 25px;
-    transition: 0.3s font-size ease-in;
-  }
-
-  .position-marker:hover {
-    font-size: 25px;
-    transition: 0.3s font-size ease-in;
-  }
-
-  div.resources:last-child {
-    margin-bottom: 0.5rem;
-  }
+  @import './author.css';
 </style>
 

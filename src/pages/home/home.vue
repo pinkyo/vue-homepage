@@ -22,12 +22,5 @@ export default {
 
 
 <style scoped>
-  .home-cat-svg svg {
-    width: 5rem;
-  }
-
-  .home-cat-svg-div {
-    margin: 2rem auto 0;
-    width: 5rem;
-  }
+  @import './home.css';
 </style>

@@ -17,23 +17,23 @@ export default {
     font-size: 20px;
     font-weight: normal;
     color: white;
-    padding: 0.03rem 0;
-    margin: 0.03rem 0;
+    padding: 3px 0;
+    margin: 3px 0;
     list-style-type: none;
   }
 
   li.project-list-item:hover {
     color: lightblue;
   }
-  
+
   li.project-list-item:hover::before {
     color: lightblue;
   }
 
   li.project-list-item:hover {
     background-color: #777;
-    border-radius: 0.03rem;
-    box-shadow: 0 0 0.16rem #777;
+    border-radius: 3px;
+    box-shadow: 0 0 16px #777;
     font-size: 20px;
     width: fit-content;
     transition: box-shadow .6s 0 ease-in;

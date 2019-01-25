@@ -1,23 +1,27 @@
-var path = require('path')
-var webpack = require('webpack')
-var ExtractTextPlugin = require("extract-text-webpack-plugin")
-var HtmlWebpackPlugin = require('html-webpack-plugin')
-var CopyWebpackPlugin = require('copy-webpack-plugin')
-var Visualizer = require('webpack-visualizer-plugin');
+const path = require('path');
+const webpack = require('webpack');
+// var ExtractTextPlugin = require("extract-text-webpack-plugin")
+const MiniCssExtractPlugin = require("mini-css-extract-plugin");
+const HtmlWebpackPlugin = require('html-webpack-plugin')
+const CopyWebpackPlugin = require('copy-webpack-plugin')
+const Visualizer = require('webpack-visualizer-plugin');
+const VueLoaderPlugin = require('vue-loader/lib/plugin')
+const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
 
 module.exports = {
   entry: {
     polyfill: 'babel-polyfill',
     main: path.resolve('src/setup/main.js'),
-    amap: ['vue-amap'],
-    lodash: ['lodash'],
-    axios: ['axios'],
-    vue: ['vue', 'vue-router', 'vuex', 'vue-i18n'],
+    // amap: ['vue-amap'],
+    // lodash: ['lodash'],
+    // axios: ['axios'],
+    // vue: ['vue', 'vue-router', 'vuex', 'vue-i18n'],
   },
   output: {
     path: path.resolve(__dirname, './dist'),
     publicPath: '/',
-    filename: 'js/[name].bundle.js'
+    filename: 'js/[name].bundle.js',
+    chunkFilename: 'js/[id].bundle.js'
   },
   module: {
     rules: [
@@ -40,10 +44,29 @@ module.exports = {
       {
         test: /\.css$/,
         exclude: /dist/,
-        use: ExtractTextPlugin.extract({
-          fallback: "style-loader",
-          use: "css-loader"
-        })
+        use: [
+          {
+            loader: MiniCssExtractPlugin.loader,
+            options: {
+              // you can specify a publicPath here
+              // by default it use publicPath in webpackOptions.output
+              publicPath: '/',
+              // filename: 'style/[name].css',
+              // chunkFilename: 'style/[id].css'
+            }
+          },
+          // {
+          //   loader: 'style-loader',
+          // },
+          {
+            loader: 'css-loader',
+            options: {
+              importLoaders: 1,
+            }
+          },
+          {
+            loader: 'postcss-loader'
+          }]
       },
       {
         test: /\.(jpg|png)$/,
@@ -68,13 +91,27 @@ module.exports = {
     ]
   },
   plugins: [
-    new ExtractTextPlugin('css/style.css'),
-    new webpack.optimize.CommonsChunkPlugin({
-      names: ['amap', 'lodash', 'vue'],
-      minChunks: Infinity,
-      // (随着 entry chunk 越来越多，
-      // 这个配置保证没其它的模块会打包进 vendor chunk)
+    // 请确保引入这个插件！
+    new VueLoaderPlugin(),
+    // new ExtractTextPlugin('css/style.css'),
+    new MiniCssExtractPlugin({
+      // Options similar to the same options in webpackOptions.output
+      // both options are optional
+      // filename: "[name].css",
+      // chunkFilename: "[id].css"
+      filename: 'style/[name].css',
+      chunkFilename: 'style/[id].css'
     }),
+    new webpack.BannerPlugin({
+      banner: "Author: pinkyo",
+      entryOnly: false
+    }),
+    // new webpack.optimize.CommonsChunkPlugin({
+    //   names: ['amap', 'lodash', 'vue'],
+    //   minChunks: Infinity,
+    //   // (随着 entry chunk 越来越多，
+    //   // 这个配置保证没其它的模块会打包进 vendor chunk)
+    // }),
     new HtmlWebpackPlugin({
       title: "Yinkn:Coder, NOT JUST Coder",
       favicon: "src/favicon.ico",
@@ -93,6 +130,34 @@ module.exports = {
     //   filename: './statistics.html'
     // })
   ],
+  optimization: {
+    minimize: false,
+    splitChunks: {
+      chunks: 'all',
+      minSize: 30000,
+      maxSize: 244000, //Less than 244K
+      minChunks: 1,
+      maxAsyncRequests: 5,
+      maxInitialRequests: 3,
+      automaticNameDelimiter: '~',
+      name: true,
+      cacheGroups: {
+        vendors: {
+          test: /[\\/]node_modules[\\/]/,
+          priority: -10
+        },
+        // main: {
+        //   test: /[\\/]src[\\/]/,
+        //   priority: -10
+        // },
+        default: {
+          minChunks: 2,
+          priority: -20,
+          reuseExistingChunk: true
+        }
+      }
+    }
+  },
   resolve: {
     extensions: [' ', '.js', '.vue', '.css'],
     alias: {
@@ -102,7 +167,7 @@ module.exports = {
   },
   devServer: {
     historyApiFallback: true,
-    // noInfo: true
+    noInfo: true
   },
   devtool: '#eval-source-map'
 }
@@ -111,16 +176,23 @@ if (process.env.NODE_ENV === 'production') {
   module.exports.devtool = '#source-map'
   // http://vue-loader.vuejs.org/en/workflow/production.html
   module.exports.plugins = (module.exports.plugins || []).concat([
-    new webpack.DefinePlugin({
-      'process.env': {
-        NODE_ENV: '"production"'
-      }
-    }),
-    new webpack.optimize.UglifyJsPlugin({
-      compress: {
-        warnings: false
-      }
-    }),
-    new webpack.optimize.OccurrenceOrderPlugin()
+    // new webpack.DefinePlugin({
+    //   'process.env': {
+    //     NODE_ENV: '"production"'
+    //   }
+    // }),
+    // new webpack.optimize.UglifyJsPlugin({
+    //   compress: {
+    //     warnings: false
+    //   }
+    // }),
+    // new webpack.optimize.OccurrenceOrderPlugin()
+    // new webpack.optimize.DedupePlugin(),
+    new webpack.optimize.OccurrenceOrderPlugin(true)
   ])
+  module.exports.optimization = {
+    ...module.exports.optimization,
+    minimize: true,
+    minimizer: [new UglifyJsPlugin()]
+  }
 }
