@@ -16,6 +16,6 @@ export default {
 </script>
 
 <style scoped>
-  @import './angular.css';
+  /* @import './angular.css'; */
 </style>
 
