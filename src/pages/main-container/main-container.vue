@@ -1,11 +1,19 @@
 <template>
   <el-container class="body-container">
     <el-container class="main-container">
-      <el-aside width='3rem' style="overflow: hidden" class="main-left-aside">
+      <el-aside width='3.5rem' style="overflow: hidden" class="main-left-aside">
         <div class="sit-icon">
           <router-link to="/" title="Home">
             <i class="menu-header-logo" v-html="menuHeaderSVG"/>
           </router-link>
+          <el-select v-model="lang" class="lang-switch-div" size="small">
+            <el-option
+              v-for="item in langOptions"
+              :key="item.key"
+              :label="item.text"
+              :value="item.key">
+            </el-option>
+          </el-select>
         </div>
         <nav-menu />
       </el-aside>
@@ -33,8 +41,27 @@ import menuHeaderSVG from '@/static/header.svg'
 
 export default {
   name: 'main-container',
-  data: () => ({menuHeaderSVG}),
-  components: {navMenu, pageFooter}
+  components: {navMenu, pageFooter},
+  data: () => ({
+    menuHeaderSVG,
+    lang: localStorage.getItem('locale') || 'zh_cn',
+    langOptions: [{
+      key: 'zh_cn',
+      text: '简体中文'
+    }, {
+      key: 'en',
+      text: 'English'
+    }]
+  }),
+  watch: {
+    lang: function(value) {
+      localStorage.setItem('locale', value)
+      this.$i18n.locale = localStorage.getItem('locale')
+    }
+  },
+  beforeCreate() {
+
+  }
 }
 </script>
 

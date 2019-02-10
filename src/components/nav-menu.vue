@@ -16,24 +16,24 @@
             <span v-t="'navigator.resources.title'"></span>
           </div>
         </template>
-        <el-menu-item-group :title="$t('navigator.resources.frontend.javascript.title')">
+        <el-menu-item-group :title="$t('navigator.resources.frontend.title')">
           <el-menu-item index="/frontend/react">
             <font-awesome-icon :icon="['fab', 'react']" />
-            <span v-t="'navigator.resources.frontend.react'"></span>
+            <span>ReactJS</span>
           </el-menu-item>
           <el-menu-item index="/frontend/vue">
             <font-awesome-icon :icon="['fab', 'vuejs']" />
-            <span v-t="'navigator.resources.frontend.vue'"></span>
+            <span>VueJS</span>
           </el-menu-item>
           <el-menu-item index="/frontend/angular">
             <font-awesome-icon :icon="['fab', 'angular']" />
-            <span v-t="'navigator.resources.frontend.angular'"></span>
+            <span>AngularJS</span>
           </el-menu-item>
         </el-menu-item-group>
         <el-menu-item-group :title="$t('navigator.resources.backend.title')">
           <el-menu-item index="/backend/java">
              <font-awesome-icon :icon="['fab', 'java']" />
-            <span v-t="'navigator.resources.backend.java'"></span>
+            <span>JAVA</span>
           </el-menu-item>
         </el-menu-item-group>
       </el-submenu>

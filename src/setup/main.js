@@ -12,6 +12,9 @@ import {
   Main,
   Aside,
   Header,
+  Select,
+  Option,
+  Loading
 } from 'element-ui'
 import 'element-ui/lib/theme-chalk/index.css'
 import '@/asset/root.css'
@@ -32,6 +35,11 @@ Vue.use(Footer)
 Vue.use(Main)
 Vue.use(Aside)
 Vue.use(Header)
+Vue.use(Select)
+Vue.use(Option)
+Vue.use(Loading)
+
+Vue.prototype.$loading = Loading.service
 
 library.add(faThList, faUserCircle, faInfoCircle,
   faReact, faVuejs, faAngular, faJava,

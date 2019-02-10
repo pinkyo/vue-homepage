@@ -4,16 +4,21 @@
 
 .sit-icon {
   padding: 5px 0 5px 20px;
-
+  display: flex;
+  align-items: center;
 }
 
-.sit-icon >>> i {
+.sit-icon i {
   font-size: 16px;
+  flex: 1;
 }
 
-.body-container {
-  width: 1850px;
-  margin: 0 auto;
+.sit-icon .lang-switch-div {
+  flex: 1;
+  padding-left: 50px;
+  & >>> .el-input {
+    width: 120px;
+  }
 }
 
 .main-header {
@@ -45,7 +50,7 @@
 }
 
 .menu-header-logo >>> svg {
-  height: 50px;
+  height: 70px;
   padding: 5px 0;
 }
 
