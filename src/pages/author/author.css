@@ -61,17 +61,6 @@
   border-radius: 4px;
 }
 
-.position-marker {
-  color: rgb(102, 9, 9);
-  font-size: 25px;
-  transition: 0.3s font-size ease-in;
-}
-
-.position-marker:hover {
-  font-size: 25px;
-  transition: 0.3s font-size ease-in;
-}
-
 div.resources:last-child {
   margin-bottom: 50px;
 }

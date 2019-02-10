@@ -51,7 +51,7 @@
         <div class="amap-page-container">
           <el-amap ref="map" vid="amapDemo" :amap-manager="amapManager" :center="center" :zoom="zoom" :events="events" class="amap-demo">
             <el-amap-marker vid="component-marker" :position="componentMarker.position">
-              <i class="fas fa-location-arrow position-marker" title=""></i>
+              <font-awesome-icon :icon="['fa', 'location-arrow']"/>
             </el-amap-marker>
           </el-amap>
         </div>
