@@ -1,5 +1,6 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
+import App from '../pages/app'
 import router from '@/setup/router'
 import store from '@/store'
 import {
@@ -57,4 +58,5 @@ new Vue({
   router,
   store,
   i18n,
+  render: (h) => h(App),
 }).$mount('#app')
