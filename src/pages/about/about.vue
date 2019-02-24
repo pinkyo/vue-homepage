@@ -29,7 +29,9 @@
                 <li>...</li>
             </ul>
           </span>
-          <i class="about-svg" v-html="aboutSVG"></i>
+          <i class="about-svg">
+            <aboutSVG />
+          </i>
         </div>
       </div>
     </div>
@@ -42,12 +44,15 @@ import aboutSVG from '@/static/about.svg'
 
 export default {
   name: "about-content",
-  components: {contentHeader},
-  data() {
-    return {
-      aboutSVG
-      }
-  }
+  components: {
+    contentHeader,
+    aboutSVG
+  },
+  // data() {
+  //   return {
+  //     aboutSVG
+  //     }
+  // }
 };
 </script>
 

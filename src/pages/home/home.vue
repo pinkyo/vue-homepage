@@ -2,7 +2,7 @@
   <div>
     <content-header :text="$t('home_page.title')" />
     <div class="home-cat-svg-div">
-      <i class="home-cat-svg" v-html="starSVG" />
+      <i class="home-cat-svg"><starSVG /></i>
     </div>
   </div>
 </template>
@@ -14,9 +14,10 @@ import starSVG from '@/static/star.svg'
 export default {
   name: 'home',
   components: {
-    contentHeader
+    contentHeader,
+    starSVG
   },
-  data: () => ({starSVG})
+  // data: () => ({starSVG})
 }
 </script>
 

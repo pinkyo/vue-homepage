@@ -49,15 +49,9 @@
 </template>
 
 <script>
-import javaSvg from '@/static/java.svg'
 
 export default {
   name: "nav-menu",
-  data() {
-    return {
-      javaSvg
-    };
-  },
   methods: {
     handleOpen(key, keyPath) {
       console.log(key, keyPath);

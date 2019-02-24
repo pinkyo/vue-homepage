@@ -22,7 +22,7 @@ import '@/asset/root.css'
 import { i18n, loadLanguageAsync } from '@/setup/i18n-setup'
 import '@/setup/amap-setup'
 import { library } from '@fortawesome/fontawesome-svg-core'
-import { faThList, faUserCircle, faInfoCircle, faAngleDoubleRight } from '@fortawesome/free-solid-svg-icons'
+import { faThList, faUserCircle, faInfoCircle, faAngleDoubleRight, faMapMarkerAlt } from '@fortawesome/free-solid-svg-icons'
 import { faReact, faVuejs, faAngular, faJava, faGithub, faBlogger } from '@fortawesome/free-brands-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 
@@ -44,7 +44,7 @@ Vue.prototype.$loading = Loading.service
 
 library.add(faThList, faUserCircle, faInfoCircle,
   faReact, faVuejs, faAngular, faJava,
-  faAngleDoubleRight, faGithub, faBlogger)
+  faAngleDoubleRight, faGithub, faBlogger, faMapMarkerAlt)
 Vue.component('font-awesome-icon', FontAwesomeIcon)
 Vue.config.productionTip = false
 

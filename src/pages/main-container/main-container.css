@@ -50,6 +50,7 @@
 }
 
 .menu-header-logo >>> svg {
+  width: 100px;
   height: 70px;
   padding: 5px 0;
 }

@@ -4,7 +4,7 @@
       <el-aside width='3.5rem' style="overflow: hidden" class="main-left-aside">
         <div class="sit-icon">
           <router-link to="/" title="Home">
-            <i class="menu-header-logo" v-html="menuHeaderSVG"/>
+            <i class="menu-header-logo"><menuHeaderSVG /></i>
           </router-link>
           <el-select v-model="lang" class="lang-switch-div" size="small">
             <el-option
@@ -41,9 +41,13 @@ import menuHeaderSVG from '@/static/header.svg'
 
 export default {
   name: 'main-container',
-  components: {navMenu, pageFooter},
+  components: {
+    navMenu,
+    pageFooter,
+    menuHeaderSVG
+  },
   data: () => ({
-    menuHeaderSVG,
+    // menuHeaderSVG,
     lang: localStorage.getItem('locale') || 'zh_cn',
     langOptions: [{
       key: 'zh_cn',

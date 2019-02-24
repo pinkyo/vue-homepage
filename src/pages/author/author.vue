@@ -50,8 +50,7 @@
         <div class="content-sub-header"><h2 v-t="'author_page.where_i_am.title'"></h2></div>
         <div class="amap-page-container">
           <el-amap ref="map" vid="amapDemo" :amap-manager="amapManager" :center="center" :zoom="zoom" :events="events" class="amap-demo">
-            <el-amap-marker vid="component-marker" :position="componentMarker.position">
-              <font-awesome-icon :icon="['fa', 'location-arrow']"/>
+            <el-amap-marker vid="component-marker" :position="componentMarker.position" :content-render="componentMarker.contentRender">
             </el-amap-marker>
           </el-amap>
         </div>
@@ -86,8 +85,21 @@ export default {
         }
       },
       componentMarker: {
-        position: [113.855757,22.61176]
-      },
+        position: [113.855757,22.61176],
+        contentRender: (h, instance) => {
+          // if use jsx you can write in this
+          // return <div style={{background: '#80cbc4', whiteSpace: 'nowrap', border: 'solid #ddd 1px', color: '#f00'}} onClick={() => ...}>marker inner text</div>
+          return h(
+            'font-awesome-icon',
+            {
+              props: {
+                icon: 'map-marker-alt'
+              }
+            },
+            ['marker inner text']
+          )
+        }
+      }
     };
   },
   methods: {
