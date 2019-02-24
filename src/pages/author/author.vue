@@ -31,7 +31,7 @@
       <div>
         <div class="content-sub-header"><h2>2016.03-2018.06</h2></div>
         <div class="resource_item_content content-sub-div">
-          <span v-t="'author_page.fist_job_interval'"></span>
+          <span v-t="'author_page.first_job_interval'"></span>
         </div>
       </div>
       <div>
