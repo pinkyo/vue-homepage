@@ -7,15 +7,15 @@ script:
 branches:
   only:
   - source
-after_success:
-  - sudo apt-get install -y python-dev libffi-dev libssl-dev
-  - python -V
-  - sudo pip install --upgrade pip urllib3 chardet requests, argparse, prettytable, pytz, datetime, tqdm, pyyaml, six
-  - sudo pip install coscmd
-  - coscmd -v
-  - coscmd config -a $COS_SECRECT_ID -s $COS_SECRECT_KEY -b vue-homepage-1254036241 -r ap-guangzhou
-  - coscmd delete -rf /
-  - coscmd upload -r dist/ /
+# after_success:
+#   - sudo apt-get install -y python-dev libffi-dev libssl-dev
+#   - python -V
+#   - sudo pip install --upgrade pip urllib3 chardet requests, argparse, prettytable, pytz, datetime, tqdm, pyyaml, six
+#   - sudo pip install coscmd
+#   - coscmd -v
+#   - coscmd config -a $COS_SECRECT_ID -s $COS_SECRECT_KEY -b vue-homepage-1254036241 -r ap-guangzhou
+#   - coscmd delete -rf /
+#   - coscmd upload -r dist/ /
 deploy:
   provider: pages
   skip_cleanup: true
