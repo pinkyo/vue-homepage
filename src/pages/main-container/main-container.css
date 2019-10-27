@@ -1,13 +1,17 @@
 /* @import 'palette.css'; */
 
+.body-container {
+  padding: 0 20px;
+}
+
 .main-left-aside {
-  background-color: var(--color1);
+  background-color: var(--color1, rgba(6, 9, 51, 1));
 }
 
 .main-top-header {
   /* background-color: var(--color1); */
   text-align: left;
-  color: var(--color3);
+  color: var(--color3, rgba(242, 100, 0, 1));
 
   &>>>.header-img {
     /* width: 100px; */
@@ -41,7 +45,7 @@
 .main-header {
   text-align: center;
   /* background-color: #fff; */
-  color: var(--color1);
+  color: var(--color1, rgba(6, 9, 51, 1));
 }
 
 .main-container {

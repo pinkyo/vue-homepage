@@ -19,7 +19,7 @@ export default {
     /* font-family: Arial, Helvetica, sans-serif; */
     /* font-weight: bold;
     color: lightblue; */
-    color: var(--color5);
+    color: var(--color5, rgba(6, 62, 122, 1));
   }
 
   .content-header h1 {

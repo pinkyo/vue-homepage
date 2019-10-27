@@ -9,7 +9,7 @@ body {
 }
 
 .content-sub-header {
-  color: var(--color4);
+  color: var(--color4, rgba(68, 189, 255, 1));
 
   &>h2 {
     font-size: 20px;
@@ -17,5 +17,5 @@ body {
 }
 
 .content-sub-div {
-  color: var(--color1);
+  color: var(--color1, rgba(6, 9, 51, 1));
 }

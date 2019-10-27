@@ -25,11 +25,12 @@ const messages = {
 }
 
 export const i18n = new VueI18n({
-  locale: 'en',
+  locale: 'zh_cn',
   // locale: localStorage.getItem('locale') || 'zh_cn', // set locale
   fallbackLocale: 'en',
   messages, // set locale messages
 })
+
 
 ElementLocale.i18n((key, value) => i18n.t(key, value))
 

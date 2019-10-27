@@ -68,7 +68,7 @@
       margin-right: 40px;
       text-decoration: none;
       font-size: 18px;
-      color: var(--color3);
+      color: var(--color3, rgba(242, 100, 0, 1));
     }
   }
 
@@ -83,13 +83,13 @@
     &>>>.el-dropdown-menu__item {
       text-decoration: none;
       font-size: 18px;
-      color: var(--color3);
+      color: var(--color3, rgba(242, 100, 0, 1));
     }
 
     &>>>span.dropdown-item {
       text-decoration: none;
       font-size: 18px;
-      color: var(--color3);
+      color: var(--color3, rgba(242, 100, 0, 1));
       margin-left: 10px;
     }
   }
