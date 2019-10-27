@@ -1,5 +1,23 @@
+/* @import 'palette.css'; */
+
 .main-left-aside {
-  background-color: #aaa;
+  background-color: var(--color1);
+}
+
+.main-top-header {
+  /* background-color: var(--color1); */
+  text-align: left;
+  color: var(--color3);
+
+  &>>>.header-img {
+    /* width: 100px; */
+    height: 60px;
+  }
+
+  &>.top-header-item {
+    display: inline-block;
+    margin-right: 25px;
+  }
 }
 
 .sit-icon {
@@ -9,7 +27,6 @@
 }
 
 .sit-icon i {
-  font-size: 16px;
   flex: 1;
 }
 
@@ -23,11 +40,12 @@
 
 .main-header {
   text-align: center;
-  background-color: #fff;
+  /* background-color: #fff; */
+  color: var(--color1);
 }
 
 .main-container {
-  font-family: Arial, Helvetica, sans-serif;
+  /* font-family: Arial, Helvetica, sans-serif; */
 }
 
 .main-content {
@@ -35,18 +53,19 @@
 }
 
 .main-right-container {
-  width: 1500px;
-  padding: 0 20px;
-  min-height: 1000px;
+  /* width: 1500px; */
+  /* padding: 0 20px; */
+  min-height: 800px;
+  margin-top: 30px;
 }
 
 .head-icon {
   display: inline-block;
-  font-size:30px;
 }
 
 .main-right-container {
-  background-color: #000;
+  /* background-color: #000; */
+  /* background: var(--color5); */
 }
 
 .menu-header-logo >>> svg {

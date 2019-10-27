@@ -1,6 +1,6 @@
 <template>
   <div class="react-content main-content">
-    <content-header text="React" />
+    <!-- <content-header text="React" /> -->
     <p class="header-description">A JavaScript library for building user interfaces</p>
     <div class="content-resources">
       <ul>
@@ -27,7 +27,6 @@ export default {
 <style scoped>
     .react-content .header-description {
     padding: 0;
-    font-size: 30px;
     text-align: center;
     letter-spacing: 0.01em;
     font-weight: 500;

@@ -1,6 +1,6 @@
 <template>
   <div class="angular-content main-content">
-    <content-header text="Angular" />
+    <!-- <content-header text="Angular" /> -->
     <div class="resources">
     </div>
   </div>

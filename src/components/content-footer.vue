@@ -15,10 +15,10 @@ export default {
 .footer-div {
   padding: 15px;
   text-align: center;
-  background-color: #000;
-  color: #fff;
+  /* background-color: #000; */
+  /* color: #fff; */
   opacity: .6;
-  font-size: 16px;
-  font-weight: 300;
+  font-size: 14px;
+  /* font-weight: 300; */
 }
 </style>

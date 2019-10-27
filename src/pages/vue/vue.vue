@@ -1,6 +1,6 @@
 <template>
   <div class="vue-content main-content">
-    <content-header text="Vue" />
+    <!-- <content-header text="Vue" /> -->
     <div class="resources">
       <div class="content-resources">
         <ul>

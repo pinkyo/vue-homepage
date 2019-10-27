@@ -1,6 +1,6 @@
 <template>
   <div class="about-content main-content">
-    <content-header :text="$t('about_page.title')" />
+    <!-- <content-header :text="$t('about_page.title')" /> -->
     <div class="resources">
       <div>
         <div class="content-sub-header first-about-sub-header">

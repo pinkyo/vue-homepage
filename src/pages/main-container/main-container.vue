@@ -1,7 +1,7 @@
 <template>
   <el-container class="body-container">
     <el-container class="main-container">
-      <el-aside width='3.5rem' style="overflow: hidden" class="main-left-aside">
+      <!-- <el-aside width='3.5rem' style="overflow: hidden" class="main-left-aside">
         <div class="sit-icon">
           <router-link to="/" title="Home">
             <i class="menu-header-logo"><menuHeaderSVG /></i>
@@ -16,7 +16,13 @@
           </el-select>
         </div>
         <nav-menu />
-      </el-aside>
+      </el-aside> -->
+      <el-header class="main-top-header">
+        <router-link to="/" class="top-header-item">
+          <img class="header-img" src="../../static/header.jpg"></img>
+        </router-link>
+        <header-menu class="top-header-item"></header-menu>
+      </el-header>
       <el-container class="main-right-container">
         <el-main style="padding: 0">
             <div class="main-div">
@@ -38,13 +44,15 @@ import {mapGetters, mapActions} from 'vuex'
 import navMenu from '@/components/nav-menu'
 const pageFooter = () => import('@/components/content-footer')
 import menuHeaderSVG from '@/static/header.svg'
+import HeaderMenu from '@/components/header-menu'
 
 export default {
   name: 'main-container',
   components: {
     navMenu,
     pageFooter,
-    menuHeaderSVG
+    menuHeaderSVG,
+    HeaderMenu
   },
   data: () => ({
     // menuHeaderSVG,

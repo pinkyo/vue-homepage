@@ -1,6 +1,6 @@
 <template>
   <div>
-    <content-header :text="$t('home_page.title')" />
+    <!-- <content-header :text="$t('home_page.title')" /> -->
     <div class="home-cat-svg-div">
       <i class="home-cat-svg"><starSVG /></i>
     </div>

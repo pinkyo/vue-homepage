@@ -1,6 +1,6 @@
 <template>
   <div class="author-content main-content">
-    <content-header :text="$t('author_page.title')" />
+    <!-- <content-header :text="$t('author_page.title')" /> -->
     <div class="resources">
       <div>
         <div class="resource_item_content content-sub-div author-brief-info">
@@ -72,7 +72,7 @@ export default {
   data: function() {
     return {
       //地理编码
-      center: [113.855757,22.61176],
+      center: [113.875138,22.570366],
       amapManager,
       zoom: 20,
       events: {
@@ -85,7 +85,7 @@ export default {
         }
       },
       componentMarker: {
-        position: [113.855757,22.61176],
+        position: [113.875138,22.570366],
         contentRender: (h, instance) => {
           // if use jsx you can write in this
           // return <div style={{background: '#80cbc4', whiteSpace: 'nowrap', border: 'solid #ddd 1px', color: '#f00'}} onClick={() => ...}>marker inner text</div>

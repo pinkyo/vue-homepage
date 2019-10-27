@@ -14,41 +14,37 @@ export default {
 
 <style>
   li.project-list-item {
-    font-size: 20px;
     font-weight: normal;
-    color: white;
+    /* color: white; */
     padding: 3px 0;
     margin: 3px 0;
     list-style-type: none;
   }
 
   li.project-list-item:hover {
-    color: lightblue;
+    /* color: lightblue; */
   }
 
   li.project-list-item:hover::before {
-    color: lightblue;
+    /* color: lightblue; */
   }
 
   li.project-list-item:hover {
-    background-color: #777;
+    /* background-color: #777; */
     border-radius: 3px;
-    box-shadow: 0 0 16px #777;
-    font-size: 20px;
+    /* box-shadow: 0 0 16px #777; */
     width: fit-content;
     transition: box-shadow .6s 0 ease-in;
     transition: font-size .6s 0 ease-in;
   }
 
   li.project-list-item a:link {
-    font-size: 20px;
     font-weight: normal;
     color: brown;
     text-decoration: none;
   }
 
   li.project-list-item a:visited {
-    font-size: 20px;
     font-weight: normal;
     color: brown;
     text-decoration: none;

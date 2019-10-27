@@ -3,17 +3,17 @@ export default {
     resources: {
       title: 'Resources',
       frontend: {
-        title: 'Frontend',
+        title: 'FRONT-END',
       },
       backend: {
-        title: 'Serverside',
+        title: 'SERVER-SIDE',
       },
     },
-    author: 'Author',
-    about: 'About',
+    author: 'AUTHOR',
+    about: 'ABOUT',
   },
   home_page: {
-    title: 'Home'
+    title: 'HOME'
   },
   author_page: {
     title: 'Author',
