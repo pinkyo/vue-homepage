@@ -146,6 +146,10 @@ div , footer {
 	margin: 60px auto;
 }
 
+.amap-container {
+
+}
+
 .hero {
 	margin: 50px auto;
 	position: relative;
@@ -353,7 +357,7 @@ li {
 	display: inline-block;
 	float: left;
 	width: 25%;
-  	height: 50px;
+  height: 50px;
 }
 li .line {
   position: absolute;
@@ -400,6 +404,11 @@ li .description {
   left: 43%;
 }
 
+li .sub {
+  font-weight: lighter;
+  font-size: 16px;
+}
+
 
 .timeline .date{
 	font-size: 14px;
@@ -413,6 +422,10 @@ li:hover {
 }
 li .description {
   display: block;
+}
+
+li.long-list-item {
+  width: 40%;
 }
 
 /*timeline ends*/
