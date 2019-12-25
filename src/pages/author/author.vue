@@ -1,7 +1,7 @@
 <template>
   <div class="author-content main-content">
     <!-- <content-header :text="$t('author_page.title')" /> -->
-    <div class="resources">
+    <!-- <div class="resources">
       <div>
         <div class="resource_item_content content-sub-div author-brief-info">
           <div class="author-pic-div">
@@ -59,7 +59,7 @@
         </div>
       </div>
 
-    </div>
+    </div> -->
 
     <div class="container">
       <div class="hero">
@@ -222,14 +222,17 @@
       </ol>
     </div>
 
-    <div class="container amap-container">
-      <div class="amap-page-container">
-        <el-amap ref="map" vid="amapDemo" :amap-manager="amapManager" :center="center" :zoom="zoom" :events="events"
-          class="amap-demo">
-          <el-amap-marker vid="component-marker" :position="componentMarker.position"
-            :content-render="componentMarker.contentRender">
-          </el-amap-marker>
-        </el-amap>
+    <div class="container">
+      <div class="amap-container">
+        <p class="line">Adress</p>
+        <div class="amap-page-container">
+          <el-amap ref="map" vid="amapDemo" :amap-manager="amapManager" :center="center" :zoom="zoom" :events="events"
+            class="amap-demo">
+            <el-amap-marker vid="component-marker" :position="componentMarker.position"
+              :content-render="componentMarker.contentRender">
+            </el-amap-marker>
+          </el-amap>
+        </div>
       </div>
     </div>
   </div>
