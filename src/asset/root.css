@@ -21,7 +21,7 @@ body {
 }
 
 ul.menu-item-popover {
-  min-width: 100px;
+  min-width: 200px;
   background-color: var(--color3);
   border: none;
 
