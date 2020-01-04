@@ -37,6 +37,10 @@
       <font-awesome-icon icon="info-circle" />
       <span v-t="'navigator.about'"></span>
     </el-menu-item>
+    <el-menu-item index="/color">
+      <font-awesome-icon icon="info-circle" />
+      <span>配色方案</span>
+    </el-menu-item>
   </el-menu>
 </template>
 

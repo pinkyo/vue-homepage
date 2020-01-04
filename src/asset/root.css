@@ -9,7 +9,7 @@ body {
 }
 
 .content-sub-header {
-  color: var(--color4, rgba(68, 189, 255, 1));
+  color: var(--color6);
 
   &>h2 {
     font-size: 20px;
@@ -17,5 +17,22 @@ body {
 }
 
 .content-sub-div {
-  color: var(--color1, rgba(6, 9, 51, 1));
+  color: var(--color1);
 }
+
+ul.menu-item-popover {
+  min-width: 100px;
+  background-color: var(--color3);
+  border: none;
+
+  & >>> .el-dropdown-menu__item:hover {
+    background-color: var(--color2);
+  }
+
+  & >>> div.popper__arrow {
+    color: var(--color3);
+    background-color: var(--color3);
+  }
+}
+
+

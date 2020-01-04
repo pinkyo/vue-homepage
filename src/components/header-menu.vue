@@ -44,6 +44,7 @@
     </el-dropdown> -->
     <router-link class="menu-item" to="/author">{{$t('navigator.author')}}</router-link>
     <router-link class="menu-item" to="/about">{{$t('navigator.about')}}</router-link>
+    <router-link class="menu-item" to="/color">配色方案</router-link>
   </div>
 </template>
 
@@ -68,7 +69,7 @@
       margin-right: 40px;
       text-decoration: none;
       font-size: 18px;
-      color: var(--color3, rgba(242, 100, 0, 1));
+      color: var(--color1);
     }
   }
 

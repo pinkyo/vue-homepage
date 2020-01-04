@@ -14,21 +14,15 @@ import ElementLocale from 'element-ui/lib/locale'
 Vue.use(VueI18n)
 
 const messages = {
-  en: {
-    ...en,
-    ...enLocale
-  },
-  zh_cn: {
-    ...zh_cn,
-    ...zhLocale
-  }
+  en: Object.assign(en, enLocale),
+  zh_cn: Object.assign(zh_cn, zhLocale)
 }
 
 export const i18n = new VueI18n({
   locale: 'zh_cn',
   // locale: localStorage.getItem('locale') || 'zh_cn', // set locale
   fallbackLocale: 'en',
-  messages, // set locale messages
+  messages // set locale messages
 })
 
 

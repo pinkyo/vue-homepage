@@ -43,7 +43,7 @@
 import {mapGetters, mapActions} from 'vuex'
 import navMenu from '@/components/nav-menu'
 const pageFooter = () => import('@/components/content-footer')
-import menuHeaderSVG from '@/static/header.svg'
+// import menuHeaderSVG from '@/static/header.svg'
 import HeaderMenu from '@/components/header-menu'
 
 export default {
@@ -51,7 +51,7 @@ export default {
   components: {
     navMenu,
     pageFooter,
-    menuHeaderSVG,
+    // menuHeaderSVG,
     HeaderMenu
   },
   data: () => ({

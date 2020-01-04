@@ -1,7 +1,7 @@
 /* @import 'palette.css'; */
 
 .body-container {
-  padding: 0 20px;
+  /* padding: 0 20px; */
 }
 
 .main-left-aside {
@@ -11,7 +11,8 @@
 .main-top-header {
   /* background-color: var(--color1); */
   text-align: left;
-  color: var(--color3, rgba(242, 100, 0, 1));
+  background-color: var(--color3);
+  color: var(--color1);
 
   &>>>.header-img {
     /* width: 100px; */
@@ -59,8 +60,8 @@
 .main-right-container {
   /* width: 1500px; */
   /* padding: 0 20px; */
-  min-height: 800px;
-  margin-top: 30px;
+  min-height: 1000px;
+  /* margin-top: 30px; */
 }
 
 .head-icon {
@@ -69,7 +70,9 @@
 
 .main-right-container {
   /* background-color: #000; */
-  /* background: var(--color5); */
+  background: var(--color4);
+  color: var(--color1);
+  padding: 50px 200px;
 }
 
 .menu-header-logo >>> svg {

@@ -29,9 +29,9 @@
                 <li>...</li>
             </ul>
           </span>
-          <i class="about-svg">
+          <!-- <i class="about-svg">
             <aboutSVG />
-          </i>
+          </i> -->
         </div>
       </div>
     </div>
@@ -40,13 +40,13 @@
 
 <script>
 const contentHeader = () =>import('@/components/content-header')
-import aboutSVG from '@/static/about.svg'
+// import aboutSVG from '@/static/about.svg'
 
 export default {
   name: "about-content",
   components: {
     contentHeader,
-    aboutSVG
+    // aboutSVG
   },
   // data() {
   //   return {

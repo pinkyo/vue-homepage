@@ -83,7 +83,8 @@ time, mark, audio, video {
 	border: 0;
 	font-size: 100%;
 	font: inherit;
-	vertical-align: baseline;
+  vertical-align: baseline;
+  color: var(--color1);
 }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure,
@@ -102,8 +103,8 @@ body {
 	text-rendering : optimizeLegibility;
 	-webkit-font-smoothing : antialiased;
 	font-size: 19px;
-	background-color: #FEFEFE;
-	color: #04143A;
+	/* background-color: #FEFEFE; */
+	color: var(--color1);
 }
 ol, ul {
 	list-style: none;
@@ -122,7 +123,7 @@ table {
 }
 
 p {
-	color: #15171a;
+	/* color: #15171a; */
 	font-size: 17;
 	line-height: 31px;
 }
@@ -152,7 +153,9 @@ div , footer {
   & > .line {
     font-size: 20px;
     font-weight: 600;
-    color: #04143A;
+    /* color: #04143A; */
+    color: var(--color1);
+    background: var(--color4);
   }
 }
 
@@ -169,8 +172,9 @@ h1.name {
 
 .job-title {
 	vertical-align: top;
-	background-color: #D9E7F8;
-	color: #4A90E2;
+	/* background-color: #D9E7F8; */
+  color: #4A90E2;
+  background-color: var(--color3);
 	font-weight: 600;
 	margin-top: 5px;
 	margin-left: 20px;
@@ -259,7 +263,7 @@ h1.name {
 .card {
 	width: 47.9%;
 	height: 200px;
-	background-color: #EEF0F7;
+	background-color: var(--color3);
 	display: inline-block;
 	margin: 7px 5px;
 	vertical-align: top;
@@ -271,7 +275,7 @@ h1.name {
 .card-active , .card:hover{
 	transform: scale(1.02);
 	transition: 0.5s;
-	background-color: #fff;
+	background-color: var(--color2);
 	box-shadow: 0px 5px 50px -8px #ddd;
 	cursor: pointer;
 }
@@ -332,7 +336,7 @@ ol {
 	display: block;
 	margin: 100px 0;
 	height: 2px;
-	background: #EEF0F7;
+	background-color: var(--color3);
 
 }
 ol::before,
@@ -371,7 +375,7 @@ li .line {
   left: 1%;
   font-size: 20px;
   font-weight: 600;
-  color: #04143A;
+  color: var(--color1);
 }
 li .point {
 	content: "";
@@ -502,7 +506,8 @@ li.long-list-item {
 		}
 
 	.job-title {
-		position: absolute;
+    position: absolute;
+    background-color: var(--color3);
 		font-size: 15px;
 		top: -40px;
 		right: 20px;

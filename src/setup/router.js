@@ -8,6 +8,7 @@ const react = () => import('@/pages/react/react')
 const vue = () => import('@/pages/vue/vue')
 const angular = () => import('@/pages/angular/angular')
 const java = () => import('@/pages/java/java')
+const color = () => import('@/pages/color/color')
 
 const routes = [
   {
@@ -17,6 +18,7 @@ const routes = [
       { path: '', component: home },
       { path: 'author', component: author },
       { path: 'about', component: about },
+      { path: 'color', component: color },
       { path: 'frontend/react', component: react },
       { path: 'frontend/vue', component: vue },
       { path: 'frontend/angular', component: angular },

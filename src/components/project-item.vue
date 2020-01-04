@@ -40,13 +40,13 @@ export default {
 
   li.project-list-item a:link {
     font-weight: normal;
-    color: brown;
+    color: #4a90e2;
     text-decoration: none;
   }
 
   li.project-list-item a:visited {
     font-weight: normal;
-    color: brown;
+    color: #4a90e2;
     text-decoration: none;
   }
 
