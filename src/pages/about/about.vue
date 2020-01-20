@@ -9,10 +9,10 @@
         <div class="resource_item_content content-sub-div">
           <p v-t="'about_page.orientation.p1'"></p>
           <p v-t="'about_page.orientation.p2'"></p>
-          <p v-t="'about_page.orientation.p3'"></p>
+          <!-- <p v-t="'about_page.orientation.p3'"></p> -->
         </div>
       </div>
-      <div>
+      <!-- <div>
         <div class="content-sub-header">
           <h2 v-t="'about_page.tools.title'"></h2>
         </div>
@@ -29,11 +29,8 @@
                 <li>...</li>
             </ul>
           </span>
-          <!-- <i class="about-svg">
-            <aboutSVG />
-          </i> -->
         </div>
-      </div>
+      </div> -->
     </div>
   </div>
 </template>

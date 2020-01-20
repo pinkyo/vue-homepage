@@ -64,7 +64,7 @@
     <div class="container">
       <div class="hero">
         <h1 class="name"><strong>Kainian</strong> Yin</h1>
-        <span class="job-title">Developer</span>
+        <span class="job-title">Web Developer</span>
         <span class="email">kainian.yin@outlook.com</span>
 
         <h2 class="lead">Development and design of web applications
@@ -120,6 +120,13 @@
             <span>Linux, Crawlers, Bots, Network</span>
           </div>
         </div>
+
+        <div class="list-card">
+          <div>
+            <h3>Life</h3>
+            <span>Climbing, Swimming</span>
+          </div>
+        </div>
       </div>
     </div>
     <!-- Achievements -->
@@ -129,7 +136,7 @@
       <div class="card">
         <div class="skill-level">
           <span>+</span>
-          <h2>60</h2>
+          <h2>10</h2>
         </div>
 
         <div class="skill-meta">
@@ -138,7 +145,6 @@
         </div>
       </div>
 
-
       <div class="card">
         <div class="skill-level">
           <h2>50</h2>
@@ -146,8 +152,8 @@
         </div>
 
         <div class="skill-meta">
-          <h3>Web</h3>
-          <span>Applications development integrating third-party services and mobile client(s)</span>
+          <h3>Java</h3>
+          <span>Server development with Java</span>
         </div>
       </div>
 
@@ -159,8 +165,8 @@
         </div>
 
         <div class="skill-meta">
-          <h3>Technical solutions</h3>
-          <span>Such as web services, scripts, configurations</span>
+          <h3>Web</h3>
+          <span>Service portal development and performance profilling</span>
         </div>
       </div>
 
@@ -172,8 +178,8 @@
         </div>
 
         <div class="skill-meta">
-          <h3>Leading</h3>
-          <span>Web projects and ensure the quality of delivery</span>
+          <h3>Technical solutions</h3>
+          <span>Such as web services, scripts, configurations</span>
         </div>
       </div>
 

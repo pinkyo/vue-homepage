@@ -15,6 +15,7 @@ export default {
 <style>
   li.project-list-item {
     font-weight: normal;
+    font-size: 20px;
     /* color: white; */
     padding: 3px 0;
     margin: 3px 0;
