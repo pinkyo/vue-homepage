@@ -1,6 +1,5 @@
 <template>
   <div>
-    <!-- <content-header :text="$t('home_page.title')" /> -->
     <div class="home-cat-svg-div">
       <i class="home-cat-svg">
         <svg xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#"

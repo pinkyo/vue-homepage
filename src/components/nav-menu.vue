@@ -39,7 +39,7 @@
     </el-menu-item>
     <el-menu-item index="/color">
       <font-awesome-icon icon="info-circle" />
-      <span>配色方案</span>
+      <span v-t="'navigator.color'"></span>
     </el-menu-item>
   </el-menu>
 </template>

@@ -76,7 +76,10 @@
   /* background-color: #000; */
   background: var(--color4);
   color: var(--color1);
+  min-height: 1000px;
   padding: 50px 250px;
+  /* width: 800px; */
+  /* display: flex; */
 }
 
 .menu-header-logo >>> svg {

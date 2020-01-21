@@ -30,21 +30,9 @@
         </el-dropdown-item>
       </el-dropdown-menu>
     </el-dropdown>
-    <!-- <el-dropdown class="menu-item">
-      <span class="el-dropdown-link">
-        下拉菜单<i class="el-icon-arrow-down el-icon--right"></i>
-      </span>
-      <el-dropdown-menu slot="dropdown" class="menu-item-popover">
-        <el-dropdown-item icon="el-icon-plus">黄金糕</el-dropdown-item>
-        <el-dropdown-item icon="el-icon-circle-plus">狮子头</el-dropdown-item>
-        <el-dropdown-item icon="el-icon-circle-plus-outline">螺蛳粉</el-dropdown-item>
-        <el-dropdown-item icon="el-icon-check">双皮奶</el-dropdown-item>
-        <el-dropdown-item icon="el-icon-circle-check">蚵仔煎</el-dropdown-item>
-      </el-dropdown-menu>
-    </el-dropdown> -->
     <router-link class="menu-item" to="/author">{{$t('navigator.author')}}</router-link>
     <router-link class="menu-item" to="/about">{{$t('navigator.about')}}</router-link>
-    <router-link class="menu-item" to="/color">配色方案</router-link>
+    <router-link class="menu-item" to="/color">{{$t('navigator.color')}}</router-link>
   </div>
 </template>
 
@@ -63,8 +51,6 @@
 
 <style scoped>
   .header-menu-list {
-
-    /* height: 100px; */
     &>.menu-item {
       margin-right: 40px;
       text-decoration: none;
@@ -72,11 +58,6 @@
       color: var(--color1);
     }
   }
-
-  /* .el-dropdown-link {
-    font-size: 18px;
-    color: var(--color3);
-  } */
 
   .el-dropdown-menu.menu-item-popover {
     /* min-width: 150px; */

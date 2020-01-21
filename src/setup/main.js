@@ -3,21 +3,6 @@ import VueRouter from 'vue-router'
 import App from '../pages/app'
 import router from '@/setup/router'
 import store from '@/store'
-// import {
-//   Menu,
-//   Submenu,
-//   MenuItem,
-//   MenuItemGroup,
-//   Container,
-//   Footer,
-//   Main,
-//   Aside,
-//   Header,
-//   Select,
-//   Option,
-//   Loading,
-//   Button
-// } from 'element-ui'
 import ElementUI, {Loading} from 'element-ui'
 import 'element-ui/lib/theme-chalk/index.css'
 import '@/asset/root.css'
@@ -30,19 +15,6 @@ import { faReact, faVuejs, faAngular, faJava, faGithub, faBlogger } from '@forta
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 
 Vue.use(VueRouter)
-// Vue.use(Menu)
-// Vue.use(Submenu)
-// Vue.use(MenuItem)
-// Vue.use(MenuItemGroup)
-// Vue.use(Container)
-// Vue.use(Footer)
-// Vue.use(Main)
-// Vue.use(Aside)
-// Vue.use(Header)
-// Vue.use(Select)
-// Vue.use(Option)
-// Vue.use(Loading)
-// Vue.use(Button)
 Vue.use(ElementUI)
 
 Vue.prototype.$loading = Loading.service
