@@ -46,6 +46,8 @@
 </script>
 
 <style scoped>
+  @import 'palette.css';
+
   .header-menu-list > .menu-item {
     margin-right: 40px;
     text-decoration: none;

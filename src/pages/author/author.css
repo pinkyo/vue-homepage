@@ -1,20 +1,4 @@
-.content-sub-header h2 {
-  /* color: white; */
-  /* font-family: Arial, Helvetica, sans-serif; */
-  /* font-weight: 500; */
-}
-
-.content-sub-header h2:hover {
-  /* font-weight: bolder;
-  color: lightblue;
-  transition: all .6s 0s ease-in; */
-}
-
-.content-sub-div {
-  /* font-weight: lighter; */
-  /* color: lightgrey; */
-  /* font-family: Arial, Helvetica, sans-serif; */
-}
+@import 'palette.css';
 
 .author-pic-div {
   float: left;
@@ -187,7 +171,6 @@ body {
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   font-size: 19px;
-  /* background-color: #FEFEFE; */
   color: var(--color1);
 }
 ol,
@@ -211,7 +194,6 @@ table {
 }
 
 p {
-  /* color: #15171a; */
   font-size: 17;
   line-height: 31px;
 }
@@ -237,14 +219,13 @@ footer {
 
 .amap-container {
   margin-top: 150px;
+}
 
-  & > .line {
-    font-size: 20px;
-    font-weight: 600;
-    /* color: #04143A; */
-    color: var(--color1);
-    background: var(--color4);
-  }
+.amap-container > .line {
+  font-size: 20px;
+  font-weight: 600;
+  color: var(--color1);
+  background: var(--color4);
 }
 
 .hero {
@@ -260,7 +241,6 @@ h1.name {
 
 .job-title {
   vertical-align: top;
-  /* background-color: #D9E7F8; */
   color: #4a90e2;
   background-color: var(--color3);
   font-weight: 600;
@@ -449,7 +429,6 @@ ol::after {
 li {
   position: relative;
   display: inline-block;
-  float: left;
   width: 25%;
   height: 50px;
 }

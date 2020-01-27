@@ -14,6 +14,7 @@
 </script>
 
 <style>
+  @import "palette.css";
   .content-header {
     text-align: center;
     margin: 0;

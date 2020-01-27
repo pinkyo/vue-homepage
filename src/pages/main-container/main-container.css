@@ -1,15 +1,10 @@
-/* @import 'palette.css'; */
-
-.body-container {
-  /* padding: 0 20px; */
-}
+@import 'palette.css';
 
 .main-left-aside {
   background-color: var(--color1);
 }
 
 .main-top-header {
-  /* background-color: var(--color1); */
   text-align: left;
   background-color: var(--color3);
   color: var(--color1);
@@ -17,15 +12,15 @@
   justify-content: flex-start;
   align-items: center;
   padding-left: 0px;
+}
 
-  & >>> .header-img {
-    height: 60px;
-  }
+.main-top-header >>> .header-img {
+  height: 60px;
+}
 
-  & > .top-header-item {
-    display: inline-block;
-    margin-right: 25px;
-  }
+.main-top-header > .top-header-item {
+  display: inline-block;
+  margin-right: 25px;
 }
 
 .sit-icon {
@@ -41,9 +36,10 @@
 .sit-icon .lang-switch-div {
   flex: 1;
   padding-left: 50px;
-  & >>> .el-input {
-    width: 120px;
-  }
+}
+
+.lang-switch-div >>> .el-input {
+  width: 120px;
 }
 
 .main-header {
