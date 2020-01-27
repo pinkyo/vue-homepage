@@ -1,15 +1,9 @@
 /* RGB */
 :root body {
-  /* --color1: rgba(238, 222, 223, 1);
-  --color2: rgba(78, 17, 22, 1);
-  --color3: rgba(141, 31, 39, 1);
-  --color4: rgba(212, 172, 174, 1);
-  --color5: rgba(178, 39, 39, 1); */
-
-  --color1: #ADAABF;
+  --color1: #adaabf;
   --color2: #091740;
-  --color3: #072B59;
-  --color4: #383D40;
-  --color5: #0D0D0D;
-  --color6: #FFF;
+  --color3: #072b59;
+  --color4: #383d40;
+  --color5: #0d0d0d;
+  --color6: #fff;
 }

@@ -1,14 +1,16 @@
 <template>
-  <div class="content-header"><h1>{{text}}</h1></div>
+  <div class="content-header">
+    <h1>{{ text }}</h1>
+  </div>
 </template>
 
 <script>
-export default {
-  name: 'content-header',
-  props: {
-    text: String
-  }
-}
+  export default {
+    name: 'content-header',
+    props: {
+      text: String
+    }
+  };
 </script>
 
 <style>
@@ -16,9 +18,6 @@ export default {
     text-align: center;
     margin: 0;
     padding: 16px;
-    /* font-family: Arial, Helvetica, sans-serif; */
-    /* font-weight: bold;
-    color: lightblue; */
     color: var(--color5, rgba(6, 62, 122, 1));
   }
 
@@ -27,5 +26,3 @@ export default {
     padding: 0;
   }
 </style>
-
-

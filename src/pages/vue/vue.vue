@@ -1,11 +1,13 @@
 <template>
   <div class="vue-content main-content">
-    <!-- <content-header text="Vue" /> -->
     <div class="resources">
       <div class="content-resources">
         <ul>
-          <project-item href="https://github.com/pinkyo/vue-homepage" name="vue-hompage"
-            description="my personal homepage source code, implemented using Vuejs and ElementUI" />
+          <project-item
+            href="https://github.com/pinkyo/vue-homepage"
+            name="vue-hompage"
+            description="my personal homepage source code, implemented using Vuejs and ElementUI"
+          />
         </ul>
       </div>
     </div>
@@ -13,8 +15,8 @@
 </template>
 
 <script>
-  const contentHeader = () => import('@/components/content-header')
-  const projectItem = () => import('@/components/project-item')
+  const contentHeader = () => import('@/components/content-header');
+  const projectItem = () => import('@/components/project-item');
 
   export default {
     name: 'vue-content',
@@ -22,10 +24,7 @@
       contentHeader,
       projectItem
     }
-  }
-
+  };
 </script>
 
-<style scoped>
-
-</style>
+<style scoped></style>

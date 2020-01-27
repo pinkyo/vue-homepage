@@ -1,22 +1,6 @@
 <template>
   <el-container class="body-container">
     <el-container class="main-container">
-      <!-- <el-aside width='3.5rem' style="overflow: hidden" class="main-left-aside">
-        <div class="sit-icon">
-          <router-link to="/" title="Home">
-            <i class="menu-header-logo"><menuHeaderSVG /></i>
-          </router-link>
-          <el-select v-model="lang" class="lang-switch-div" size="small">
-            <el-option
-              v-for="item in langOptions"
-              :key="item.key"
-              :label="item.text"
-              :value="item.key">
-            </el-option>
-          </el-select>
-        </div>
-        <nav-menu />
-      </el-aside> -->
       <el-header class="main-top-header">
         <router-link to="/" class="top-header-item">
           <img class="header-img" src="../../static/header.jpg"></img>
@@ -43,7 +27,6 @@
 import {mapGetters, mapActions} from 'vuex'
 import navMenu from '@/components/nav-menu'
 const pageFooter = () => import('@/components/content-footer')
-// import menuHeaderSVG from '@/static/header.svg'
 import HeaderMenu from '@/components/header-menu'
 
 export default {
@@ -51,11 +34,9 @@ export default {
   components: {
     navMenu,
     pageFooter,
-    // menuHeaderSVG,
     HeaderMenu
   },
   data: () => ({
-    // menuHeaderSVG,
     lang: localStorage.getItem('locale') || 'zh_cn',
     langOptions: [{
       key: 'zh_cn',

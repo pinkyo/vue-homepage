@@ -12,16 +12,13 @@
 </template>
 
 <script>
-const contentHeader = () => import('@/components/content-header')
-const projectItem = () => import('@/components/project-item')
+  const contentHeader = () => import('@/components/content-header');
+  const projectItem = () => import('@/components/project-item');
 
-export default {
-  name: 'java-content',
-  components: {contentHeader, projectItem}
-}
+  export default {
+    name: 'java-content',
+    components: { contentHeader, projectItem }
+  };
 </script>
 
-<style scoped>
-
-</style>
-
+<style scoped></style>

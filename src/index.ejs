@@ -1,62 +1,64 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="utf-8">
-  <title><%= htmlWebpackPlugin.options.title %></title>
-  <link rel="icon" href="<%= BASE_URL %>favicon.ico">
-  <script>
-    (function(){
-      var redirect = sessionStorage.redirect;
-      delete sessionStorage.redirect;
-      if (redirect && redirect != location.href) {
-        history.replaceState(null, null, redirect);
-      }
-    })();
+  <head>
+    <meta charset="utf-8" />
+    <title><%= htmlWebpackPlugin.options.title %></title>
+    <link rel="icon" href="<%= BASE_URL %>favicon.ico" />
+    <script>
+      (function() {
+        var redirect = sessionStorage.redirect;
+        delete sessionStorage.redirect;
+        if (redirect && redirect != location.href) {
+          history.replaceState(null, null, redirect);
+        }
+      })();
 
-    var calcRootFontSize = function() {
-      var whdef = 100 / 1920;// 表示1920的设计图,使用100PX的默认值
-      var wW = window.innerWidth;// 当前窗口的宽度
-      var rem = Math.floor(wW * whdef);// 以默认比例值乘以当前窗口宽度,得到该宽度下的相应FONT-SIZE值
-      var html = document.getElementsByTagName('html')[0];
-      html.style['font-size'] = rem + "px";
-    }
+      var calcRootFontSize = function() {
+        var whdef = 100 / 1920; // 表示1920的设计图,使用100PX的默认值
+        var wW = window.innerWidth; // 当前窗口的宽度
+        var rem = Math.floor(wW * whdef); // 以默认比例值乘以当前窗口宽度,得到该宽度下的相应FONT-SIZE值
+        var html = document.getElementsByTagName('html')[0];
+        html.style['font-size'] = rem + 'px';
+      };
 
-    calcRootFontSize();
+      calcRootFontSize();
 
-    (function() {
-      var throttle = function(type, name, obj) {
+      (function() {
+        var throttle = function(type, name, obj) {
           obj = obj || window;
           var running = false;
           var func = function() {
-              if (running) { return; }
-              running = true;
-              requestAnimationFrame(function() {
-                  obj.dispatchEvent(new CustomEvent(name));
-                  running = false;
-              });
+            if (running) {
+              return;
+            }
+            running = true;
+            requestAnimationFrame(function() {
+              obj.dispatchEvent(new CustomEvent(name));
+              running = false;
+            });
           };
           obj.addEventListener(type, func);
-      };
+        };
 
-      /* init - you can init any event */
-      throttle("resize", "optimizedResize");
-    })();
+        /* init - you can init any event */
+        throttle('resize', 'optimizedResize');
+      })();
 
-    // handle event
-    window.addEventListener("optimizedResize", calcRootFontSize);
-  </script>
-</head>
-<body>
-  <div id="app">
-    <router-view></router-view>
-  </div>
-</body>
-<style type="text/css">
-  html {
-    font-size: 100px;
-  }
-  body {
-    font-size: 14px;
-  }
-</style>
+      // handle event
+      window.addEventListener('optimizedResize', calcRootFontSize);
+    </script>
+  </head>
+  <body>
+    <div id="app">
+      <router-view></router-view>
+    </div>
+  </body>
+  <style type="text/css">
+    html {
+      font-size: 100px;
+    }
+    body {
+      font-size: 14px;
+    }
+  </style>
 </html>

@@ -1,6 +1,14 @@
 <template>
-  <el-menu class="el-menu-vertical" @open="handleOpen" @close="handleClose" background-color="#aaa" text-color="#000"
-    active-text-color="#039" :default-active="getDefaultActiveItem()" router>
+  <el-menu
+    class="el-menu-vertical"
+    @open="handleOpen"
+    @close="handleClose"
+    background-color="#aaa"
+    text-color="#000"
+    active-text-color="#039"
+    :default-active="getDefaultActiveItem()"
+    router
+  >
     <el-submenu index="1">
       <template slot="title">
         <div>
@@ -46,7 +54,7 @@
 
 <script>
   export default {
-    name: "nav-menu",
+    name: 'nav-menu',
     methods: {
       handleOpen(key, keyPath) {
         console.log(key, keyPath);
@@ -58,8 +66,7 @@
         return this.$router.currentRoute.fullPath;
       }
     }
-  }
-
+  };
 </script>
 
 <style>
@@ -84,12 +91,11 @@
   .el-menu-item:hover span {
     padding: 20px;
     font-style: italic;
-    transition: padding .4s 0s ease-in;
-    transition: font-style .4s 0s ease-in;
+    transition: padding 0.4s 0s ease-in;
+    transition: font-style 0.4s 0s ease-in;
   }
 
   .el-menu {
     border: none;
   }
-
 </style>

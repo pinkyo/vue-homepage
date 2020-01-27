@@ -1,15 +1,13 @@
 module.exports = {
-  presets: [
-    '@vue/app'
-  ],
-  plugins:[
-    "@babel/plugin-syntax-dynamic-import",
+  presets: ['@vue/app'],
+  plugins: [
+    '@babel/plugin-syntax-dynamic-import',
     [
-      "component",
+      'component',
       {
-        "libraryName": "element-ui",
-        "styleLibraryName": "theme-chalk"
+        libraryName: 'element-ui',
+        styleLibraryName: 'theme-chalk'
       }
     ]
   ]
-}
+};
