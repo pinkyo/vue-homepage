@@ -15,13 +15,8 @@
 </template>
 
 <script>
-  const contentHeader = () => import('@/components/content-header');
-
   export default {
-    name: 'about-content',
-    components: {
-      contentHeader
-    }
+    name: 'about-content'
   };
 </script>
 

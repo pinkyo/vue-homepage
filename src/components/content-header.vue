@@ -14,12 +14,14 @@
 </script>
 
 <style>
-  @import "palette.css";
+  @import 'palette.css';
+
   .content-header {
     text-align: center;
     margin: 0;
     padding: 16px;
-    color: var(--color5, rgba(6, 62, 122, 1));
+    font-size: 25px;
+    color: var(--color6);
   }
 
   .content-header h1 {

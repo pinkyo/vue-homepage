@@ -148,14 +148,6 @@
           <p class="sub">Computer Science And Technology</p>
           <span class="date">2012 - 2016</span>
         </li>
-
-        <!-- <li>
-          <span class="point"></span>
-          <p class="description">
-            Art & Design studies
-          </p>
-          <span class="date">2013 - 2008</span>
-        </li> -->
       </ol>
     </div>
 
@@ -176,15 +168,10 @@
 <script>
   // NPM 方式
   import VueAMap from 'vue-amap';
-  const contentHeader = () => import('@/components/content-header');
-
   const amapManager = new VueAMap.AMapManager();
 
   export default {
     name: 'author-content',
-    components: {
-      contentHeader
-    },
     data: function() {
       return {
         //地理编码
