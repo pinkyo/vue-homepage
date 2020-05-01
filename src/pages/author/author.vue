@@ -3,10 +3,10 @@
     <div class="container">
       <div class="hero">
         <h1 class="name"><strong>Kainian</strong> Yin</h1>
-        <span class="job-title">Web Developer</span>
+        <span class="job-title">Java Developer</span>
         <span class="email">kainian.yin@outlook.com</span>
 
-        <h2 class="lead">Development and design of web applications</h2>
+        <h2 class="lead">Development and design of Java applications</h2>
       </div>
     </div>
 

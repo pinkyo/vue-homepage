@@ -16,7 +16,7 @@
 <style>
   li.project-list-item {
     font-weight: normal;
-    font-size: 20px;
+    font-size: 25px;
     padding: 3px 0;
     margin: 3px 0;
     list-style-type: none;
