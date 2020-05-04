@@ -24,10 +24,11 @@ ul.menu-item-popover {
 }
 
 ul.menu-item-popover >>> .el-dropdown-menu__item:hover {
-  background-color: var(--color2);
+  /* background-color: var(--color2); */
+  background-color: blue;
 }
 
 ul.menu-item-popover >>> div.popper__arrow {
   color: var(--color3);
-  background-color: var(--color3);
+  /* background-color: var(--color3); */
 }

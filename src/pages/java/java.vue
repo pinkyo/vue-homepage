@@ -1,6 +1,6 @@
 <template>
   <div class="java-content main-content">
-    <!-- <content-header text="Java" /> -->
+    <content-header text="Java" />
     <!-- <div class="resources">
       <div class="content-resources">
         <ul>

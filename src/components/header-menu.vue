@@ -31,6 +31,7 @@
     <router-link class="menu-item" to="/author">{{ $t('navigator.author') }}</router-link>
     <router-link class="menu-item" to="/about">{{ $t('navigator.about') }}</router-link>
     <router-link class="menu-item" to="/color">{{ $t('navigator.color') }}</router-link>
+    <!-- <router-link class="menu-item" to="/animation">动画</router-link> -->
   </div>
 </template>
 
@@ -66,5 +67,9 @@
     font-size: 18px;
     color: var(--color1);
     margin-left: 10px;
+  }
+
+  .el-dropdown-menu__item:focus, .el-dropdown-menu__item:not(.is-disabled):hover {
+    background-color: #091740;
   }
 </style>
