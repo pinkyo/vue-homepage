@@ -5,15 +5,15 @@
         {{ $t('navigator.resources.frontend.title') }}<i class="el-icon-arrow-down el-icon--right"></i>
       </span>
       <el-dropdown-menu slot="dropdown" class="menu-item-popover">
-        <el-dropdown-item icon="el-icon-plus" command="/frontend/react">
+        <el-dropdown-item command="/frontend/react">
           <font-awesome-icon :icon="['fab', 'react']"></font-awesome-icon>
           <span class="dropdown-item">REACT JS</span>
         </el-dropdown-item>
-        <el-dropdown-item icon="el-icon-circle-plus" command="/frontend/vue">
+        <el-dropdown-item command="/frontend/vue">
           <font-awesome-icon :icon="['fab', 'vuejs']"></font-awesome-icon>
           <span class="dropdown-item">VUE JS</span>
         </el-dropdown-item>
-        <el-dropdown-item icon="el-icon-circle-plus-outline" command="/frontend/angular">
+        <el-dropdown-item command="/frontend/angular">
           <font-awesome-icon :icon="['fab', 'angular']"></font-awesome-icon>
           <span class="dropdown-item">AngularJS JS</span>
         </el-dropdown-item>
@@ -22,7 +22,7 @@
     <el-dropdown class="menu-item" @command="handleRouteChange">
       <span class="el-dropdown-link"> {{ $t('navigator.resources.backend.title') }}<i class="el-icon-arrow-down el-icon--right"></i> </span>
       <el-dropdown-menu slot="dropdown" class="menu-item-popover">
-        <el-dropdown-item icon="el-icon-plus" command="/backend/java">
+        <el-dropdown-item command="/backend/java">
           <font-awesome-icon :icon="['fab', 'java']" />
           <span class="dropdown-item">JAVA</span>
         </el-dropdown-item>

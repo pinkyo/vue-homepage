@@ -1,8 +1,8 @@
 <template>
   <li class="project-list-item">
-    <font-awesome-icon icon="angle-double-right" />
+    <font-awesome-icon icon="angle-double-right" />&nbsp;
     <a :href="this.href" target="_blank">{{ name }}</a>
-    : {{ description }}
+    :&nbsp;{{ description }}
   </li>
 </template>
 

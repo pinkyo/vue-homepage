@@ -19,7 +19,6 @@
   .content-header {
     text-align: center;
     margin: 0;
-    /* padding: 16px; */
     font-size: 30px;
     color: var(--color1);
   }

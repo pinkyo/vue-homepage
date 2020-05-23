@@ -25,14 +25,12 @@
 
 <script>
 import {mapGetters, mapActions} from 'vuex'
-import navMenu from '@/components/nav-menu'
 const pageFooter = () => import('@/components/content-footer')
 import HeaderMenu from '@/components/header-menu'
 
 export default {
   name: 'main-container',
   components: {
-    navMenu,
     pageFooter,
     HeaderMenu
   },

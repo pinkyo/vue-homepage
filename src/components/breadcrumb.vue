@@ -1,6 +1,6 @@
 <template>
   <el-breadcrumb separator-class="el-icon-arrow-right" v-if="data && data.length > 0">
-    <el-breadcrumb-item v-for="item in data" :to="getToObj(item)">{{ item.text }}</el-breadcrumb-item>
+    <el-breadcrumb-item v-for="item in data" :key="item" :to="getToObj(item)">{{ item.text }}</el-breadcrumb-item>
   </el-breadcrumb>
 </template>
 
