@@ -29,7 +29,7 @@
       </el-dropdown-menu>
     </el-dropdown> -->
     <router-link class="menu-item" to="/author">{{ $t('navigator.author') }}</router-link>
-    <router-link class="menu-item" to="/about">{{ $t('navigator.about') }}</router-link>
+    <!-- <router-link class="menu-item" to="/about">{{ $t('navigator.about') }}</router-link> -->
     <router-link class="menu-item" to="/color">{{ $t('navigator.color') }}</router-link>
     <!-- <router-link class="menu-item" to="/animation">动画</router-link> -->
   </div>
