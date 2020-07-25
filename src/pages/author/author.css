@@ -395,6 +395,19 @@ h1.name {
 /* Achievements ends */
 
 /* Timeline styles*/
+.timeline {
+  border: none;
+  background-color: rgba(0, 0, 0, 0);
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  background-color: var(--color3);
+  margin-top: 20px;
+}
+
+.timeline li {
+  width: 33%;
+}
 
 ol {
   position: relative;
@@ -541,9 +554,15 @@ li.long-list-item {
   .timeline {
     border: none;
     background-color: rgba(0, 0, 0, 0);
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    background-color: var(--color3);
+    margin-top: 20px;
   }
 
   .timeline li {
+    position: relative;
     margin-top: 70px;
     height: 150px;
   }
@@ -562,9 +581,9 @@ li.long-list-item {
     float: left;
   }
 
-  .timeline {
+  /* .timeline {
     display: none;
-  }
+  } */
 
   .job-title {
     position: absolute;

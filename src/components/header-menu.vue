@@ -1,6 +1,6 @@
 <template>
   <div class="header-menu-list">
-    <el-dropdown class="menu-item" @command="handleRouteChange">
+    <!-- <el-dropdown class="menu-item" @command="handleRouteChange">
       <span class="el-dropdown-link">
         {{ $t('navigator.resources.frontend.title') }}<i class="el-icon-arrow-down el-icon--right"></i>
       </span>
@@ -27,7 +27,7 @@
           <span class="dropdown-item">JAVA</span>
         </el-dropdown-item>
       </el-dropdown-menu>
-    </el-dropdown>
+    </el-dropdown> -->
     <router-link class="menu-item" to="/author">{{ $t('navigator.author') }}</router-link>
     <router-link class="menu-item" to="/about">{{ $t('navigator.about') }}</router-link>
     <router-link class="menu-item" to="/color">{{ $t('navigator.color') }}</router-link>

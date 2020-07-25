@@ -1,7 +1,7 @@
 <template>
   <div class="vue-content main-content">
     <div class="resources">
-      <div class="content-resources">
+      <!-- <div class="content-resources">
         <ul>
           <project-item
             href="https://github.com/pinkyo/vue-homepage"
@@ -9,7 +9,7 @@
             description="my personal homepage source code, implemented using Vuejs and ElementUI"
           />
         </ul>
-      </div>
+      </div> -->
     </div>
   </div>
 </template>

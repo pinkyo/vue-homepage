@@ -1,6 +1,7 @@
 <template>
   <div class="author-content main-content">
     <div class="container">
+      <div><img src="../../static/author.png" width="150px"></div>
       <div class="hero">
         <h1 class="name"><strong>Kainian</strong> Yin</h1>
         <span class="job-title">Java Developer</span>
@@ -16,7 +17,7 @@
         <h2 class="section-title">Skills</h2>
 
         <div class="list-card">
-          <span class="exp">+ 3 years</span>
+          <span class="exp">+ 4 years</span>
           <div>
             <h3>Object programming & frameworks</h3>
             <span>Spring, MyBatis, Hibernates</span>
@@ -24,7 +25,7 @@
         </div>
 
         <div class="list-card">
-          <span class="exp">+ 3 years</span>
+          <span class="exp">+ 4 years</span>
           <div>
             <h3>Design integration</h3>
             <span>React, Vue, CSS, Html</span>
@@ -32,7 +33,7 @@
         </div>
 
         <div class="list-card">
-          <span class="exp">+ 3 years</span>
+          <span class="exp">+ 4 years</span>
           <div>
             <h3>Linux</h3>
             <span>Scripting, Servers management and protocols, Automation</span>
@@ -45,7 +46,7 @@
         <div class="list-card">
           <div>
             <h3>Scripting languages</h3>
-            <span>PHP, JS, Bash, Python</span>
+            <span>JS, Bash, Python</span>
           </div>
         </div>
 
@@ -119,34 +120,33 @@
     <!-- Timeeline -->
 
     <div class="container">
+      <p class="line">Experience</p>
       <ol class="timeline">
         <li>
-          <p class="line">Experiences</p>
-          <span class="point"></span>
-          <p class="description">
-            Webank
-          </p>
-          <p class="sub">JAVA Developer</p>
-          <span class="date">Today - JUL. 2018</span>
-        </li>
-
-        <li>
-          <span class="point"></span>
-          <p class="description">
-            Ericsson Mobile Data R&D (GuangZhon)
-          </p>
-          <p class="sub">JAVA Developer</p>
-          <span class="date">JUN. 2018 - Sep. 2016</span>
-        </li>
-
-        <li class="long-list-item">
-          <p class="line">Education</p>
+          <!-- <p class="line">Education</p> -->
           <span class="point"></span>
           <p class="description">
             SUN YAT-SEN UNIVERSITY
           </p>
           <p class="sub">Computer Science And Technology</p>
-          <span class="date">2012 - 2016</span>
+          <span class="date">Sep. 2012 - JUN. 2016</span>
+        </li>
+
+        <li>
+          <span class="point"></span>
+          <p class="description">
+            Ericsson Mobile Data R&D Co.,Ltd
+          </p>
+          <p class="sub">JAVA Developer</p>
+          <span class="date">Sep. 2016 - JUN. 2018</span>
+        </li>
+
+        <li>
+          <!-- <p class="line">Experiences</p> -->
+          <span class="point"></span>
+          <p class="description">Webank</p>
+          <p class="sub">JAVA Developer</p>
+          <span class="date">JUL. 2018 - Today</span>
         </li>
       </ol>
     </div>

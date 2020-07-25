@@ -1,6 +1,6 @@
 <template>
   <div class="footer-div">
-    <span>@MIT License</span>
+    <!-- <span>@MIT License</span> -->
   </div>
 </template>
 

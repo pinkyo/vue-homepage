@@ -1,6 +1,6 @@
 <template>
   <div class="react-content main-content">
-    <div class="content-resources">
+    <!-- <div class="content-resources">
       <ul>
         <project-item
           href="https://github.com/pinkyo/validatorjs"
@@ -8,7 +8,7 @@
           description="centra validation provider when developing using es6+."
         />
       </ul>
-    </div>
+    </div> -->
   </div>
 </template>
 
