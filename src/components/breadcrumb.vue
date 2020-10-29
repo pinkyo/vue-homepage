@@ -31,7 +31,7 @@
   }
 
   .el-breadcrumb >>> .el-breadcrumb__inner {
-    color: var(----color4);
+    color: var(--color4);
   }
 
   .el-breadcrumb >>> .el-breadcrumb__inner.is-link {

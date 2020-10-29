@@ -15,6 +15,7 @@
     "@fortawesome/vue-fontawesome": "^0.1.5",
     "axios": "^0.18.0",
     "element-ui": "^2.4.11",
+    "html2canvas": "^1.0.0-rc.7",
     "lodash": "^4.17.11",
     "vue": "^2.5.22",
     "vue-amap": "^0.5.8",

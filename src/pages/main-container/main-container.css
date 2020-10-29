@@ -63,7 +63,7 @@
   background: var(--color4);
   color: var(--color1);
   min-height: 1000px;
-  padding: 50px 250px;
+  padding: 15px 250px;
 }
 
 .menu-header-logo >>> svg {

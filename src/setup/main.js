@@ -3,8 +3,8 @@ import VueRouter from 'vue-router';
 import App from '../pages/app';
 import router from '@/setup/router';
 import store from '@/store';
+import '../../theme/index.css'
 import ElementUI, { Loading } from 'element-ui';
-import 'element-ui/lib/theme-chalk/index.css';
 import '@/asset/root.css';
 import '@/asset/palette.css';
 import { i18n, loadLanguageAsync } from '@/setup/i18n-setup';

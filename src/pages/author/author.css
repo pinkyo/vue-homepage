@@ -1,5 +1,18 @@
 @import 'palette.css';
 
+.author-content {
+  padding: 30px 0;
+  background: var(--color4);
+}
+
+.save-btn-div .el-button {
+  color: var(--color1);
+}
+
+.save-btn-div {
+  text-align: right;
+}
+
 .author-pic-div {
   float: left;
   padding-right: 10px;
