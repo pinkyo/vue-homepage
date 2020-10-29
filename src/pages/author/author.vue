@@ -14,7 +14,7 @@
             <strong>Kainian</strong> Yin
           </h1>
           <span class="job-title">Java Developer</span>
-          <span class="email">kainian.yin@outlook.com</span>
+          <span class="email">yinkn@outlook.com</span>
 
           <h2 class="lead">Development and design of Java applications</h2>
         </div>
