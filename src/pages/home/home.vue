@@ -161,8 +161,13 @@
     name: 'home',
     components: {
       contentHeader
-    }
+    },
     // data: () => ({starSVG})
+    methods: {
+      abc: (params) => {
+        console.log('params :>> ', params);
+      }
+    },
   };
 </script>
 

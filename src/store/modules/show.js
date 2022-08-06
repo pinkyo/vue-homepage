@@ -4,6 +4,9 @@ const initialState = {
   hidden: false
 };
 
+/**
+ * @param {Object} state
+ */
 const getters = {
   isHidden: state => state.hidden
 };

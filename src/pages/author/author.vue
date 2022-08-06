@@ -11,12 +11,13 @@
         </div>
         <div class="hero">
           <h1 class="name">
-            <strong>Kainian</strong> Yin
+            <span>{{ $t('author_page.author.name') }}</span>
+            <!-- <strong>Kainian</strong> Yin -->
           </h1>
-          <span class="job-title">Java Developer</span>
+          <span class="job-title">Java/GoLang Developer</span>
           <span class="email">yinkn@outlook.com</span>
 
-          <h2 class="lead">Development and design of Java applications</h2>
+          <h2 class="lead">Development and design of Web applications</h2>
         </div>
       </div>
 

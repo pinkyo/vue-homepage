@@ -3,7 +3,7 @@
     <el-container class="main-container">
       <el-header class="main-top-header">
         <router-link to="/" class="top-header-item">
-          <img class="header-img" src="../../static/header.jpg"></img>
+          <img class="header-img" src="../../static/header.jpg"/>
         </router-link>
         <header-menu class="top-header-item"></header-menu>
       </el-header>
@@ -24,9 +24,8 @@
 </template>
 
 <script>
-import {mapGetters, mapActions} from 'vuex'
-const pageFooter = () => import('@/components/content-footer')
-import HeaderMenu from '@/components/header-menu'
+const pageFooter = () => import('@/components/content-footer');
+import HeaderMenu from '@/components/header-menu';
 
 export default {
   name: 'main-container',
@@ -36,26 +35,27 @@ export default {
   },
   data: () => ({
     lang: localStorage.getItem('locale') || 'zh_cn',
-    langOptions: [{
-      key: 'zh_cn',
-      text: '简体中文'
-    }, {
-      key: 'en',
-      text: 'English'
-    }]
+    langOptions: [
+      {
+        key: 'zh_cn',
+        text: '简体中文'
+      },
+      {
+        key: 'en',
+        text: 'English'
+      }
+    ]
   }),
   watch: {
-    lang: function(value) {
-      localStorage.setItem('locale', value)
-      this.$i18n.locale = localStorage.getItem('locale')
+    lang: function (value) {
+      localStorage.setItem('locale', value);
+      this.$i18n.locale = localStorage.getItem('locale');
     }
   },
-  beforeCreate() {
-
-  }
-}
+  beforeCreate() {}
+};
 </script>
 
 <style scoped>
-  @import './main-container.css';
+@import './main-container.css';
 </style>

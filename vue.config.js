@@ -25,5 +25,6 @@ module.exports = {
     svgRule.use('vue-svg-loader').loader('vue-svg-loader');
   },
 
-  lintOnSave: false
+  lintOnSave: false,
+  publicPath: './',
 };
