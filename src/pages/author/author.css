@@ -234,7 +234,7 @@ footer {
   margin-top: 150px;
 }
 
-.amap-container > .line {
+.amap-container > .line, .container > .line {
   font-size: 20px;
   font-weight: 600;
   color: var(--color1);
@@ -419,7 +419,7 @@ h1.name {
 }
 
 .timeline li {
-  width: 33%;
+  /* width: 33%; */
 }
 
 ol {

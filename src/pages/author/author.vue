@@ -127,7 +127,7 @@
         </div>
       </div>
 
-      <!-- Timeeline -->
+      <!-- Timeline -->
 
       <div class="container">
         <p class="line">Experience</p>
@@ -152,7 +152,13 @@
             <span class="point"></span>
             <p class="description">Webank</p>
             <p class="sub">JAVA Developer</p>
-            <span class="date">JUL. 2018 - Today</span>
+            <span class="date">JUL. 2018 - ARP. 2022</span>
+          </li>
+          <li>
+            <span class="point"></span>
+            <p class="description">Shopee</p>
+            <p class="sub">GoLang Developer</p>
+            <span class="date">ARP. 2022 - Today</span>
           </li>
         </ol>
       </div>
